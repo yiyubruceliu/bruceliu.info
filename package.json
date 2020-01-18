@@ -41,10 +41,12 @@
     "fizzy-ui-utils": "^2.0.7",
     "get-size": "^2.0.3",
     "isotope": "^1.0.0-alpha.3",
+    "jquery-migrate": "^3.1.0",
     "js": "^0.1.0",
     "lightcase": "^2.5.0",
     "masonry-layout": "^4.2.2",
     "outlayer": "^2.1.1",
-    "popper": "^1.0.1"
+    "popper": "^1.0.1",
+    "wow": "0.0.6"
   }
 }
