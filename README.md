@@ -1,2 +1,2 @@
-# bruceliu.info
-My personal website
+# website
+The company's website
