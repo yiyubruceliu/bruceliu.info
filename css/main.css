@@ -1590,7 +1590,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
   text-align: center;
   white-space: nowrap;
-  background-color: #0091EA!important;
+  background-color: #1B5E20!important;
   transition: width .6s ease;
 }
 
@@ -1653,7 +1653,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .client-info .lage {
-  color: #0091EA;
+  color: #1B5E20;
   font-size: 100px;
   font-weight: bolder;
   line-height: 85px;
@@ -1952,7 +1952,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-job:hover {
-  background: #0091EA;
+  background: #1B5E20;
   cursor: pointer;
   color: #fff;
 }
@@ -1982,7 +1982,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .service-area .col-lg-3.col-md-6:nth-child(3) .single-service {
-  background: #0091EA;
+  background: #1B5E20;
 }
 
 .service-area .col-lg-3.col-md-6:nth-child(4) .single-service {
@@ -2460,7 +2460,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #back-top a {
-  background: #0091EA;
+  background: #1B5E20;
   display: block;
   text-align: center;
   width: 35px;
