@@ -86,6 +86,10 @@ a, a:focus, a:hover {
   outline: 0;
 }
 
+.fa {
+  font-size: larger;
+}
+
 /**
  *  Typography
  *
@@ -1837,6 +1841,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .single-job {
   background-color: #BDBDBD;
   padding: 40px 30px;
+  min-height: 225px;
   border-radius: 10px;
   margin-bottom: 30px;
   -webkit-transition: all 0.3s ease 0s;
@@ -1902,6 +1907,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 .single-job:hover {
   background: #1B5E20;
   cursor: pointer;
+  color: #fff;
+}
+
+.single-job>.fa {
   color: #fff;
 }
 
