@@ -747,6 +747,7 @@ h1, h2, h3, h4, h5, h6 {
 .primary-btn {
   color: #fff;
   padding: 0 52px;
+  min-width: 241px;
   background: #33691E;
   overflow: hidden;
   border-radius: 40px;
@@ -766,6 +767,7 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  align-self: center;
 }
 
 @media (max-width: 767px) {
@@ -1919,6 +1921,18 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*================================
+=             Skills             =
+================================*/
+
+.skill-area {
+  background: #BDBDBD;
+}
+
+.d-table-cell {
+  background-color: #fff;
+}
+
+/*================================
 =             SERVICES           =
 ================================*/
 
@@ -1954,6 +1968,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+
+.single-service span {
+  font-size: xx-large;
 }
 
 @media (max-width: 1199px) {
@@ -2442,4 +2460,24 @@ body.mobile-nav-active #mobile-nav-toggle {
   -moz-transition: all 0.4s ease-in !important;
   -o-transition: all 0.4s ease-in !important;
   transition: all 0.4s ease-in !important;
+}
+
+/*================================
+=             SPACING           =
+================================*/
+
+.mr-1 {
+  margin-right: 8px !important;
+}
+
+.ml-1 {
+  margin-left: 8px !important;
+}
+
+.mt-1 {
+  margin-top: 8px !important;
+}
+
+.mb-1 {
+  margin-bottom: 8px !important;
 }
