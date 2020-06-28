@@ -1972,6 +1972,96 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*================================
+=             PROJECTS           =
+================================*/
+
+.project-area{
+  background-color: black;
+  color:white;
+}
+
+.single-project {
+  background-color: #BDBDBD;
+  padding: 40px 30px;
+  min-height: 225px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 576px) {
+  .single-project .top-sec {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+.single-project .top-left h4 {
+  color: #000;
+  font-size: 21px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  font-weight: 700;
+}
+
+@media (max-width: 1199px) {
+  .single-project .top-left h4 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .single-project .bottom-sec {
+    margin-top: 30px;
+  }
+}
+
+.single-project .primary-btn {
+  padding: 0 28px;
+  background: #fff;
+  color: #222222;
+  border: 1px solid #90acd1;
+}
+
+@media (max-width: 1199px) {
+  .single-project .primary-btn {
+    padding: 0 15px;
+  }
+}
+
+.single-project .primary-btn span {
+  color: #222222;
+}
+
+.single-project .primary-btn:before {
+  color: #222222;
+}
+
+.single-project:hover {
+  background: #1B5E20;
+  cursor: pointer;
+  color: #fff;
+}
+
+.single-project>.fa {
+  color: #fff;
+}
+
+.single-project:hover .top-left h4 {
+  color: #fff;
+}
+
+
+/*================================
 =             Skills             =
 ================================*/
 
