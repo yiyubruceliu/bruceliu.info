@@ -1710,7 +1710,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 ================================*/
 
 .work-area {
-  background: #BDBDBD;
+  background: #66BB6A;
 }
 
 @media (max-width: 1024px) {
@@ -1892,7 +1892,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 ================================*/
 
 .single-job {
-  background-color: #BDBDBD;
+  background-color: #66BB6A;
   padding: 40px 30px;
   min-height: 225px;
   border-radius: 10px;
@@ -1981,7 +1981,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-project {
-  background-color: #BDBDBD;
+  background-color: #66BB6A;
   padding: 40px 30px;
   min-height: 225px;
   border-radius: 10px;
@@ -2066,7 +2066,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 ================================*/
 
 .skill-area {
-  background: #BDBDBD;
+  background: #66BB6A;
 }
 
 .d-table-cell {
@@ -2078,7 +2078,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 ================================*/
 
 .service-area {
-  background: #BDBDBD;
+  background: #66BB6A;
 }
 
 .service-area.white {
