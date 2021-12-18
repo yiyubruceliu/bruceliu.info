@@ -43,12 +43,13 @@ html {
 }
 
 body {
-  color: #777777;
+  color: #424242;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.625em;
   position: relative;
+  background-color: #E8F5E9;
 }
 
 ol,
@@ -1035,7 +1036,7 @@ h6 {
 }
 
 .primary-btn.white {
-  border: 1px solid #90acd1;
+  border: 1px solid #43A047;
   color: #e45447;
   background: #fff;
 }
@@ -1049,7 +1050,7 @@ h6 {
 }
 
 .primary-btn.white:hover {
-  background: #90acd1;
+  background: #43A047;
   color: #fff;
 }
 
@@ -1146,7 +1147,7 @@ h6 {
 }
 
 .home-banner-area .header-social a i {
-  color: #cccccc;
+  color: #424242;
   font-size: 36px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -1441,7 +1442,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .banner-area {
-  background: #90acd1;
+  background: #43A047;
 }
 
 .banner-content {
@@ -1940,7 +1941,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 0 28px;
   background: #fff;
   color: #222222;
-  border: 1px solid #90acd1;
+  border: 1px solid #43A047;
 }
 
 @media (max-width: 1199px) {
@@ -1976,7 +1977,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 ================================*/
 
 .project-area{
-  background-color: black;
+  background-color: #263238;
   color:white;
 }
 
@@ -2029,7 +2030,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 0 28px;
   background: #fff;
   color: #222222;
-  border: 1px solid #90acd1;
+  border: 1px solid #43A047;
 }
 
 @media (max-width: 1199px) {
@@ -2507,7 +2508,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .footer-area .footer-logo h4 {
   font-size: 21px;
-  color: #777777;
+  color: #424242;
   font-weight: 700;
   margin-top: 48px;
 }
@@ -2528,7 +2529,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .footer-area .footer-social a i {
-  color: #cccccc;
+  color: #424242;
   font-size: 36px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
