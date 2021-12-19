@@ -2308,6 +2308,27 @@ body.mobile-nav-active #mobile-nav-toggle {
   line-height: 45px;
 }
 
+.contact-area .contact-title h5 {
+  color: white;
+  text-align: left;
+}
+
+.contact-area .contact-title .contact-details {
+  text-align: left;
+  margin-bottom:5px;
+}
+
+.icon-space {
+  width: 40px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.gift {
+  background: linear-gradient(0deg, rgba(55 71 79 / 69%), rgba(22 27 29 / 80%)), url(../img/joanna-kosinska-3BgkveM3y_k-unsplash.jpg);
+  background:rgba(0, 0, 0, 0.7), url(../img/joanna-kosinska-3BgkveM3y_k-unsplash.jpg);
+  background-size: cover;
+}
 @media (max-width: 1024px) {
   .contact-area .contact-title h2 {
     font-size: 40px;
