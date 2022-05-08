@@ -13366,11 +13366,12 @@ h6 {
     max-width: 100%;
   }
 
-  .banner-content .designation .primary-btn {
+  .banner-content .primary-btn {
     display: block;
   }
   
   .home-banner-area .header-social a {
+    margin-right: 0px;
     text-align: left;
     margin-top: 5px;
     backface-visibility: hidden;
