@@ -1155,8 +1155,16 @@ h6 {
   transition: all 0.3s ease 0s;
 }
 
+@media (min-width: 768px) {
+  .d-xs {
+    display: none;
+  }
+}
 
 @media (max-width: 768px) {
+  .d-xs {
+    display:inline;
+  }
   .home-banner-area .header-social a i {
     font-size: 25px;
     color: white;
@@ -1169,6 +1177,7 @@ h6 {
   }
   .home-banner-area .banner-content h1 {
     text-align: center;
+    margin-bottom:5px;
   }
   .home-banner-area .banner-content .header-social {
     display: flex;
