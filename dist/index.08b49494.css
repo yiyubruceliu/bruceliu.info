@@ -13359,9 +13359,18 @@ h6 {
     display: flex;
     flex-direction: column;
   }
+
+  .banner-content .designation {
+    max-width: 100%;
+  }
+
+  .banner-content .designation .primary-btn {
+    display: block;
+  }
+  
   .home-banner-area .header-social a {
     text-align: left;
-    margin-top: 1px;
+    margin-top: 5px;
     backface-visibility: hidden;
     background: #33691e;
     border: 1px solid #33691e;
