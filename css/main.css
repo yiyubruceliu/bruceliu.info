@@ -1155,6 +1155,17 @@ h6 {
   transition: all 0.3s ease 0s;
 }
 
+
+@media (max-width: 768px) {
+  .home-banner-area .header-social a i {
+    font-size: 25px;
+  }
+  
+  .home-banner-area .container {
+    padding: 60px;
+  }
+}
+
 @media (max-width: 576px) {
   .home-banner-area .header-social a i {
     font-size: 25px;
