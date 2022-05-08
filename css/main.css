@@ -1164,10 +1164,12 @@ h6 {
 @media (max-width: 768px) {
   .d-xs {
     display:inline;
+    flex-grow: 1;
   }
   .home-banner-area .header-social a i {
     font-size: 25px;
     color: white;
+    padding-top:8px;
   }
 
   .home-banner-area .banner-content {
@@ -1201,7 +1203,8 @@ h6 {
     border-radius: 40px;
     color: #fff;
     cursor: pointer;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     font-size: 15px;
     font-weight: 600;
     min-width: 241px;
