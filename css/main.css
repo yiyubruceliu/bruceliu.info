@@ -1159,10 +1159,12 @@ h6 {
 @media (max-width: 768px) {
   .home-banner-area .header-social a i {
     font-size: 25px;
+    color: white;
   }
 
   .home-banner-area .banner-content {
-    padding: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
     height: 100vh; 
   }
   .home-banner-area .banner-content h1 {
@@ -1173,6 +1175,8 @@ h6 {
     flex-direction: column;
   }
   .home-banner-area .header-social a {
+    text-align: left;
+    margin-top: 1px;
     backface-visibility: hidden;
     background: #33691e;
     border: 1px solid #33691e;
