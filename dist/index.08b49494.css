@@ -13335,10 +13335,41 @@ h6 {
   .home-banner-area .header-social a i {
     font-size: 25px;
   }
-  
-  .home-banner-area .container {
+
+  .home-banner-area .banner-content {
     padding: 60px;
+    height: 100vh; 
   }
+  .home-banner-area .banner-content h1 {
+    text-align: center;
+  }
+  .home-banner-area .banner-content .header-social {
+    display: flex;
+    flex-direction: column;
+  }
+  .home-banner-area .header-social a {
+    backface-visibility: hidden;
+    background: #33691e;
+    border: 1px solid #33691e;
+    border-radius: 40px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    min-width: 241px;
+    overflow: hidden;
+    padding: 0 52px;
+    position: relative;
+    text-align: center;
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+    vertical-align: middle;
+    z-index: 1;
+  }
+
 }
 
 @media (max-width: 576px) {
