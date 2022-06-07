@@ -586,12 +586,20 @@ th {
   color: #33691E !important;
 }
 
+.fa-2x.fa-secondary{
+ color: #66bb6a !important;
+}
+
 .float-right {
   float: right;
 }
 
 .float-left {
   float: left;
+}
+
+.bottom-space{
+  margin-bottom: 10px;
 }
 
 b,
