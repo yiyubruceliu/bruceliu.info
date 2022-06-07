@@ -2401,7 +2401,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .gift {
-  background: linear-gradient(0deg, rgba(55 71 79 / 69%), rgba(22 27 29 / 80%)), url(../img/joanna-kosinska-3BgkveM3y_k-unsplash.jpg);
+  /* background: linear-gradient(0deg, rgba(55 71 79 / 69%), rgba(22 27 29 / 80%)), url(../img/joanna-kosinska-3BgkveM3y_k-unsplash.jpg); */
   background:rgba(0, 0, 0, 0.7), url(../img/joanna-kosinska-3BgkveM3y_k-unsplash.jpg);
   background-size: cover;
 }
