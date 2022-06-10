@@ -405,6 +405,9 @@ th {
   padding: 150px 0;
 }
 
+.quote{
+  font-style: italic;
+}
 @media (max-width: 1024px) {
   .section-gap {
     padding: 60px 0;
@@ -2404,6 +2407,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   /* background: linear-gradient(0deg, rgba(55 71 79 / 69%), rgba(22 27 29 / 80%)), url(../img/joanna-kosinska-3BgkveM3y_k-unsplash.jpg); */
   background:rgba(0, 0, 0, 0.7), url(../img/joanna-kosinska-3BgkveM3y_k-unsplash.jpg);
   background-size: cover;
+}
+.tint {
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 @media (max-width: 1024px) {
   .contact-area .contact-title h2 {
