@@ -2689,7 +2689,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   width: 35px;
   height: 40px;
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 5px 5px;
   padding: 12px 8px 8px 7px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
