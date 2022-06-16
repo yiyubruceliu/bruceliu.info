@@ -2408,6 +2408,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   background:rgba(0, 0, 0, 0.7), url(../img/joanna-kosinska-3BgkveM3y_k-unsplash.jpg);
   background-size: cover;
 }
+.gift , h3{
+  text-align: left;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+
 .tint {
   height:100%;
   width:100%;
