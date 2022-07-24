@@ -405,6 +405,10 @@ th {
   padding: 150px 0;
 }
 
+.section-gap-mini {
+  padding: 75px 0;
+}
+
 .quote{
   font-style: italic;
 }
@@ -2253,9 +2257,23 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*================================
 =          TESTIMONIALS          =
 ================================*/
+.testimonial-body {
+  display: flex; 
+  flex-flow: column; 
+  height: 100%; 
+  justify-content: space-around;
+}
+
+.slide-progress {
+  width: 0;
+  max-width: 100%;
+  height: 4px;
+  background: #7fc242;
+}
 
 .testimonials_area {
   position: relative;
+  padding-bottom: 10px;
 }
 
 .testimonials_area .owl-controls {
@@ -2318,8 +2336,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .testi_slider .testi_item img {
-  width: auto;
-  height: 200px;
+  width: 100%;
+  min-height: 100px;
+  height: auto;
   margin: auto;
   border-radius: 500px;
 }

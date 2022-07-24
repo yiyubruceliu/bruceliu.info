@@ -1,4 +1,4 @@
-17884
+17845
 81C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\fast-deep-equal132990967109588055 1
 84C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\lodash\throttle.js132990954244351084 0
 112C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\.highlight.js-yaHiSJbP\lib\languages\elixir.js132990954333962518 0
@@ -13,7 +13,7 @@
 83C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\lodash\fp\math.js132990954239032215 0
 78C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\resolve-alpn132990954128421886 1
 76C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\is-extglob132991016208123936 1
-57C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist132998481874794174 1
+57C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist133031519265636067 1
 58C:\Users\BakedMufin\Documents\Projects\bruceliu.info\CNAME132990919405293507 0
 111C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\.highlight.js-yaHiSJbP\lib\languages\stata.js132990954376301285 0
 86C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\picocolors\README.md132990954171434741 0
@@ -133,7 +133,7 @@
 84C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\filed\test\test.js132991016211246418 0
 98C:\Users\BakedMufin\Documents\Projects\bruceliu.info\.cache\b9\0f4e495fbaa9363e221ecc1168c1f7.json132990919399431572 0
 83C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\lodash\xorWith.js132990954246568254 0
-63C:\Users\BakedMufin\Documents\Projects\bruceliu.info\index.html132998481873181363 0
+63C:\Users\BakedMufin\Documents\Projects\bruceliu.info\index.html133031517695130688 0
 102C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\rijs.npm\node_modules\pako\README.md132991016303838325 0
 88C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\util-deprecate\node.js132990959131715394 0
 91C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\path-is-absolute\index.js132991016206243753 0
@@ -144,7 +144,7 @@
 89C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\repeat-element\index.js132991016216913494 0
 75C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\nth-check132991016215483178 1
 116C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\snapdragon\node_modules\is-descriptor\node_modules132991016190240420 1
-61C:\Users\BakedMufin\Documents\Projects\bruceliu.info\index.js132990919406777228 0
+61C:\Users\BakedMufin\Documents\Projects\bruceliu.info\index.js133031236018417312 0
 88C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\lodash\fp\dropRight.js132990954233999008 0
 97C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\caniuse-lite\data\regions\CO.js132990967120671678 0
 79C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\browser-icons132991016205973351 1
@@ -945,7 +945,7 @@
 117C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\rijs.sync\node_modules\escape-string-regexp\license132991016207584215 0
 83C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\lodash\_getTag.js132990954228678404 0
 112C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\node-gyp-build-optional-packages\build-test.js132990967104098994 0
-80C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\about-img.b230304a.jpg132998478489452655 0
+80C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\about-img.b230304a.jpg133031518997948100 0
 100C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\module-deps\test\expose\lib\abc.js132991016219654207 0
 103C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\jquery-migrate\.eslintrc-browser.json132991016226420271 0
 91C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\is-equal-shallow\index.js132991016208618977 0
@@ -1388,7 +1388,7 @@
 83C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\lodash\fp\util.js132990954245793750 0
 76C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\mixin-deep132990954210624142 1
 127C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\.split2-Y7KjTagx\node_modules\readable-stream\CONTRIBUTING.md132990954560482044 0
-81C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\contact-bg.0aa27acf.png132998478489452655 0
+81C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\contact-bg.0aa27acf.png133031518997948100 0
 98C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\querystring\test\common-index.js132991016213024869 0
 80C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\supports-color132991016209454202 1
 88C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\lodash\fp\zipObject.js132990954246692698 0
@@ -1440,7 +1440,7 @@
 77C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\locate-path132991016209433695 1
 81C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\utilise\from.js132990954066014723 0
 111C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\.highlight.js-yaHiSJbP\styles\kimbie.dark.css132990954320363777 0
-84C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\Molefe Tlhaku.45ef2314.png132998478489457665 0
+84C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\Molefe Tlhaku.45ef2314.png133031518997953463 0
 89C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\yargs-unparser\index.js132991016206193757 0
 112C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\rijs.npm\node_modules\browserify\test\entry.js132990959188586087 0
 145C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\browser-resolve\node_modules\resolve\test\resolver\without_basedir\node_modules132991016219960884 1
@@ -2104,7 +2104,7 @@
 96C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\process-nextick-args\readme.md132990954155478143 0
 89C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\is-fullwidth-code-point132991016209416769 1
 128C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\rijs.npm\node_modules\browserify\test\identical_different\x.js132990959190646077 0
-88C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\owl.video.play.01be35de.js.map132998478489833693 0
+88C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\owl.video.play.01be35de.js.map133031518998216535 0
 125C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\lmdb\dependencies\lz4\lib\dll\example\fullbench-dll.vcxproj132990967123296782 0
 84C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\uws\src\Socket.cpp132990954366473104 0
 136C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\rijs.resdir\node_modules\readdirp\node_modules\micromatch\package.json132991016205457876 0
@@ -3446,7 +3446,7 @@
 84C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\yaml\types\omap.js132990954052996433 0
 94C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\request\node_modules\qs\dist132991016270430622 1
 82C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\async\tryEach.js132990967196409755 0
-83C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-solid-900.2ff9f162.ttf132998478489833693 0
+83C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-solid-900.2ff9f162.ttf133031518998192773 0
 94C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\syntax-error\test\shebang.js132990954079908001 0
 83C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\yaml\types\set.js132990954061671710 0
 107C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\caniuse-lite\data\features\pointerlock.js132990967136876595 0
@@ -3915,7 +3915,6 @@
 95C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\@babel\highlight\package.json132990967105553480 0
 96C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\buble\src\utils\destructure.js132990959185790004 0
 104C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\@swc\helpers\src\_wrap_native_super.js132991016247732684 0
-83C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-solid-900.e1e17b7a.eot132993592584733050 0
 107C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\wd\test\midway\multi\config-http-specs.js132991016221021553 0
 79C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\nan\README.md132991016225409950 0
 113C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\unset-value\node_modules\isarray\component.json132991016211624448 0
@@ -4015,7 +4014,7 @@
 108C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\class-utils\node_modules\isobject\index.js132991016208929226 0
 86C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\through2\through2.js132990954088462488 0
 137C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\.lmdb-store-c4AhmNXY\dependencies\lmdb\libraries\liblmdb\sample-mdb.txt132990954748666238 0
-76C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\index.47ca9330.css132998481470860742 0
+76C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\index.47ca9330.css133031519265547296 0
 83C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\wd\lib\element.js132991016221465000 0
 88C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\async\internal\once.js132990967189292528 0
 138C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\rijs.npm\node_modules\browserify\test\hash_instance_context\two\dir\f.js132990959190267562 0
@@ -4399,7 +4398,7 @@
 98C:\Users\BakedMufin\Documents\Projects\bruceliu.info\.cache\7e\c0be72fb5e0577e0da299bb19b8d77.json132990919398138239 0
 112C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\randomatic\node_modules\is-number\package.json132990954578762971 0
 114C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\caniuse-lite\data\features\css-touch-action-2.js132990967128307630 0
-87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\Linearicons-Free.05aae5ed.svg132998478489440363 0
+87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\Linearicons-Free.05aae5ed.svg133031518997943107 0
 79C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\uuid\dist\bin132991016210392247 1
 132C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\rijs.resdir\node_modules\readdirp\node_modules\micromatch\index.js132991016207867617 0
 93C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\browserify\test\retarget.js132991016219195481 0
@@ -4561,7 +4560,6 @@
 89C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\utility-types\README.md132990954064011973 0
 91C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\utility-types\SECURITY.md132990954064240211 0
 123C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\rijs.npm\node_modules\browserify\test\no_builtins\main.js132990959193117722 0
-107C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\joanna-kosinska-3BgkveM3y_k-unsplash.445ff367.jpg132993592584575342 0
 86C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\lodash\_arrayPush.js132990954222039314 0
 95C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\outlayer\sandbox\examples.css132991016214219106 0
 106C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\utility-types\dist\aliases-and-guards.js132990954060353924 0
@@ -4683,7 +4681,7 @@
 82C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\utilise\proxy.js132990954069809098 0
 107C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\browserify\test\double_buffer\implicit.js132991016229382138 0
 91C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\rijs.css\rollup.config.js132990954127939551 0
-89C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\Linearicons-Free.7019bb8e.woff2132998478489439732 0
+89C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\Linearicons-Free.7019bb8e.woff2133031518997938098 0
 81C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\utilise\wrap.js132990954075219303 0
 100C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\css-tree\lib\syntax\node\Atrule.js132991016210286747 0
 127C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\bl\node_modules\readable-stream\lib\internal\streams\state.js132990954874228781 0
@@ -5033,7 +5031,7 @@
 97C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\caniuse-lite\data\regions\WF.js132990967140949000 0
 98C:\Users\BakedMufin\Documents\Projects\bruceliu.info\.cache\33\28db45c80297c8b08e0730ab807aa0.json132990919396197077 0
 100C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\type-fest\ts41\delimiter-case.d.ts132991016213186377 0
-83C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\obj_triangle.a4a4c49e.png132998478489429718 0
+83C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\obj_triangle.a4a4c49e.png133031518997936127 0
 96C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\type-fest\ts41\kebab-case.d.ts132991016215023898 0
 138C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\rijs.npm\node_modules\browserify\test\hash_instance_context\one\dir\f.js132990959190008473 0
 123C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\rijs.npm\node_modules\browserify\test\debug_standalone.js132990959187011755 0
@@ -5226,7 +5224,6 @@
 92C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\nth-check\lib\parse.js.map132991016215382738 0
 95C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\jquery\src\selector-sizzle.js132991016236094355 0
 80C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\svgo\README.md132991016221639636 0
-79C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\index.de538a67.js.map132993592594675925 0
 87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\bootstrap\scss\mixins132991016260662865 1
 82C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\through\index.js132990959133268813 0
 138C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\rijs.npm\node_modules\browserify\example\source_maps\js\build\.npmignore132990959140946715 0
@@ -5322,7 +5319,6 @@
 106C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\has-ansi\node_modules\ansi-regex\license132991016207645395 0
 84C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\tar-stream\pack.js132991016214526629 0
 94C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\rijs.pages\src\pages\foo.txt132990954122726812 0
-84C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-brands-400.09cbd7c7.svg132993592584531513 0
 89C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\tar-stream\package.json132991016215117271 0
 109C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\resolve\test\resolver\dot_main\package.json132991016222904919 0
 86C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\tar-stream\README.md132991016215419646 0
@@ -5379,7 +5375,7 @@
 90C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\events\tests\num-args.js132991016214133781 0
 115C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\resolve\test\resolver\incorrect_main\package.json132991016223046487 0
 94C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\copy-descriptor\package.json132991016205257711 0
-87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\lightcaseeead.6531149d.js.map132998478489860619 0
+87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\lightcaseeead.6531149d.js.map133031518998231534 0
 87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\syntax-error\index.js132990954079195358 0
 94C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\syntax-error\readme.markdown132990954079340758 0
 110C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\rijs.sync\node_modules\color-name\.npmignore132991016206458371 0
@@ -5671,7 +5667,7 @@
 93C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\stream-combiner2\.npmignore132990954092290128 0
 79C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\popper\client132990959112279714 1
 91C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\fs-constants\package.json132990954329576293 0
-89C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\lightcaseeead-4.bc35dffc.js.map132998478489898093 0
+89C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\lightcaseeead-4.bc35dffc.js.map133031518998256026 0
 87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\string-width\index.js132991016206193757 0
 86C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\string-width\license132991016205121618 0
 92C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\strict-uri-encode\index.js132990954086861813 0
@@ -5873,7 +5869,7 @@
 119C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\static-extend\node_modules\is-descriptor\package.json132991016205422619 0
 116C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\static-extend\node_modules\is-descriptor\README.md132991016206458371 0
 83C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\djbx\package.json132990954374343077 0
-87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\Linearicons-Free.a2736f1a.eot132998478489434726 0
+87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\Linearicons-Free.a2736f1a.eot133031518997938098 0
 127C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\static-extend\node_modules\is-descriptor\node_modules\kind-of132991016208309312 1
 136C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\static-extend\node_modules\is-descriptor\node_modules\kind-of\index.js132991016206458371 0
 99C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\caniuse-lite\data\features\ime.js132990967132330437 0
@@ -6384,7 +6380,6 @@
 98C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\chai\lib\chai\core\assertions.js132991016232319322 0
 91C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\safer-buffer\package.json132990954109526186 0
 89C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\get-stream\package.json132990954325026930 0
-87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\lightcaseeead-2.38d394c2.html132993592584506697 0
 96C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\safer-buffer\Porting-Buffer.md132990954110101638 0
 114C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\resolve\test\resolver\browser_field\package.json132991016222677755 0
 97C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\colors\examples\normal-usage.js132990954411428831 0
@@ -6906,7 +6901,7 @@
 82C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\assert\assert.js132991016210117324 0
 110C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\rijs.resdir\node_modules\fill-range\index.js132991016209077051 0
 84C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\domhandler\LICENSE132991016209602835 0
-84C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-brands-400.c7a6c2ba.svg132998478489445380 0
+84C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-brands-400.c7a6c2ba.svg133031518997946652 0
 114C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\rijs.resdir\node_modules\fill-range\node_modules132991016190247478 1
 114C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\rijs.resdir\node_modules\fill-range\package.json132991016205457876 0
 99C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\browserify\example\source_maps\js132991016216278190 1
@@ -7371,7 +7366,7 @@
 111C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\browserify\test\bundle-bundle-external\foo.js132991016230448358 0
 107C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\mocha\node_modules\minimatch\node_modules132991016190098668 1
 126C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\rijs.npm\node_modules\browserify\test\multi_bundle_unique.js132990959191591227 0
-84C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\owl.video.play.01be35de.js132998478489445380 0
+84C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\owl.video.play.01be35de.js133031518997948100 0
 115C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\rijs.npm\node_modules\browserify\test\multi_entry132990959192396587 1
 101C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\caniuse-lite\data\regions\alt-an.js132990967111189492 0
 125C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\caniuse-lite\data\features\private-methods-and-accessors.js132990967136988848 0
@@ -7882,7 +7877,7 @@
 90C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\lodash\_reInterpolate.js132990954230485873 0
 82C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\rijs\.travis.yml132990954129190212 0
 81C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\bn.js\lib\bn.js132991016236671475 0
-79C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\index.3d214d75.js.map132998478489948779 0
+79C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\index.3d214d75.js.map133031518998301555 0
 79C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\rijs\index.js132990954129211224 0
 92C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\rijs\rollup.pure.config.js132990954129497125 0
 136C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\archiver\node_modules\readable-stream\lib\internal\streams\pipeline.js132990954865333554 0
@@ -8486,7 +8481,6 @@
 115C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\acorn-node\node_modules\acorn\dist\acorn.mjs.d.ts132991016316359508 0
 86C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\lodash\_arrayEach.js132990954221889787 0
 91C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\bootstrap\js\src\modal.js132991016237515724 0
-87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\lightcaseeead-4.38d394c2.html132993592584511366 0
 81C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\psl\dist\psl.js132991016219722462 0
 87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\proxy-addr\HISTORY.md132991016218248984 0
 85C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\proxy-addr\index.js132991016218104585 0
@@ -9100,7 +9094,7 @@
 110C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\acorn5-object-spread\node_modules\.bin\acorn132991017276234106 0
 81C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\js\package.json132991016205257711 0
 94C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\outlayer\test\unit\offset.js132991016217312464 0
-82C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\skill-info.e4e835fa.html132998478489452655 0
+82C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\skill-info.e4e835fa.html133031518997948100 0
 95C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\outlayer\test\unit\options.js132991016217415006 0
 94C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\outlayer\test\unit\origin.js132991016217552828 0
 95C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\outlayer\test\unit\prepend.js132991016217877126 0
@@ -9167,7 +9161,6 @@
 90C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\object.pick\node_modules132991016190240420 1
 86C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\fill-range\README.md132991016209028252 0
 88C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\lodash\wrapperChain.js132990954246231410 0
-85C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-regular-400.37a32b11.ttf132993592584532751 0
 87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\object.pick\README.md132991016206243753 0
 81C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\debug\.eslintrc132991016211246418 0
 107C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\caniuse-lite\data\features\typedarrays.js132990967139799357 0
@@ -9341,7 +9334,6 @@
 125C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\css-tree\node_modules\source-map\dist\source-map.min.js.map132991016216946405 0
 88C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\normalize-url\index.js132991016206243753 0
 92C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\normalize-url\package.json132991016205121618 0
-85C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-brands-400.cf1432b0.woff132993592584575342 0
 89C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\normalize-url\readme.md132991016208573646 0
 98C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\browserify\test\multi_entry\a.js132991016223788938 0
 88C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\normalize-path\LICENSE132990954204443633 0
@@ -9704,7 +9696,7 @@
 103C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\module-deps\test\files\tr_module\f.js132991016221799035 0
 107C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\module-deps\test\files\tr_module\index.js132991016221822953 0
 106C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\module-deps\test\files\tr_module\main.js132991016221852242 0
-89C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\lightcaseeead-2.a88f900f.js.map132998478489865699 0
+89C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\lightcaseeead-2.a88f900f.js.map133031518998231534 0
 111C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\module-deps\test\files\tr_module\package.json132991016221754118 0
 105C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\module-deps\test\files\tr_module\xxx.js132991016221879366 0
 106C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\module-deps\test\files\tr_global\main.js132991016222411065 0
@@ -9974,7 +9966,7 @@
 83C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\mime\package.json132990959087030246 0
 112C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\@parcel\package-manager\test\fixtures\packages132990967194378511 1
 86C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\lodash\fp\isArray.js132990954236566653 0
-68C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\index.html132998479688547902 0
+68C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\index.html133031518997938098 0
 84C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\methods\HISTORY.md132991016209795970 0
 80C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\mime\README.md132990959089960258 0
 83C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\mime\src\build.js132990959104449827 0
@@ -10275,7 +10267,6 @@
 85C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\lodash\flowRight.js132990954235393210 0
 113C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\@parcel\transformer-json\lib\JSONTransformer.js132991016246581395 0
 94C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\@parcel\optimizer-terser\src132991016263458620 1
-85C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\lightcaseeead.38d394c2.html132993592584508305 0
 88C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\lodash\forEachRight.js132990954235452621 0
 91C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\buble\src\utils\locate.js132990959185894994 0
 93C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\jquery-migrate\src\utils.js132991016226372628 0
@@ -10560,7 +10551,6 @@
 112C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\caniuse-lite\data\features\broadcastchannel.js132990967118278038 0
 84C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\lodash\_baseMap.js132990954223687277 0
 121C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\@parcel\node-resolver-core\test\fixture\nested\index.js132991016268432647 0
-80C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\about-img.09f546a2.jpg132993592584555312 0
 88C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\lodash\_baseMatches.js132990954223702265 0
 99C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\browserify\test\global_noparse.js132991016222037912 0
 85C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\lodash\_baseMean.js132990954223728098 0
@@ -11164,7 +11154,7 @@
 117C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\@parcel\optimizer-htmlnano\src\HTMLNanoOptimizer.js132991016273151870 0
 119C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mtest_enc2.c132990967117507096 0
 120C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mtest_remap.c132990967117539634 0
-87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\Linearicons-Free.c3a78640.ttf132998478489440363 0
+87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\Linearicons-Free.c3a78640.ttf133031518997943107 0
 121C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\sample-mdb.txt132990967123266770 0
 89C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\lines-and-columns\build132990954223989367 1
 86C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\lightcase\bower.json132990954230659176 0
@@ -12846,7 +12836,6 @@
 108C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\@parcel\core\test\PublicDependency.test.js132990967196633256 0
 93C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\balanced-match\package.json132991016235290439 0
 95C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\detective\test\files\yield.js132990954379104751 0
-86C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\owl.video.play.38d394c2.html132993592584497059 0
 93C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\detective\node_modules\.bin132991017276187253 1
 108C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\caniuse-lite\data\features\css-any-link.js132990967121894993 0
 111C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\browserify\test\hash_instance_context\main.js132991016226830609 0
@@ -13193,7 +13182,7 @@
 101C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\css-tree\lib\syntax\function\var.js132991016223339120 0
 101C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\css-tree\lib\syntax\config\lexer.js132991016221300573 0
 102C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\css-tree\lib\syntax\config\walker.js132991016223471676 0
-87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\lightcaseeead-4.34fbf4b3.html132998478489450372 0
+87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\lightcaseeead-4.34fbf4b3.html133031518997948100 0
 102C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\css-tree\lib\syntax\atrule\import.js132991016219731817 0
 101C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\css-tree\lib\syntax\atrule\media.js132991016221590634 0
 100C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\css-tree\lib\syntax\atrule\page.js132991016222068978 0
@@ -14000,7 +13989,7 @@
 116C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\caniuse-lite\data\features\css-at-counter-style.js132990967122142991 0
 115C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\caniuse-lite\data\features\css-backdrop-filter.js132990967122188417 0
 109C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\caniuse-lite\data\features\css-boxshadow.js132990967122279977 0
-86C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-brands-400.de7d288e.woff2132998478489523980 0
+86C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-brands-400.de7d288e.woff2133031518998001896 0
 111C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\caniuse-lite\data\features\css-caret-color.js132990967122487405 0
 114C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\caniuse-lite\data\features\css-color-function.js132990967122756127 0
 107C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\bootstrap\scss\utilities\_visibility.scss132991016260824862 0
@@ -14301,7 +14290,7 @@
 86C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\asynckit\parallel.js132991016211121549 0
 109C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\caniuse-lite\data\features\vector-effect.js132990967140255452 0
 105C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\caniuse-lite\data\features\vibration.js132990967140310980 0
-86C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-regular-400.35257a4c.woff132998478489440363 0
+86C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-regular-400.35257a4c.woff133031518997945054 0
 118C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\caniuse-lite\data\features\viewport-unit-variants.js132990967140382028 0
 110C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\caniuse-lite\data\features\viewport-units.js132990967140402920 0
 99C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\caniuse-lite\data\features\wav.js132990967140518231 0
@@ -14769,7 +14758,6 @@
 98C:\Users\BakedMufin\Documents\Projects\bruceliu.info\.cache\cf\207dc1f47739c19079eebe38aa29d5.json132990919399594237 0
 99C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\browserify\test\pkg_event\main.js132991016227805943 0
 91C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\@parcel\watcher\src\linux132990967112608940 1
-87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\Christopher Park.1fe9db4c.jpg132993592584521500 0
 93C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\browserify\test\pkg\main.js132991016227452039 0
 96C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\browserify\test\array\three.js132991016226542717 0
 98C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\browserify\test\pkg\package.json132991016227424608 0
@@ -14790,7 +14778,7 @@
 108C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\browserify\test\noparse\node_modules\robot132991016226403238 1
 112C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\browserify\test\noparse\node_modules\robot\lib132991016226433301 1
 116C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\browserify\test\noparse\node_modules\robot\main.js132991016226393322 0
-107C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\joanna-kosinska-3BgkveM3y_k-unsplash.bb2475c8.jpg132998478490110462 0
+107C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\joanna-kosinska-3BgkveM3y_k-unsplash.bb2475c8.jpg133031518998448257 0
 121C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\browserify\test\noparse\node_modules\robot\package.json132991016226375975 0
 120C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\browserify\test\noparse\node_modules\robot\lib\boop.js132991016226447416 0
 106C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\@parcel\reporter-cli\src\bundleReport.js132991016259238235 0
@@ -15233,7 +15221,7 @@
 100C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\base\node_modules\isobject\LICENSE132991016207756595 0
 105C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\base\node_modules\isobject\package.json132991016205566083 0
 88C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\balanced-match\.github132991016235472963 1
-86C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\owl.video.play.50c8102d.html132998478489445380 0
+86C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\owl.video.play.50c8102d.html133031518997948100 0
 90C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\balanced-match\README.md132991016235379181 0
 100C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\balanced-match\.github\FUNDING.yml132991016235472963 0
 78C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\aws4\LICENSE132991016233970765 0
@@ -15512,7 +15500,6 @@
 119C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\animate.css\source\fading_entrances\fadeInLeftBig.css132990954454838259 0
 117C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\animate.css\source\fading_entrances\fadeInRight.css132990954454868263 0
 117C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\animate.css\source\fading_entrances\fadeInUpBig.css132990954455032146 0
-83C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\obj_triangle.9a204de9.png132993592584521500 0
 117C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\animate.css\source\bouncing_exits\bounceOutDown.css132990954454382225 0
 120C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\animate.css\source\bouncing_entrances\bounceInLeft.css132990954453561846 0
 118C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\animate.css\source\bouncing_entrances\bounceInUp.css132990954453772767 0
@@ -15662,7 +15649,7 @@
 93C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\acorn\bin\update_authors.sh132991016213132670 0
 82C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\accepts\index.js132991016235159209 0
 95C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\abortcontroller-polyfill\dist132990954452773511 1
-83C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\lightcaseeead.6531149d.js132998478489445380 0
+83C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\lightcaseeead.6531149d.js133031518997948100 0
 100C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\abortcontroller-polyfill\README.md132990954453724530 0
 94C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\abortcontroller-polyfill\src132990954453244173 1
 131C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\.postcss-modules-values-gF8yOjh6\node_modules\postcss\lib\node.js132990954604014500 0
@@ -15940,7 +15927,7 @@
 118C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\.slice-ansi-y3j0xYkL\node_modules\color-name\LICENSE132990954568872794 0
 109C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\.ncp-BlJhRxqs\test\regular-fixtures\src\sub132990959155846546 1
 109C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\@parcel\transformer-svg\src\dependencies.js132991016243700807 0
-87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\Linearicons-Free.664e4e3f.eot132998478489434726 0
+87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\Linearicons-Free.664e4e3f.eot133031518997938098 0
 103C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\@parcel\transformer-svg\src\inline.js132991016243814032 0
 108C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\@parcel\transformer-react-refresh-wrap\lib132991016243457287 1
 112C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\@parcel\transformer-react-refresh-wrap\LICENSE132991016243313451 0
@@ -16482,7 +16469,6 @@
 116C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\@iarna\.toml-0DiLg3mi\lib\create-datetime-float.js132990954512208378 0
 110C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\@iarna\.toml-0DiLg3mi\lib\create-datetime.js132990954512218440 0
 101C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\@iarna\.toml-0DiLg3mi\lib\parser.js132990954517969635 0
-86C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-brands-400.94971114.woff2132993592584570306 0
 80C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\@compone\class132990954512787928 1
 81C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\@compone\define132990954509738869 1
 89C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\@compone\event\index.js132990954500419022 0
@@ -16811,7 +16797,7 @@
 127C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\.lmdb-store-c4AhmNXY\prebuilds\darwin-x64\electron.abi98.node132990954317010664 0
 124C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\.lmdb-store-c4AhmNXY\prebuilds\darwin-x64\node.abi102.node132990954384743229 0
 123C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\.lmdb-store-c4AhmNXY\prebuilds\darwin-x64\node.abi83.node132990954459578011 0
-85C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-regular-400.d67bc3c9.svg132998478489440363 0
+85C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-regular-400.d67bc3c9.svg133031518997946652 0
 123C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\.lmdb-store-c4AhmNXY\prebuilds\darwin-x64\node.abi88.node132990954493821826 0
 129C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\.lmdb-store-c4AhmNXY\prebuilds\darwin-arm64\electron.abi98.node132990954306546052 0
 126C:\Users\BakedMufin\Documents\Projects\bruceliu.info\node_modules\.lmdb-store-c4AhmNXY\prebuilds\darwin-arm64\node.abi102.node132990954376422638 0
@@ -17380,69 +17366,43 @@
 79C:\Users\BakedMufin\Documents\Projects\bruceliu.info\fonts\Linearicons-Free.eot132990919406108848 0
 79C:\Users\BakedMufin\Documents\Projects\bruceliu.info\fonts\Linearicons-Free.ttf132990919406108848 0
 81C:\Users\BakedMufin\Documents\Projects\bruceliu.info\fonts\Linearicons-Free.woff2132990919406108848 0
-87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\Christopher Park.65f89e43.jpg132998478489434726 0
+87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\Christopher Park.65f89e43.jpg133031518997938098 0
 63C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\CNAME132990919405293507 0
-81C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\contact-bg.e3644c20.png132993592584537749 0
-84C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-brands-400.2dde8f4c.ttf132993592584578058 0
-84C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-brands-400.3b225ccd.eot132993592584565308 0
-84C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-brands-400.555a6e23.eot132998478489523980 0
-85C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-brands-400.74670b80.woff132998478489529003 0
-84C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-brands-400.f70fba4c.ttf132998478489538986 0
-85C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-regular-400.1723cf1a.eot132993592584526507 0
-85C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-regular-400.26f5daa8.ttf132998478489440363 0
-98C:\Users\BakedMufin\Documents\Projects\bruceliu.info\.cache\13\b0c184cea6b2e7cfdf3f74289d349f.json132990919395297326 0
-85C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-regular-400.53f35844.svg132993592584532751 0
-87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-regular-400.78cc65cd.woff2132998478489440363 0
-85C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-regular-400.9b41e891.eot132998478489440363 0
-86C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-regular-400.c88515ed.woff132993592584532751 0
-87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-regular-400.d3abeeca.woff2132993592584532751 0
-83C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-solid-900.025b1170.eot132998478489833693 0
-84C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-solid-900.4c2d0262.woff132993592584592258 0
-83C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-solid-900.563baddb.svg132993592584537749 0
-83C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-solid-900.7089b396.ttf132993592584735610 0
-85C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-solid-900.77620caf.woff2132998478489569898 0
-84C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-solid-900.b3251255.woff132998478489575585 0
-83C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-solid-900.b9468795.svg132998478489450372 0
-85C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-solid-900.cff1f7b5.woff2132993592584587268 0
-82C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\home-banner.b0c68d0d.png132998478489452655 0
-82C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\home-banner.b674d88e.png132993592584537749 0
-75C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\index.3d214d75.js132998478489457665 0
-80C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\index.47ca9330.css.map132998481470894771 0
-76C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\index.dccfc1c3.css132993592594573741 0
-80C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\index.dccfc1c3.css.map132993592594785903 0
-75C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\index.de538a67.js132993592594573741 0
-86C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\Kuselo Ntsaluba.07ebbd7b.png132998478489489193 0
-86C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\Kuselo Ntsaluba.464996a7.png132993592584521500 0
-87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\lightcaseeead-2.8fc5ada5.html132998478489445380 0
-85C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\lightcaseeead-2.a88f900f.js132998478489450372 0
-87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\lightcaseeead-3.38d394c2.html132993592584497059 0
-85C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\lightcaseeead-3.ad0cbf44.js132998478489450372 0
-89C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\lightcaseeead-3.ad0cbf44.js.map132998478489865699 0
-87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\lightcaseeead-3.bf40d2d6.html132998478489450372 0
-85C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\lightcaseeead-4.bc35dffc.js132998478489452655 0
-85C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\lightcaseeead.c0e66f14.html132998478489445380 0
-89C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\Linearicons-Free.08a50030.woff2132993592584521500 0
-87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\Linearicons-Free.8871e643.svg132993592584526507 0
-88C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\Linearicons-Free.9e0ae55c.woff132993592584526507 0
-87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\Linearicons-Free.ada66428.eot132993592584521500 0
-87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\Linearicons-Free.adb6f816.ttf132993592584526507 0
-88C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\Linearicons-Free.da029ba8.woff132998478489434726 0
-79C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\mar-elise.23a658cc.js132998478489429718 0
-83C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\mar-elise.23a658cc.js.map132998478489743824 0
-72C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\mar-elise.html132993592584521500 0
-84C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\Molefe Tlhaku.a9c7a79f.png132993592584521500 0
-78C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\profile.aa2af33b.png132998478489457665 0
-78C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\profile.fecf4aa3.png132993592584521500 0
+84C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-brands-400.555a6e23.eot133031518998001896 0
+85C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-brands-400.74670b80.woff133031518998001896 0
+84C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-brands-400.f70fba4c.ttf133031518998006886 0
+85C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-regular-400.26f5daa8.ttf133031518997945054 0
+87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-regular-400.78cc65cd.woff2133031518997945054 0
+85C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-regular-400.9b41e891.eot133031518997945054 0
+83C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-solid-900.025b1170.eot133031518998192773 0
+85C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-solid-900.77620caf.woff2133031518998022854 0
+84C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-solid-900.b3251255.woff133031518998024787 0
+83C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\fa-solid-900.b9468795.svg133031518997948100 0
+82C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\home-banner.b0c68d0d.png133031518997948100 0
+75C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\index.3d214d75.js133031518997964055 0
+80C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\index.47ca9330.css.map133031519265620215 0
+86C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\Kuselo Ntsaluba.07ebbd7b.png133031518997958739 0
+87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\lightcaseeead-2.8fc5ada5.html133031518997948100 0
+85C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\lightcaseeead-2.a88f900f.js133031518997948100 0
+85C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\lightcaseeead-3.ad0cbf44.js133031518997948100 0
+89C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\lightcaseeead-3.ad0cbf44.js.map133031518998249733 0
+87C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\lightcaseeead-3.bf40d2d6.html133031518997948100 0
+85C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\lightcaseeead-4.bc35dffc.js133031518997948100 0
+85C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\lightcaseeead.c0e66f14.html133031518997948100 0
+88C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\Linearicons-Free.da029ba8.woff133031518997938098 0
+79C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\mar-elise.23a658cc.js133031518997938098 0
+83C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\mar-elise.23a658cc.js.map133031518998085020 0
+72C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\mar-elise.html133031518997936127 0
+78C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\profile.aa2af33b.png133031518997948100 0
 68C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\robots.txt132990919406898662 0
-82C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\skill-info.38d394c2.html132993592584516504 0
-80C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\skill-info.4a4e5b15.js132998478489452655 0
-84C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\skill-info.4a4e5b15.js.map132998478489918616 0
+80C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\skill-info.4a4e5b15.js133031518997948100 0
+84C:\Users\BakedMufin\Documents\Projects\bruceliu.info\dist\skill-info.4a4e5b15.js.map133031518998274437 0
 68C:\Users\BakedMufin\Documents\Projects\bruceliu.info\css\all.min.css132990919405301393 0
 72C:\Users\BakedMufin\Documents\Projects\bruceliu.info\css\animate.min.css132990919405301393 0
 70C:\Users\BakedMufin\Documents\Projects\bruceliu.info\css\bootstrap.css132990919405301393 0
 70C:\Users\BakedMufin\Documents\Projects\bruceliu.info\css\lightcase.css132990919405301393 0
 72C:\Users\BakedMufin\Documents\Projects\bruceliu.info\css\linearicons.css132990919405301393 0
-65C:\Users\BakedMufin\Documents\Projects\bruceliu.info\css\main.css132998481469148120 0
+65C:\Users\BakedMufin\Documents\Projects\bruceliu.info\css\main.css133031519263069206 0
 73C:\Users\BakedMufin\Documents\Projects\bruceliu.info\css\owl.carousel.css132990919405301393 0
 62C:\Users\BakedMufin\Documents\Projects\bruceliu.info\.cache\03132990919395122972 1
 98C:\Users\BakedMufin\Documents\Projects\bruceliu.info\.cache\eb\bbe2371f3cdf6c5c060c6822782f24.json132990919400097745 0
@@ -17869,6 +17829,7 @@
 98C:\Users\BakedMufin\Documents\Projects\bruceliu.info\.cache\15\5d8669aee4aff1f59a655c32cc961b.json132990919395354576 0
 98C:\Users\BakedMufin\Documents\Projects\bruceliu.info\.cache\14\6fc07461746d9ac652421ce0f9e3aa.json132990919395297326 0
 98C:\Users\BakedMufin\Documents\Projects\bruceliu.info\.cache\13\3ab031bb58f139e7ae94886dfef4c2.json132990919395297326 0
+98C:\Users\BakedMufin\Documents\Projects\bruceliu.info\.cache\13\b0c184cea6b2e7cfdf3f74289d349f.json132990919395297326 0
 98C:\Users\BakedMufin\Documents\Projects\bruceliu.info\.cache\10\3789822d6fb294a238c6da5292a5e2.json132990919395206456 0
 98C:\Users\BakedMufin\Documents\Projects\bruceliu.info\.cache\0f\7ab3edc95f768120f8f4e283310d5a.json132990919395206456 0
 98C:\Users\BakedMufin\Documents\Projects\bruceliu.info\.cache\0c\4f3cc0f9e7bd6605aa62304b9ac1b8.json132990919395206456 0
