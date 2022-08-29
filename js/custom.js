@@ -213,21 +213,22 @@ $(document).ready(function() {
 
 $("#btnSendMail").on("click", async function (){
   console.log("hitting the send button");
-  var name = $("#msgName").val();
-  var subject = $("#msgSubject").val();
-  var email = $("#msgEmail").val();
-  var message = $("#msgMessage").val();
 
-  //sendEmail(name,subject, email, message);
+  // var name = $("#msgName").val();
+  // var subject = $("#msgSubject").val();
+  // var email = $("#msgEmail").val();
+  // var message = $("#msgMessage").val();
+
+  // //sendEmail(name,subject, email, message);
   
-  const payload = {
-    "name": name,
-    "subject": `bruceliu.info: ${subject}`, 
-    "email": email,
-    "message": message,
-    "password": "alshsniho092ujei489h"
-  } ;
-  console.log(payload);
+  // const payload = {
+  //   "name": name,
+  //   "subject": `bruceliu.info: ${subject}`, 
+  //   "email": email,
+  //   "message": message,
+  //   "password": "alshsniho092ujei489h"
+  // } ;
+  // console.log(payload);
   // const response = await fetch('https://bruceliu-info-email-service.herokuapp.com/sendEmail', {
   //   method: 'post',
   //   body: JSON.stringify(payload),
