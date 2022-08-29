@@ -692,14 +692,14 @@
 					<form class="form-area " id="myform" action="#" method="post" class="contact-form text-right">
 						<div class="row">
 							<div class="col-lg-6 form-group form-group-top">
-								<input name="name" placeholder="Enter your name" class="common-input mb-20 form-control" required="" type="text">
-								<input name="email" placeholder="Enter email address" class="common-input mb-20 form-control" required="" type="email">
-								<input name="subject" placeholder="Enter your subject" class="common-input mb-20 form-control" required="" type="text"> </div>
+								<input name="msgName" placeholder="Enter your name" class="common-input mb-20 form-control" required="" type="text">
+								<input name="msgEmail" placeholder="Enter email address" class="common-input mb-20 form-control" required="" type="email">
+								<input name="msgSubject" placeholder="Enter your subject" class="common-input mb-20 form-control" required="" type="text"> </div>
 							<div class="col-lg-6 form-group">
-								<textarea class="common-textarea form-control" name="message" placeholder="Messege" required=""></textarea>
+								<textarea class="common-textarea form-control" name="msgMessage" placeholder="Messege" required=""></textarea>
 							</div>
 							<div class="col-lg-12">
-								<button class="primary-btn float-right" onclick="sendEmail()" data-text="Send Message"> <span>S</span> <span>e</span> <span>n</span> <span>d</span> <span></span> <span>M</span> <span>e</span> <span>s</span> <span>s</span> <span>a</span> <span>g</span> <span>e</span> </button>
+								<button class="primary-btn float-right" id="btnSendMail" data-text="Send Message"> <span>S</span> <span>e</span> <span>n</span> <span>d</span> <span></span> <span>M</span> <span>e</span> <span>s</span> <span>s</span> <span>a</span> <span>g</span> <span>e</span> </button>
 							</div>
 						</div>
 					</form>

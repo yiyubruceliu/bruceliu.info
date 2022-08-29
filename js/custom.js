@@ -210,3 +210,46 @@ $(document).ready(function() {
     });
   }
 });
+
+
+async function sendEmail(name,subject, email, message) {
+const payload = {
+    "name": name,
+    "subject": `bruceliu.info: ${subject}`,
+    "email": email,
+    "message": message,
+    "password": "alshsniho092ujei489h"
+  } ;
+  const response = await fetch('https://bruceliu-info-email-service.herokuapp.com/sendEmail', {
+    method: 'post',
+    body: JSON.stringify(payload),
+    headers: {'Content-Type': 'application/json'}
+  });
+  const data = await response.json();
+  console.log(data);
+}
+
+$("#btnSendMail").on("click", function (){
+  var name = $("#msgName").val();
+  var subject = $("#msgSubject").val();
+  var email = $("#msgEmail").val();
+  var message = $("#msgMessage").val();
+
+  
+  
+  sendEmail(name,subject, email, message);
+  
+});
+
+function sendEmail(name,subject, email, message) {
+  
+
+
+  // {
+  //   "name": "bob",
+  //   "subject": "Request for coffee",
+  //   "email": "someone@someone.com",
+  //   "message": "I got bitches",
+  //   "password": "alshsniho092ujei489h"
+  // } 
+}
