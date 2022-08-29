@@ -215,7 +215,7 @@ $(document).ready(function() {
 async function sendEmail(name,subject, email, message) {
 const payload = {
     "name": name,
-    "subject": `bruceliu.info: ${subject}`,
+    "subject": `bruceliu.info: ${subject}`, 
     "email": email,
     "message": message,
     "password": "alshsniho092ujei489h"
@@ -240,16 +240,3 @@ $("#btnSendMail").on("click", function (){
   sendEmail(name,subject, email, message);
   
 });
-
-function sendEmail(name,subject, email, message) {
-  
-
-
-  // {
-  //   "name": "bob",
-  //   "subject": "Request for coffee",
-  //   "email": "someone@someone.com",
-  //   "message": "I got bitches",
-  //   "password": "alshsniho092ujei489h"
-  // } 
-}
