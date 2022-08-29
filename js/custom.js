@@ -212,6 +212,7 @@ $(document).ready(function() {
 });
 
 $("#btnSendMail").on("click", async function (){
+  console.log("hitting the send button");
   var name = $("#msgName").val();
   var subject = $("#msgSubject").val();
   var email = $("#msgEmail").val();
