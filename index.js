@@ -1,7 +1,10 @@
 import $ from "jquery";
 // const jQuery = require("./js/jquery-2.2.4.min.js");
 // const $ = require("./lib/jquery/jquery.min.js");
+var jquery = require("jquery");
 window.$ = window.jQuery = $;
+window.$ = window.jQuery = jquery; // notice the definition of global variables here
+
 import jquerymigrate from "jquery-migrate";
 // const jquerymigrate = require("/js/jquery-migrate.min.js");
 // const bootstrap = require("./lib/bootstrap/js/bootstrap.min.js");
@@ -63,5 +66,4 @@ new AOS.init({
 });
 const waypoint = require("/js/waypoint.min.js");
 
-const fetch = require('node-fetch');
 const custom = require("/js/custom.js");
