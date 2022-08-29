@@ -226,11 +226,13 @@ $("#btnSendMail").on("click", async function (){
     "message": message,
     "password": "alshsniho092ujei489h"
   } ;
-  const response = await fetch('https://bruceliu-info-email-service.herokuapp.com/sendEmail', {
-    method: 'post',
-    body: JSON.stringify(payload),
-    headers: {'Content-Type': 'application/json'}
-  });
-  const data = await response.json();
-  console.log(data);
+  console.log(payload);
+  // const response = await fetch('https://bruceliu-info-email-service.herokuapp.com/sendEmail', {
+  //   method: 'post',
+  //   body: JSON.stringify(payload),
+  //   headers: {'Content-Type': 'application/json'}
+  // });
+  // console.log(response);
+  // const data = await response.json();
+  // console.log(data);
 });
