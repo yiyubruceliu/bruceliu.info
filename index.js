@@ -63,3 +63,23 @@ new AOS.init({
 });
 const waypoint = require("/js/waypoint.min.js");
 const custom = require("/js/custom.js");
+
+function sendEmail(name,subject, email, message) {
+  const axios = require('axios');
+  async function getData() {
+    const res = await axios.get('https://bruceliu-info-email-service.herokuapp.com/ping');
+    const data = res.data;
+    console.log(data);
+    alert(data);
+  }
+  getData();
+
+
+  // {
+  //   "name": "bob",
+  //   "subject": "Request for coffee",
+  //   "email": "someone@someone.com",
+  //   "message": "I got bitches",
+  //   "password": "alshsniho092ujei489h"
+  // } 
+}
