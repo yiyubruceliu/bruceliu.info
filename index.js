@@ -62,6 +62,6 @@ new AOS.init({
   disable: "mobile"
 });
 const waypoint = require("/js/waypoint.min.js");
-const custom = require("/js/custom.js");
 
 const fetch = require('node-fetch');
+const custom = require("/js/custom.js");

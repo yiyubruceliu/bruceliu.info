@@ -211,9 +211,15 @@ $(document).ready(function() {
   }
 });
 
+$("#btnSendMail").on("click", async function (){
+  var name = $("#msgName").val();
+  var subject = $("#msgSubject").val();
+  var email = $("#msgEmail").val();
+  var message = $("#msgMessage").val();
 
-async function sendEmail(name,subject, email, message) {
-const payload = {
+  //sendEmail(name,subject, email, message);
+  
+  const payload = {
     "name": name,
     "subject": `bruceliu.info: ${subject}`, 
     "email": email,
@@ -227,16 +233,4 @@ const payload = {
   });
   const data = await response.json();
   console.log(data);
-}
-
-$("#btnSendMail").on("click", function (){
-  var name = $("#msgName").val();
-  var subject = $("#msgSubject").val();
-  var email = $("#msgEmail").val();
-  var message = $("#msgMessage").val();
-
-  
-  
-  sendEmail(name,subject, email, message);
-  
 });
