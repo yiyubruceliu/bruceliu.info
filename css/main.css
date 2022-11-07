@@ -594,7 +594,7 @@ th {
 }
 
 .fa-2x.fa-secondary{
- color: #eaf1f9 !important;
+ color: #c0c0ca !important;
 }
 
 .float-right {
@@ -1794,7 +1794,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 ================================*/
 
 .work-area {
-  background: #eaf1f9;
+  background: #c0c0ca;
 }
 
 @media (max-width: 1024px) {
@@ -1976,7 +1976,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 ================================*/
 
 .single-job {
-  background-color: #eaf1f9;
+  background-color: #c0c0ca;
   padding: 40px 30px;
   min-height: 225px;
   border-radius: 10px;
@@ -2065,7 +2065,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-project {
-  background-color: #eaf1f9;
+  background-color: #c0c0ca;
   padding: 40px 30px;
   min-height: 225px;
   border-radius: 10px;
@@ -2150,7 +2150,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 ================================*/
 
 .skill-area {
-  background: #eaf1f9;
+  background: #c0c0ca;
 }
 
 .d-table-cell {
@@ -2162,7 +2162,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 ================================*/
 
 .service-area {
-  background: #eaf1f9;
+  background: #c0c0ca;
 }
 
 .service-area.white {
