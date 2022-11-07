@@ -43,7 +43,7 @@ html {
 }
 
 body {
-  color: #555194;
+  color: black;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -1607,13 +1607,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 =             ABOUT              =
 ================================*/
 
-.about-right {
-  display: flex;
-  flex-direction: column;
-}
-
 @media (max-width: 626px) {
   .about-right {
+    display: flex;
+    flex-direction: column;
     margin-left: 55px;
     margin-right: 55px;
   }
