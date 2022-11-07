@@ -1612,6 +1612,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   flex-direction: column;
 }
 
+@media (max-width: 626px) {
+  .about-right {
+    margin-left: 55px;
+    margin-right: 55px;
+  }
+}
+
 .box-img {
   position: relative;
   z-index: 2;
