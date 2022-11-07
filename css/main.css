@@ -1611,8 +1611,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   .about-right {
     display: flex;
     flex-direction: column;
-    margin-left: 55px;
-    margin-right: 55px;
   }
 }
 
@@ -2794,6 +2792,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .icon-bar a:hover {
   background-color: #000;
+}
+
+@media (max-width: 576px) {
+  .icon-bar {
+    top:unset;
+    bottom:0;
+    transform: translateY(0%);
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .facebook {
