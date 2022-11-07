@@ -594,7 +594,7 @@ th {
 }
 
 .fa-2x.fa-secondary{
- color: #66bb6a !important;
+ color: #eaf1f9 !important;
 }
 
 .float-right {
@@ -1051,7 +1051,7 @@ h6 {
 }
 
 .primary-btn.white {
-  border: 1px solid #43A047;
+  border: 1px solid #a3cd98;
   color: #e45447;
   background: #fff;
 }
@@ -1065,7 +1065,7 @@ h6 {
 }
 
 .primary-btn.white:hover {
-  background: #43A047;
+  background: #a3cd98;
   color: #fff;
 }
 
@@ -1525,7 +1525,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .banner-area {
-  background: #43A047;
+  background: #a3cd98;
 }
 
 .banner-content {
@@ -1794,7 +1794,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 ================================*/
 
 .work-area {
-  background: #66BB6A;
+  background: #eaf1f9;
 }
 
 @media (max-width: 1024px) {
@@ -1976,7 +1976,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 ================================*/
 
 .single-job {
-  background-color: #66BB6A;
+  background-color: #eaf1f9;
   padding: 40px 30px;
   min-height: 225px;
   border-radius: 10px;
@@ -2024,7 +2024,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 0 28px;
   background: #fff;
   color: #222222;
-  border: 1px solid #43A047;
+  border: 1px solid #a3cd98;
 }
 
 @media (max-width: 1199px) {
@@ -2065,7 +2065,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-project {
-  background-color: #66BB6A;
+  background-color: #eaf1f9;
   padding: 40px 30px;
   min-height: 225px;
   border-radius: 10px;
@@ -2113,7 +2113,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 0 28px;
   background: #fff;
   color: #222222;
-  border: 1px solid #43A047;
+  border: 1px solid #a3cd98;
 }
 
 @media (max-width: 1199px) {
@@ -2150,7 +2150,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 ================================*/
 
 .skill-area {
-  background: #66BB6A;
+  background: #eaf1f9;
 }
 
 .d-table-cell {
@@ -2162,7 +2162,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 ================================*/
 
 .service-area {
-  background: #66BB6A;
+  background: #eaf1f9;
 }
 
 .service-area.white {
