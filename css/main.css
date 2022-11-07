@@ -2800,12 +2800,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     bottom:0;
     transform: translateY(0%);
     display: flex;
-    left: 50%;
     transform: translateX(-50%);
     width: 100%;
   }
 
-  .icon-bar .a {
+  .icon-bar a {
     flex: auto;
   }
 }
