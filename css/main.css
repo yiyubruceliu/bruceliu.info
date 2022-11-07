@@ -2335,12 +2335,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #2f2d52;
 }
 
-@media (width: 576px){
-  .testi_slider .testi_item img{
-    max-width: 205px;
-  }
-
-}
 .testi_slider {
   margin: auto;
 }
@@ -2351,6 +2345,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .testi_slider .testi_item img {
   width: 100%;
+  max-width: 205px;
   min-height: 100px;
   height: auto;
   margin: auto;
