@@ -9,6 +9,7 @@
   "directories": {
     "lib": "lib"
   },
+  "type":"module",
   "scripts": {
     "dev": "parcel index.html",
     "cname": "Copy CNAME dist\\CNAME",
