@@ -43,7 +43,7 @@ html {
 }
 
 body {
-  color: #eaf1f9;
+  color: #555194;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -2238,6 +2238,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .single-service h4 span {
   display: block;
+  font-size: 21px;
 }
 
 @media (max-width: 767px) {
