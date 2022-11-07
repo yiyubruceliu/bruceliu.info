@@ -111,7 +111,7 @@ h4,
 h5,
 h6 {
   font-family: "Poppins", sans-serif;
-  color: #222222;
+  color: #2f2d52;
   line-height: 1.2em;
   margin-bottom: 0;
   margin-top: 0;
@@ -128,7 +128,7 @@ h6 {
   margin-top: 0;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  color: #222222;
+  color: #2f2d52;
 }
 
 h1,
@@ -159,7 +159,7 @@ h5,
 h6,
 .h6 {
   font-size: 14px;
-  color: #222222;
+  color: #2f2d52;
 }
 
 td,
@@ -1057,11 +1057,11 @@ h6 {
 }
 
 .primary-btn.white span {
-  color: #222222;
+  color: #2f2d52;
 }
 
 .primary-btn.white:before {
-  color: #222222;
+  color: #2f2d52;
 }
 
 .primary-btn.white:hover {
@@ -1103,7 +1103,7 @@ h6 {
 }
 
 #header.header-scrolled.dark {
-  background: #222222;
+  background: #2f2d52;
 }
 
 #logo {
@@ -1320,7 +1320,7 @@ h6 {
   padding: 0px;
   text-decoration: none;
   display: inline-block;
-  color: #222222;
+  color: #2f2d52;
   font-weight: 500;
   font-size: 16px;
   text-transform: capitalize;
@@ -1353,7 +1353,7 @@ h6 {
 }
 
 .nav-menu ul.dark {
-  background: #222222;
+  background: #2f2d52;
 }
 
 .nav-menu ul li {
@@ -1442,7 +1442,7 @@ h6 {
 }
 
 #mobile-nav ul li a {
-  color: #222;
+  color: #2f2d52;
   font-size: 13px;
   text-transform: uppercase;
   overflow: hidden;
@@ -1678,7 +1678,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
   text-align: center;
   white-space: nowrap;
-  background-color: #1B5E20 !important;
+  background-color: #1c1b31 !important;
   transition: width .6s ease;
 }
 
@@ -1740,7 +1740,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .client-info .lage {
-  color: #1B5E20;
+  color: #1c1b31;
   font-size: 100px;
   font-weight: bolder;
   line-height: 85px;
@@ -2023,7 +2023,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .single-job .primary-btn {
   padding: 0 28px;
   background: #fff;
-  color: #222222;
+  color: #2f2d52;
   border: 1px solid #a3cd98;
 }
 
@@ -2034,15 +2034,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-job .primary-btn span {
-  color: #222222;
+  color: #2f2d52;
 }
 
 .single-job .primary-btn:before {
-  color: #222222;
+  color: #2f2d52;
 }
 
 .single-job:hover {
-  background: #1B5E20;
+  background: #1c1b31;
   cursor: pointer;
   color: #fff;
 }
@@ -2112,7 +2112,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .single-project .primary-btn {
   padding: 0 28px;
   background: #fff;
-  color: #222222;
+  color: #2f2d52;
   border: 1px solid #a3cd98;
 }
 
@@ -2123,15 +2123,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-project .primary-btn span {
-  color: #222222;
+  color: #2f2d52;
 }
 
 .single-project .primary-btn:before {
-  color: #222222;
+  color: #2f2d52;
 }
 
 .single-project:hover {
-  background: #1B5E20;
+  background: #1c1b31;
   cursor: pointer;
   color: #fff;
 }
@@ -2170,19 +2170,19 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .service-area .col-lg-3.col-md-6:nth-child(1) .single-service {
-  background: #1B5E20;
+  background: #1c1b31;
 }
 
 .service-area .col-lg-3.col-md-6:nth-child(2) .single-service {
-  background: #1B5E20;
+  background: #1c1b31;
 }
 
 .service-area .col-lg-3.col-md-6:nth-child(3) .single-service {
-  background: #1B5E20;
+  background: #1c1b31;
 }
 
 .service-area .col-lg-3.col-md-6:nth-child(4) .single-service {
-  background: #1B5E20;
+  background: #1c1b31;
 }
 
 .single-service {
@@ -2711,7 +2711,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #back-top a {
-  background: #1B5E20;
+  background: #1c1b31;
   display: block;
   text-align: center;
   width: 35px;
