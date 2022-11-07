@@ -43,7 +43,7 @@ html {
 }
 
 body {
-  color: #85bd76;
+  color: #eaf1f9;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -1162,7 +1162,7 @@ h6 {
 }
 
 .home-banner-area .header-social a i {
-  color: #85bd76;
+  color: #eaf1f9;
   font-size: 36px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -2642,7 +2642,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .footer-area .footer-logo h4 {
   font-size: 21px;
-  color: #85bd76;
+  color: #eaf1f9;
   font-weight: 700;
   margin-top: 48px;
 }
@@ -2663,7 +2663,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .footer-area .footer-social a i {
-  color: #85bd76;
+  color: #eaf1f9;
   font-size: 36px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
