@@ -18,6 +18,9 @@ import bootstrap from "bootstrap";
 const superfish = require("/js/superfish.min.js");
 const magnific = require("/js/jquery.magnific-popup.min.js");
 const carousel = require("/js/owl.carousel.min.js");
+
+import { findKeyword } from "./keyword.js";
+
 //Init the carousel
 initSlider();
 
@@ -47,6 +50,8 @@ function resetProgressBar() {
   });
 }
 
+window.findKeyword = findKeyword;
+
 // const isotope = require("./js/isotope.pkgd.min.js");
 const Typed = require("/js/typed.min.js");
 var typed = new Typed("#typed", {
@@ -64,6 +69,8 @@ new AOS.init({
   delay: 100,
   disable: "mobile"
 });
+const custom = require("/js/custom.js");
+
 const waypoint = require("/js/waypoint.min.js");
 
-const custom = require("/js/custom.js");
+

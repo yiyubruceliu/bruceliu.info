@@ -9,7 +9,7 @@
   "directories": {
     "lib": "lib"
   },
-  "type":"module",
+  "type": "module",
   "scripts": {
     "dev": "parcel index.html",
     "cname": "Copy CNAME dist\\CNAME",
@@ -49,6 +49,7 @@
     "js": "^0.1.0",
     "lightcase": "^2.5.0",
     "masonry-layout": "^4.2.2",
+    "natural": "^5.2.4",
     "node-fetch": "^3.2.10",
     "outlayer": "^2.1.1",
     "parcel": "^2.0.1",
