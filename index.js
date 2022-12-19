@@ -50,6 +50,7 @@ function resetProgressBar() {
   });
 }
 
+
 window.findKeyword = findKeyword;
 
 // const isotope = require("./js/isotope.pkgd.min.js");
