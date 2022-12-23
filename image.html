@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>image identifer</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="css/main.css">
+    <script type="module" async src="https://www.googletagmanager.com/gtag/js?id=UA-152570984-1"></script>
+	<script type="module">window.dataLayer=window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-152570984-1'); </script>   
+    
+</head>
+<body>
+    <div class="container" style="margin-top:100px">
+        <div class="col-lg-12">
+            <div class="form-area " id="myform" action="#" method="post" class="contact-form text-right">
+                <div class="row">
+
+                    <div class="col-lg-12 form-group">
+                        <input class="common-textarea form-control" id="inpKeyword" rows="10" placeholder="Body" required="">
+                    
+                </div>
+                <div class="col-lg-12">
+                    <button class="primary-btn float-right"  id="btnimage" onclick="getImage(document.getElementById('inpKeyword').value)"
+                     data-text="Find images"> <span>F</span> <span>i</span> <span>n</span> <span>d</span> <span></span> <span>K</span> <span>e</span> <span>y</span> <span>w</span> <span>o</span> <span>r</span> <span>d</span> <span>s</span> </button>
+                </div>
+                <div class="container">
+                    <label id="lblOutput"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module">
+
+        
+    </script>
+</body>
+    
+    <script src="index.js" type="module"></script>
+</html>

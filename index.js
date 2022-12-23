@@ -20,6 +20,7 @@ const magnific = require("/js/jquery.magnific-popup.min.js");
 const carousel = require("/js/owl.carousel.min.js");
 
 import { findKeyword } from "./keyword.js";
+import { getImage } from "./image.js";
 
 //Init the carousel
 initSlider();
@@ -52,6 +53,7 @@ function resetProgressBar() {
 
 
 window.findKeyword = findKeyword;
+window.getImage = getImage;
 
 // const isotope = require("./js/isotope.pkgd.min.js");
 const Typed = require("/js/typed.min.js");
