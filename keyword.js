@@ -1,7 +1,7 @@
 var natural = require('natural');
 window.natural = natural;
 
-function filterStopWordsAndSymbols(words) {
+export function filterStopWordsAndSymbols(words) {
     const stopWords = natural.stopwords;
     let keywords = words.filter(word => {
         return !stopWords.includes(word) && word.length > 3 && /^[a-zA-Z]+$/.test(word);
@@ -9,7 +9,7 @@ function filterStopWordsAndSymbols(words) {
     return keywords;
 }
 
-function getUniqueBigramList(ngrammedKeywords) {
+export function getUniqueBigramList(ngrammedKeywords) {
     uniqueBiGrams = [];
     ngrammedKeywords.map(bigram => {
         let exists = false;
