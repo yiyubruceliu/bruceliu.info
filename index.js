@@ -22,7 +22,7 @@ const carousel = require("/js/owl.carousel.min.js");
 var natural = require('natural');
 window.natural = natural;
 
-import { findKeyword } from "./keyword.js";
+//import { findKeyword } from "./keyword.js";
 import { getImage } from "./image.js";
 
 //Init the carousel
@@ -55,7 +55,7 @@ function resetProgressBar() {
 }
 
 
-window.findKeyword = findKeyword;
+//window.findKeyword = findKeyword;
 window.getImage = getImage;
 
 // const isotope = require("./js/isotope.pkgd.min.js");
