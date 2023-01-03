@@ -19,7 +19,7 @@ const superfish = require("/js/superfish.min.js");
 const magnific = require("/js/jquery.magnific-popup.min.js");
 const carousel = require("/js/owl.carousel.min.js");
 
-import { findKeyword } from "./keyword.js";
+//import { findKeyword } from "./keyword.js";
 import { getImage } from "./image.js";
 
 //Init the carousel
