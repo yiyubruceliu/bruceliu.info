@@ -1,6 +1,3 @@
-var natural = require('natural');
-window.natural = natural;
-
 export function filterStopWordsAndSymbols(words) {
     const stopWords = natural.stopwords;
     let keywords = words.filter(word => {
