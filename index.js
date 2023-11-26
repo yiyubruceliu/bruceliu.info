@@ -88,6 +88,7 @@ function sendEmail() {
     message: window.document.getElementById("msgMessage").value,
     reply_to: window.document.getElementById("msgEmail").value,
   };
+  console.log('built params')
 
   var data = {
     service_id: 'service_er9utfj',
@@ -95,6 +96,7 @@ function sendEmail() {
     user_id: '05PTXCIpnsxT2QWk3',
     template_params: params
   };
+  console.log('built data')
 
   $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
     type: 'POST',
@@ -105,6 +107,8 @@ function sendEmail() {
   }).fail(function(error) {
       alert('Oops... ' + JSON.stringify(error));
   });
+
+  console.log('ajax sent')
 }
 
 window.sendEmail = sendEmail;
