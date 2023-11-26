@@ -80,3 +80,31 @@ const custom = require("/js/custom.js");
 const waypoint = require("/js/waypoint.min.js");
 
 
+function sendEmail() {
+  console.log("hitting the send button");
+  var params = {
+    from_name: window.document.getElementById("msgName").value,
+    subject: window.document.getElementById("msgSubject").value,
+    message: window.document.getElementById("msgMessage").value,
+    reply_to: window.document.getElementById("msgEmail").value,
+  };
+
+  var data = {
+    service_id: 'service_er9utfj',
+    template_id: 'template_ij3x988',
+    user_id: '05PTXCIpnsxT2QWk3',
+    template_params: params
+  };
+
+  $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+    type: 'POST',
+    data: JSON.stringify(data),
+    contentType: 'application/json'})
+  .done(function() {
+      alert('Your mail is sent!');
+  }).fail(function(error) {
+      alert('Oops... ' + JSON.stringify(error));
+  });
+}
+
+window.sendEmail = sendEmail;

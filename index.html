@@ -715,43 +715,8 @@
 		const axios = require('axios');
 	</script>
 	<script>
-		function getVal(id){
-			console.log(id);
-			return window.document.getElementById(id);
-		}
-		
-		(function(){
-			emailjs.init("05PTXCIpnsxT2QWk3");
-		})();
-		async function sendEmail() {
-			console.log("hitting the send button");
-			var params = {
-				from_name: getVal("msgName").value,
-				subject: getVal("msgSubject").value,
-				message: getVal("msgMessage").value,
-				reply_to: getVal("msgEmail").value,
-			};
-
-			var data = {
-				service_id: 'service_er9utfj',
-				template_id: 'template_ij3x988',
-				user_id: '05PTXCIpnsxT2QWk3',
-				template_params: params
-			};
-
-			fetch('https://api.emailjs.com/api/v1.0/email/send', {
-				type: 'POST',
-				data: JSON.stringify(data),
-				contentType: 'application/json'})
-			.then(res => console.log(res));
-		}
-		async function sendEmail(){
-		
-			
-			
-		}
-
 		function btnEmailClick(){
+			console.log('testing')
 			sendEmail();
 		}
 	</script>
