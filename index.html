@@ -17,7 +17,7 @@
 	<link rel="stylesheet" href="css/main.css">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script type="module" async src="https://www.googletagmanager.com/gtag/js?id=UA-152570984-1"></script>
-	<script type="module" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+	<script type="type/Javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
 	<script type="module">window.dataLayer=window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-152570984-1'); </script>
 </head>
 
@@ -731,14 +731,19 @@
 				message: getVal("msgMessage").value,
 				reply_to: getVal("msgEmail").value,
 			};
-			console.log(name, subject, email, message);
-			emailjs.send("service_er9utfj","template_ij3x988", params)
-				.then(function(response) {
-					console.log('SUCCESS!', response.status, response.text);
-					alert('Thank you. Chat soon')
-				}, function(error) {
-					console.log('FAILED...', error);
-				});
+
+			var data = {
+				service_id: 'service_er9utfj',
+				template_id: 'template_ij3x988',
+				user_id: '05PTXCIpnsxT2QWk3',
+				template_params: params
+			};
+
+			fetch('https://api.emailjs.com/api/v1.0/email/send', {
+				type: 'POST',
+				data: JSON.stringify(data),
+				contentType: 'application/json'})
+			.then(res => console.log(res));
 		}
 		async function sendEmail(){
 		
