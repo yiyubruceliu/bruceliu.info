@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="css/main.css">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script type="module" async src="https://www.googletagmanager.com/gtag/js?id=UA-152570984-1"></script>
+	<script type="module" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
 	<script type="module">window.dataLayer=window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-152570984-1'); </script>
 </head>
 
@@ -719,43 +720,32 @@
 			return window.document.getElementById(id);
 		}
 		
-		async function sendEmail(){
+		(function(){
+			emailjs.init("05PTXCIpnsxT2QWk3");
+		})();
+		async function sendEmail() {
 			console.log("hitting the send button");
-			var name = getVal("msgName").value;
-			var subject = getVal("msgSubject").value;
-			var email = getVal("msgEmail").value;
-			var message = getVal("msgMessage").value;
+			var params = {
+				from_name: getVal("msgName").value,
+				subject: getVal("msgSubject").value,
+				message: getVal("msgMessage").value,
+				reply_to: getVal("msgEmail").value,
+			};
 			console.log(name, subject, email, message);
-
-			const payload = {
-				name: name,
-				subject: `bruceliu.info: ${subject}`, 
-				email: email,
-				message: message,
-				password: "alshsniho092ujei489h"
-			} ;
-			console.log(JSON.stringify(payload));
-			// try {
-				// const res = await axios.post('https://bruceliu-info-email-service.herokuapp.com/sendEmail', payload);
-  
-				fetch('https://bruceliu-info-email-service.herokuapp.com/ping', {
-					method: 'GET',
-				}).then(res => console.log(res));
-
-				// const response = await fetch('https://bruceliu-info-email-service.herokuapp.com/sendEmail', {
-				// 	method: 'post',
-				// 	body: JSON.stringify(payload),
-				// 	headers: {'Content-Type': 'application/json'}
-			 	// });
-				// console.log(response);
-				// const data = res.data;
-				// // const data = await response.json();
-				// console.log(data);
-			// } catch (err) {
-			// 	console.log(err, err.);
-			// };
+			emailjs.send("service_er9utfj","template_ij3x988", params)
+				.then(function(response) {
+					console.log('SUCCESS!', response.status, response.text);
+					alert('Thank you. Chat soon')
+				}, function(error) {
+					console.log('FAILED...', error);
+				});
+		}
+		async function sendEmail(){
+		
+			
 			
 		}
+
 		function btnEmailClick(){
 			sendEmail();
 		}
