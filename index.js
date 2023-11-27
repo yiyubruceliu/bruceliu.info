@@ -82,34 +82,36 @@ const waypoint = require("/js/waypoint.min.js");
 
 function sendEmail() {
   console.log("hitting the send button");
-  var params = {
-    from_name: $("#msgName").val(),
-    subject: $("#msgSubject").val(),
-    message: $("#msgMessage").val(),
-    reply_to: $("#msgEmail").val(),
-  };
-  console.log('built params', params)
-
-  var data = {
-    service_id: 'service_er9utfj',
-    template_id: 'template_ij3x988',
-    user_id: '05PTXCIpnsxT2QWk3',
-    template_params: params
-  };
-  console.log('built data')
-
-  $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
-    type: 'POST',
-    data: JSON.stringify(data),
-    contentType: 'application/json'})
-  .done(function() {
-      alert('Your mail is sent!');
-  }).fail(function(error) {
-      console.log(JSON.stringify(error))
-      alert('Oops... ' + JSON.stringify(error));
-  });
-
-  console.log('ajax sent')
+  if ($("#msgInput").val()) {//robot test
+    var params = {
+      from_name: $("#msgName").val(),
+      subject: $("#msgSubject").val(),
+      message: $("#msgMessage").val(),
+      reply_to: $("#msgEmail").val(),
+    };
+  
+    var data = {
+      service_id: 'service_er9utfj',
+      template_id: 'template_ij3x988',
+      user_id: '05PTXCIpnsxT2QWk3',
+      template_params: params
+    };
+  
+    $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+      type: 'POST',
+      data: JSON.stringify(data),
+      contentType: 'application/json'})
+    .done(function() {
+        $('#exampleModalCenter').modal()
+        alert('Your mail is sent!');
+    }).fail(function(error) {
+        console.log(JSON.stringify(error))
+        alert('Oops... ' + JSON.stringify(error));
+    });
+  
+    console.log('ajax sent')
+  }
+  
 }
 
 window.sendEmail = sendEmail;

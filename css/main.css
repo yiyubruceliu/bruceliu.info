@@ -2841,3 +2841,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #25D366;
   color: white;
 }
+
+.inactive .common-input .mb-20 .form-control{
+  height:0px;
+  padding:0px;
+  margin:0px;
+}

@@ -657,13 +657,17 @@
 							<div class="col-lg-6 form-group form-group-top">
 								<input id="msgName" placeholder="Enter your name" class="common-input mb-20 form-control" required="" type="text">
 								<input id="msgEmail" placeholder="Enter email address" class="common-input mb-20 form-control" required="" type="email">
-								<input id="msgSubject" placeholder="Enter your subject" class="common-input mb-20 form-control" required="" type="text"> </div>
+								<input id="msgSubject" placeholder="Enter your subject" class="common-input mb-20 form-control" required="" type="text"> 
+								<input id="msgInput" placeholder="Enter your purpose" class="inactive common-input mb-20 form-control" type="text"> 
+							</div>
+								
 							<div class="col-lg-6 form-group">
 								<textarea class="common-textarea form-control" id="msgMessage" placeholder="Message" required=""></textarea>
 							</div>
 							<div class="col-lg-12">
-								<button class="primary-btn float-right" onclick="
-								btnEmailClick()" data-text="Send Message"> <span>S</span> <span>e</span> <span>n</span> <span>d</span> <span></span> <span>M</span> <span>e</span> <span>s</span> <span>s</span> <span>a</span> <span>g</span> <span>e</span> </button>
+								<button class="primary-btn float-right" onclick="btnEmailClick()" data-text="Send Message">
+									<span>S</span> <span>e</span> <span>n</span> <span>d</span> <span></span> <span>M</span> <span>e</span> <span>s</span> <span>s</span> <span>a</span> <span>g</span> <span>e</span> 
+								</button>
 							</div>
 						</div>
 					</form>
@@ -702,6 +706,29 @@
 		</div>
 	</footer>
 	<!-- End Footer Area -->
+	<!--Model-->
+	<!-- Button trigger modal -->
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+		Launch demo modal
+	</button>
+	
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="exampleModalLongTitle">It's done</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			</div>
+			<div class="modal-body">
+			Yip, he's got your email now.
+			</div>
+		</div>
+		</div>
+	</div>
+	<!-- end Modal-->
 	<!-- Back to Top -->
 	<div id="back-top" style="font-size: x-small; color:black">
 		<a title="Go to Top" href="#"> <i class="fa fa-sort-up"></i> </a>
