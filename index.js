@@ -105,6 +105,7 @@ function sendEmail() {
   .done(function() {
       alert('Your mail is sent!');
   }).fail(function(error) {
+      console.log(JSON.stringify(error))
       alert('Oops... ' + JSON.stringify(error));
   });
 
