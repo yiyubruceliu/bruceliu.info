@@ -1,4 +1,4 @@
-import $ from "jquery";
+import $, { param } from "jquery";
 // const jQuery = require("./js/jquery-2.2.4.min.js");
 // const $ = require("./lib/jquery/jquery.min.js");
 // var jquery = require("jquery");
@@ -83,12 +83,12 @@ const waypoint = require("/js/waypoint.min.js");
 function sendEmail() {
   console.log("hitting the send button");
   var params = {
-    from_name: window.document.getElementById("msgName").value,
-    subject: window.document.getElementById("msgSubject").value,
-    message: window.document.getElementById("msgMessage").value,
-    reply_to: window.document.getElementById("msgEmail").value,
+    from_name: $("#msgName").val(),
+    subject: $("#msgSubject").val(),
+    message: $("#msgMessage").val(),
+    reply_to: $("#msgEmail").val(),
   };
-  console.log('built params')
+  console.log('built params', params)
 
   var data = {
     service_id: 'service_er9utfj',
