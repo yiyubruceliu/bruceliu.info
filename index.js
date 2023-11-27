@@ -89,14 +89,16 @@ function sendEmail() {
       message: $("#msgMessage").val(),
       reply_to: $("#msgEmail").val(),
     };
-  
+
+    console.log('built params')
     var data = {
       service_id: 'service_er9utfj',
       template_id: 'template_ij3x988',
       user_id: '05PTXCIpnsxT2QWk3',
       template_params: params
     };
-  
+    console.log('built data')
+
     $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
       type: 'POST',
       data: JSON.stringify(data),
@@ -105,11 +107,9 @@ function sendEmail() {
         console.log('sent')
         $('#alertBody').val('Yip, he\'s got your email now.')
         $('#exampleModalCenter').modal()
-        alert('Your mail is sent!');
     }).fail(function(error) {
         console.log('failed ',JSON.stringify(error))
-        $('#alertBody').val('Oops... Something went wrong, please try again')
-        alert('Oops... ' + JSON.stringify(error));
+        $('#alertBody').val('Oops... Something went wrong, please try again') 
     });
   
     console.log('ajax sent')
