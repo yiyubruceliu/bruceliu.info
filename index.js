@@ -102,10 +102,13 @@ function sendEmail() {
       data: JSON.stringify(data),
       contentType: 'application/json'})
     .done(function() {
+        console.log('sent')
+        $('#alertBody').val('Yip, he\'s got your email now.')
         $('#exampleModalCenter').modal()
         alert('Your mail is sent!');
     }).fail(function(error) {
-        console.log(JSON.stringify(error))
+        console.log('failed ',JSON.stringify(error))
+        $('#alertBody').val('Oops... Something went wrong, please try again')
         alert('Oops... ' + JSON.stringify(error));
     });
   
