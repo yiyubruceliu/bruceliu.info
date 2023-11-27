@@ -79,42 +79,72 @@ const custom = require("/js/custom.js");
 
 const waypoint = require("/js/waypoint.min.js");
 
-
-function sendEmail() {
-  console.log("hitting the send button");
-  if (!$("#msgInput").val()) {//robot test
-    var params = {
-      from_name: $("#msgName").val(),
-      subject: $("#msgSubject").val(),
-      message: $("#msgMessage").val(),
-      reply_to: $("#msgEmail").val(),
-    };
-
-    console.log('built params')
-    var data = {
-      service_id: 'service_er9utfj',
-      template_id: 'template_ij3x988',
-      user_id: '05PTXCIpnsxT2QWk3',
-      template_params: params
-    };
-    console.log('built data')
-
-    $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
-      type: 'POST',
-      data: JSON.stringify(data),
-      contentType: 'application/json'})
-    .done(function() {
-        console.log('sent')
-        $('#alertBody').val('Yip, he\'s got your email now.')
-        $('#exampleModalCenter').modal()
-    }).fail(function(error) {
-        console.log('failed ',JSON.stringify(error))
-        $('#alertBody').val('Oops... Something went wrong, please try again') 
-    });
-  
-    console.log('ajax sent')
+function sendEmail(){
+  var form = $("myform");
+  async function handleSubmit(event) {
+  event.preventDefault();
+  var status = $("formStatus");
+  var data = new FormData(event.target);
+  fetch(event.target.action, {
+    method: form.method,
+    body: data,
+    headers: {
+      'Accept': 'application/json'
   }
-  
+  }).then(response => {
+    if (response.ok) {
+      status.innerHTML = "Thanks for your submission!";
+      form.reset()
+    } else {
+      response.json().then(data => {
+      if (Object.hasOwn(data, 'errors')) {
+        status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+      } else {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      }
+    })
+  }
+  }).catch(error => {
+    status.innerHTML = "Oops! There was a problem submitting your form"
+  });
+  }
+  form.addEventListener("submit", handleSubmit)
 }
+// function sendEmail() {
+//   console.log("hitting the send button");
+//   if (!$("#msgInput").val()) {//robot test
+//     var params = {
+//       from_name: $("#msgName").val(),
+//       subject: $("#msgSubject").val(),
+//       message: $("#msgMessage").val(),
+//       reply_to: $("#msgEmail").val(),
+//     };
+
+//     console.log('built params')
+//     var data = {
+//       service_id: 'service_er9utfj',
+//       template_id: 'template_ij3x988',
+//       user_id: '05PTXCIpnsxT2QWk3',
+//       template_params: params
+//     };
+//     console.log('built data')
+
+//     $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+//       type: 'POST',
+//       data: JSON.stringify(data),
+//       contentType: 'application/json'})
+//     .done(function() {
+//         console.log('sent')
+//         $('#alertBody').val('Yip, he\'s got your email now.')
+//         $('#exampleModalCenter').modal()
+//     }).fail(function(error) {
+//         console.log('failed ',JSON.stringify(error))
+//         $('#alertBody').val('Oops... Something went wrong, please try again') 
+//     });
+  
+//     console.log('ajax sent')
+//   }
+  
+// }
 
 window.sendEmail = sendEmail;
