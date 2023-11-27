@@ -82,7 +82,7 @@ const waypoint = require("/js/waypoint.min.js");
 
 function sendEmail() {
   console.log("hitting the send button");
-  if ($("#msgInput").val()) {//robot test
+  if (!$("#msgInput").val()) {//robot test
     var params = {
       from_name: $("#msgName").val(),
       subject: $("#msgSubject").val(),
