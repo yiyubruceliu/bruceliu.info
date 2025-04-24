@@ -31,9 +31,10 @@
             font-family: 'Montserrat', sans-serif;
             font-weight: 300;
             color: #2d221d;
+            margin-top: 10px;
         }
         .chart-container {
-            padding: 5px;
+            padding: 10px;
             border: 1px solid #676350;
             border-radius: 0;
             height: 100%;
@@ -94,6 +95,12 @@
             width: 350px !important;
             max-width: 100%;
         }
+
+        .radar-chart canvas {
+            height: 310px !important;
+            
+        }
+
         .bar-chart canvas {
             width: 100% !important;
             max-width: 800px !important;
@@ -186,7 +193,7 @@
                 </div>
             </div>
             <div class="col-md-3 mb-4">
-                <div class="chart-container">
+                <div class="chart-container radar-chart">
                     <h2 class="bold">Average Skill Levels by Category</h2>
                     <canvas id="skillLevelsChart"></canvas>
                 </div>
