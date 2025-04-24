@@ -164,6 +164,28 @@
             color: #676350;
             opacity: 0.7;
         }
+        .radar-chart {
+            position: relative;
+        }
+        .radar-chart .top-categories {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #2d221d;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 5px;
+        }
+        .radar-chart .top-categories .badge {
+            background-color: #785037;
+            color: white;
+            font-weight: 400;
+            padding: 5px 10px;
+            margin: 0 5px;
+            border-radius: 15px;
+        }
     </style>
 </head>
 <body>
@@ -196,6 +218,7 @@
                 <div class="chart-container radar-chart">
                     <h2 class="bold">Average Skill Levels by Category</h2>
                     <canvas id="skillLevelsChart"></canvas>
+                    <div class="top-categories" id="topCategories"></div>
                 </div>
             </div>
             <div class="col-md-6 mb-4">
@@ -270,11 +293,11 @@ function loadData(){
         { Category: 'Business Analysis', Skill: 'MIRO', 'Experience (Years)': 3, 'Level (1–10)': 8 },
         { Category: 'Business Analysis', Skill: 'Drawio', 'Experience (Years)': 4, 'Level (1–10)': 9 },
         { Category: 'Business Analysis', Skill: 'Lucidchart', 'Experience (Years)': 1, 'Level (1–10)': 5 },
-        { Category: 'Data Analysis & Reporting', Skill: 'Power BI', 'Experience (Years)': 3, 'Level (1–10)': 7 },
-        { Category: 'Data Analysis & Reporting', Skill: 'Excel', 'Experience (Years)': 10, 'Level (1–10)': 9 },
-        { Category: 'Data Analysis & Reporting', Skill: 'R & RStudio', 'Experience (Years)': 3, 'Level (1–10)': 7 },
-        { Category: 'Data Analysis & Reporting', Skill: 'Rapid Miner', 'Experience (Years)': 2, 'Level (1–10)': 7 },
-        { Category: 'Data Analysis & Reporting', Skill: 'Orange Data Mining', 'Experience (Years)': 2, 'Level (1–10)': 8 },
+        { Category: 'Data Analysis', Skill: 'Power BI', 'Experience (Years)': 3, 'Level (1–10)': 7 },
+        { Category: 'Data Analysis', Skill: 'Excel', 'Experience (Years)': 10, 'Level (1–10)': 9 },
+        { Category: 'Data Analysis', Skill: 'R & RStudio', 'Experience (Years)': 3, 'Level (1–10)': 7 },
+        { Category: 'Data Analysis', Skill: 'Rapid Miner', 'Experience (Years)': 2, 'Level (1–10)': 7 },
+        { Category: 'Data Analysis', Skill: 'Orange Data Mining', 'Experience (Years)': 2, 'Level (1–10)': 8 },
         { Category: 'Database', Skill: 'SQL', 'Experience (Years)': 9, 'Level (1–10)': 8 },
         { Category: 'Database', Skill: 'XML', 'Experience (Years)': 7, 'Level (1–10)': 7 },
         { Category: 'Database', Skill: 'JSON', 'Experience (Years)': 7, 'Level (1–10)': 7 },
@@ -685,6 +708,39 @@ function createRadarChart(canvasId, label, labels, data) {
 
             document.getElementById('maxExperience').textContent = maxExp;
             document.getElementById('maxExperienceSkill').textContent = maxExpSkill;
+
+            // Calculate and display top categories
+            const categoryAverages = {};
+            data.table_data.forEach(item => {
+                if (!categoryAverages[item.category]) {
+                    categoryAverages[item.category] = {
+                        total: 0,
+                        count: 0
+                    };
+                }
+                categoryAverages[item.category].total += item.level;
+                categoryAverages[item.category].count++;
+            });
+
+            const topCategories = Object.entries(categoryAverages)
+                .map(([category, data]) => ({
+                    category,
+                    average: data.total / data.count
+                }))
+                .sort((a, b) => b.average - a.average)
+                .slice(0, 3);
+
+            const topCategoriesText = `<b style="margin-bottom: 10px;margin-left: 10px;font-weight: 500;">Top categories:</b> 
+            <br/>
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+                <span class="badge">${topCategories[0].category}</span>
+                <span class="badge">${topCategories[1].category}</span>
+                <span class="badge">${topCategories[2].category}</span>
+            </div>`;
+            document.getElementById('topCategories').innerHTML = topCategoriesText;
+            document.getElementById('topCategories').style.textAlign = 'left';
+            document.getElementById('topCategories').style.marginLeft = '5px';
+            document.getElementById('topCategories').style.marginRight = '5px';
         }
 
         // Initialize dashboard
