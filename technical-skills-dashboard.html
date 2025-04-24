@@ -50,6 +50,28 @@
             border: 1px solid #676350;
             margin-bottom: 15px;
         }
+
+        .number-widget .content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .number-widget .icon {
+            width: 80px;
+            height: 80px;
+        }
+        .number-widget .number-row {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+
+        .number-widget .number-row div {
+            margin: 0px;
+        }
+
         .number-widget .number {
             font-size: 3rem;
             font-weight: 500;
@@ -63,7 +85,7 @@
         }
         .number-widget .sublabel {
             font-size: 0.9rem;
-            color: #676350;
+            color: black;
             margin-top: 5px;
         }
         canvas {
@@ -143,13 +165,24 @@
         <div class="row charts-row">
             <div class="col-md-3 mb-4 left-column">
                 <div class="number-widget">
-                    <div class="label bold">Total Technical Skills / Tools</div>
-                    <div class="number" id="totalSkills">-</div>
+                    <div class="content">
+                        <img src="img/noun-tools-7324790.svg" alt="Tools Icon" class="icon">
+                        <div class="number-row">
+                            <div class="label bold">Total Technical Skills / Tools</div>
+                            <div class="number" id="totalSkills">-</div>
+                            <div class="sublabel" id="totalSkillsSkill">-</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="number-widget" style="margin-bottom: 0px;">
-                    <div class="label bold">Maximum Years of Experience</div>
-                    <div class="number" id="maxExperience">-</div>
-                    <div class="sublabel" id="maxExperienceSkill">-</div>
+                    <div class="content">
+                        <img src="img/noun-work-experience-7103348.svg" alt="Experience Icon" class="icon">
+                        <div class="number-row">
+                            <div class="label bold">Maximum Years of Experience</div>
+                            <div class="number" id="maxExperience">-</div>
+                            <div class="sublabel" id="maxExperienceSkill">-</div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-md-3 mb-4">
@@ -357,6 +390,7 @@ async function createCharts(file) {
 
 // Function to create a radar chart
 function createRadarChart(canvasId, label, labels, data) {
+    ctx.defaults.color = '#fff';
     const ctx = document.getElementById(canvasId).getContext('2d');
     new Chart(ctx, {
         type: 'radar',
@@ -397,6 +431,7 @@ function createRadarChart(canvasId, label, labels, data) {
             },
             plugins: {
                 legend: {
+                    fontColor: 'black',
                     display: false
                 }
             }
@@ -429,6 +464,7 @@ function createRadarChart(canvasId, label, labels, data) {
         // Function to create a radar chart
         function createRadarChart(canvasId, label, labels, data) {
             const ctx = document.getElementById(canvasId).getContext('2d');
+            Chart.defaults.color = 'black';
             Chart.defaults.font.family = "'Montserrat', sans-serif";
             Chart.defaults.font.weight = 300;
             new Chart(ctx, {
@@ -486,6 +522,7 @@ function createRadarChart(canvasId, label, labels, data) {
                     },
                     plugins: {
                         legend: {
+                            fontColor: 'black',
                             display: false,
                             labels: {
                                 font: {
@@ -510,14 +547,7 @@ function createRadarChart(canvasId, label, labels, data) {
                             }
                         }
                     },
-                    layout: {
-                        padding: {
-                            left: 20,
-                            right: 20,
-                            top: 10,
-                            bottom: 10
-                        }
-                    }
+
                 }
             });
         }
@@ -634,6 +664,7 @@ function createRadarChart(canvasId, label, labels, data) {
             // Update total skills
             const totalSkills = data.table_data.length;
             document.getElementById('totalSkills').textContent = totalSkills;
+            document.getElementById('totalSkillsSkill').textContent = "Across all categories";
 
             // Find maximum years of experience and corresponding skill
             let maxExp = 0;
