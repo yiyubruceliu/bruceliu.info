@@ -114,11 +114,58 @@
         .charts-row {
             margin-top: 20px;
         }
-        .table-container, .btn, .dropdown-toggle, .show {
+        .table-container {
             background-color: white;
             padding: 20px;
             border-radius: 0;
             border: 1px solid #676350;
+        }
+        .btn, .dropdown-toggle, .show {
+            background-color: white;
+            padding: 8px;
+            border-radius: 0;
+            border: 1px solid #676350;
+        }
+        .btn-secondary, .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+            background-color: #785037;
+            border-color: #785037;
+            color: white;
+            border-radius: 0;
+        }
+        .btn-secondary:hover {
+            background-color: #676350;
+            border-color: #676350;
+        }
+        .pagination .page-link {
+            color: #2d221d;
+            background-color: white;
+            border: 1px solid #676350;
+            border-radius: 0;
+            margin: 0 2px;
+        }
+        .pagination {
+            border-radius: 0;
+        }
+        .pagination .page-item:first-child .page-link {
+            border-radius: 0;
+        }
+        .pagination .page-item:last-child .page-link {
+            border-radius: 0;
+        }
+        .pagination .page-link:hover {
+            background-color: #785037;
+            border-color: #785037;
+            color: white;
+        }
+        .pagination .page-item.active .page-link {
+            background-color: #785037;
+            border-color: #785037;
+            color: white;
+        }
+        .pagination .page-item.disabled .page-link {
+            color: #676350;
+            background-color: white;
+            border-color: #676350;
         }
         .table {
             font-weight: 300;
@@ -184,7 +231,14 @@
             font-weight: 400;
             padding: 5px 10px;
             margin: 0 5px;
-            border-radius: 15px;
+            border-radius: 0;
+        }
+        .btn-group.dropdown, .btn-group.dropup {
+            border: 1px solid black;
+            border-radius: 0;
+        }
+        .btn-group.dropdown .btn, .btn-group.dropup .btn {
+            border: none;
         }
     </style>
 </head>
@@ -207,7 +261,7 @@
                     <div class="content">
                         <img src="img/noun-work-experience-7103348.svg" alt="Experience Icon" class="icon">
                         <div class="number-row">
-                            <div class="label bold">Maximum Years of Experience</div>
+                            <div class="label bold">Most Years of Experience</div>
                             <div class="number" id="maxExperience">-</div>
                             <div class="sublabel" id="maxExperienceSkill">-</div>
                         </div>
@@ -245,12 +299,13 @@
                 data-sort-name="category"
                 data-sort-order="asc"
                 data-pagination="true"
-                data-page-size="100"
-                data-page-list="[100, 200, 500, all]">
+                data-page-size="10"
+                data-page-list="[10, 20, 50, 100, all]">
                 <thead>
                     <tr>
                         <th data-field="category" data-sortable="true">Category</th>
                         <th data-field="skill" data-sortable="true">Skill</th>
+                        <th data-field="description" data-sortable="true">Description</th>
                         <th data-field="experience" data-sortable="true">Experience (Years)</th>
                         <th data-field="level" data-sortable="true">Skill Level (1-10)</th>
                     </tr>
@@ -271,67 +326,68 @@
     <script>
 function loadData(){
     const data = [
-        { Category: 'Backend', Skill: 'AI Engineering', 'Experience (Years)': 3, 'Level (1–10)': 6 },
-        { Category: 'Backend', Skill: 'Flask', 'Experience (Years)': 5, 'Level (1–10)': 7 },
-        { Category: 'Backend', Skill: 'Python', 'Experience (Years)': 6, 'Level (1–10)': 9 },
-        { Category: 'Backend', Skill: 'C#', 'Experience (Years)': 9, 'Level (1–10)': 9 },
-        { Category: 'Backend', Skill: 'ASP.NET', 'Experience (Years)': 7, 'Level (1–10)': 9 },
-        { Category: 'Backend', Skill: 'LinQ', 'Experience (Years)': 4, 'Level (1–10)': 8 },
-        { Category: 'Backend', Skill: 'Lambda', 'Experience (Years)': 4, 'Level (1–10)': 8 },
-        { Category: 'Backend', Skill: 'MVC', 'Experience (Years)': 7, 'Level (1–10)': 9 },
-        { Category: 'Backend', Skill: 'NodeJS', 'Experience (Years)': 3, 'Level (1–10)': 7 },
-        { Category: 'Backend', Skill: 'Entity Framework', 'Experience (Years)': 4, 'Level (1–10)': 8 },
-        { Category: 'Backend', Skill: 'Java', 'Experience (Years)': 3, 'Level (1–10)': 7 },
-        { Category: 'Backend', Skill: 'Spring', 'Experience (Years)': 2, 'Level (1–10)': 6 },
-        { Category: 'Backend', Skill: 'Hibernate', 'Experience (Years)': 2, 'Level (1–10)': 6 },
-        { Category: 'Backend', Skill: 'WinForms', 'Experience (Years)': 4, 'Level (1–10)': 7 },
-        { Category: 'Business Analysis', Skill: 'IBM Systems Architecture', 'Experience (Years)': 4, 'Level (1–10)': 6 },
-        { Category: 'Business Analysis', Skill: 'Microsoft Visio', 'Experience (Years)': 5, 'Level (1–10)': 8 },
-        { Category: 'Business Analysis', Skill: 'BPMN', 'Experience (Years)': 4, 'Level (1–10)': 8 },
-        { Category: 'Business Analysis', Skill: 'UML', 'Experience (Years)': 11, 'Level (1–10)': 9 },
-        { Category: 'Business Analysis', Skill: 'Persona Design', 'Experience (Years)': 4, 'Level (1–10)': 7 },
-        { Category: 'Business Analysis', Skill: 'MIRO', 'Experience (Years)': 3, 'Level (1–10)': 8 },
-        { Category: 'Business Analysis', Skill: 'Drawio', 'Experience (Years)': 4, 'Level (1–10)': 9 },
-        { Category: 'Business Analysis', Skill: 'Lucidchart', 'Experience (Years)': 1, 'Level (1–10)': 5 },
-        { Category: 'Data Analysis', Skill: 'Power BI', 'Experience (Years)': 3, 'Level (1–10)': 7 },
-        { Category: 'Data Analysis', Skill: 'Excel', 'Experience (Years)': 10, 'Level (1–10)': 9 },
-        { Category: 'Data Analysis', Skill: 'R & RStudio', 'Experience (Years)': 3, 'Level (1–10)': 7 },
-        { Category: 'Data Analysis', Skill: 'Rapid Miner', 'Experience (Years)': 2, 'Level (1–10)': 7 },
-        { Category: 'Data Analysis', Skill: 'Orange Data Mining', 'Experience (Years)': 2, 'Level (1–10)': 8 },
-        { Category: 'Database', Skill: 'SQL', 'Experience (Years)': 9, 'Level (1–10)': 8 },
-        { Category: 'Database', Skill: 'XML', 'Experience (Years)': 7, 'Level (1–10)': 7 },
-        { Category: 'Database', Skill: 'JSON', 'Experience (Years)': 7, 'Level (1–10)': 7 },
-        { Category: 'Database', Skill: 'MongoDB', 'Experience (Years)': 3, 'Level (1–10)': 7 },
-        { Category: 'Database', Skill: 'Oracle', 'Experience (Years)': 2, 'Level (1–10)': 6 },
-        { Category: 'Database', Skill: 'Microsoft Access', 'Experience (Years)': 2, 'Level (1–10)': 7 },
-        { Category: 'DevOps', Skill: 'GitHub', 'Experience (Years)': 6, 'Level (1–10)': 8 },
-        { Category: 'DevOps', Skill: 'Jenkins', 'Experience (Years)': 2, 'Level (1–10)': 6 },
-        { Category: 'DevOps', Skill: 'Linux', 'Experience (Years)': 2, 'Level (1–10)': 6 },
-        { Category: 'DevOps', Skill: 'Bash', 'Experience (Years)': 2, 'Level (1–10)': 6 },
-        { Category: 'Frontend', Skill: 'HTML', 'Experience (Years)': 8, 'Level (1–10)': 9 },
-        { Category: 'Frontend', Skill: 'CSS', 'Experience (Years)': 8, 'Level (1–10)': 9 },
-        { Category: 'Frontend', Skill: 'UI Design', 'Experience (Years)': 11, 'Level (1–10)': 10 },
-        { Category: 'Frontend', Skill: 'Kendo UI', 'Experience (Years)': 4, 'Level (1–10)': 7 },
-        { Category: 'Frontend', Skill: 'JavaScript', 'Experience (Years)': 7, 'Level (1–10)': 8 },
-        { Category: 'Frontend', Skill: 'Bootstrap', 'Experience (Years)': 8, 'Level (1–10)': 9 },
-        { Category: 'Frontend', Skill: 'Angular JS', 'Experience (Years)': 4, 'Level (1–10)': 6 },
-        { Category: 'Frontend', Skill: 'Angular', 'Experience (Years)': 2, 'Level (1–10)': 5 },
-        { Category: 'Frontend', Skill: 'jQuery', 'Experience (Years)': 4, 'Level (1–10)': 7 },
-        { Category: 'Frontend', Skill: 'React JS', 'Experience (Years)': 3, 'Level (1–10)': 7 },
-        { Category: 'Frontend', Skill: 'Figma', 'Experience (Years)': 3, 'Level (1–10)': 7 },
-        { Category: 'Frontend', Skill: 'Flutter', 'Experience (Years)': 2, 'Level (1–10)': 5 },
-        { Category: 'Frontend', Skill: 'Material UI', 'Experience (Years)': 2, 'Level (1–10)': 7 },
-        { Category: 'Frontend', Skill: 'Redux', 'Experience (Years)': 2, 'Level (1–10)': 6 },
-        { Category: 'Frontend', Skill: 'VueJS', 'Experience (Years)': 2, 'Level (1–10)': 6 },
-        { Category: 'Project Management', Skill: 'JIRA', 'Experience (Years)': 5, 'Level (1–10)': 7 },
-        { Category: 'Project Management', Skill: 'Trello', 'Experience (Years)': 6, 'Level (1–10)': 8 },
-        { Category: 'Project Management', Skill: 'Confluence', 'Experience (Years)': 3, 'Level (1–10)': 7 },
-        { Category: 'Project Management', Skill: 'Zapier', 'Experience (Years)': 2, 'Level (1–10)': 6 },
-        { Category: 'Project Management', Skill: 'Slack', 'Experience (Years)': 3, 'Level (1–10)': 7 },
-        { Category: 'Project Management', Skill: 'GSuite', 'Experience (Years)': 3, 'Level (1–10)': 7 },
-        { Category: 'Web / Marketing', Skill: 'SEO', 'Experience (Years)': 4, 'Level (1–10)': 6 },
-        { Category: 'Web / Marketing', Skill: 'WooCommerce', 'Experience (Years)': 2, 'Level (1–10)': 6 },
-        { Category: 'Web / Marketing', Skill: 'WordPress', 'Experience (Years)': 3, 'Level (1–10)': 7 },
+        { Category: 'Business Analysis', Skill: 'IBM Systems Architecture', Description: 'IBM Systems Architecture is a tool for designing and documenting systems architecture.', 'Experience (Years)': 4, 'Level (1–10)': 6 },
+        { Category: 'Business Analysis', Skill: 'Microsoft Visio', Description: 'Microsoft Visio is a tool for creating diagrams and flowcharts.', 'Experience (Years)': 5, 'Level (1–10)': 8 },
+        { Category: 'Business Analysis', Skill: 'Business Process Modeling Notation (BPMN)', Description: 'Business Process Modeling Notation (BPMN) is a standard notation for describing business processes.', 'Experience (Years)': 4, 'Level (1–10)': 8 },
+        { Category: 'Business Analysis', Skill: 'Unified Modeling Language (UML)', Description: 'Unified Modeling Language (UML) is a standard notation for describing software systems.', 'Experience (Years)': 11, 'Level (1–10)': 9 },
+        { Category: 'Business Analysis', Skill: 'Persona Design', Description: 'Persona Design is a technique for creating user personas.', 'Experience (Years)': 4, 'Level (1–10)': 7 },
+        { Category: 'Business Analysis', Skill: 'MIRO', Description: 'MIRO is a tool for creating diagrams and flowcharts.', 'Experience (Years)': 3, 'Level (1–10)': 8 },
+        { Category: 'Business Analysis', Skill: 'Drawio', Description: 'Drawio is a tool for creating diagrams and flowcharts.', 'Experience (Years)': 4, 'Level (1–10)': 9 },
+        { Category: 'Business Analysis', Skill: 'Lucidchart', Description: 'Lucidchart is a tool for creating diagrams and flowcharts.', 'Experience (Years)': 1, 'Level (1–10)': 5 },
+        { Category: 'Data Analysis', Skill: 'Power BI', Description: 'Power BI is a tool for creating interactive dashboards and reports.', 'Experience (Years)': 3, 'Level (1–10)': 7 },
+        { Category: 'Data Analysis', Skill: 'Excel', Description: 'Excel is a tool for creating spreadsheets and performing data analysis.', 'Experience (Years)': 10, 'Level (1–10)': 9 },
+        { Category: 'Data Analysis', Skill: 'R & RStudio', Description: 'R is a programming language for statistical computing and graphics, and RStudio is an integrated development environment for R.', 'Experience (Years)': 3, 'Level (1–10)': 7 },
+        { Category: 'Data Analysis', Skill: 'Rapid Miner', Description: 'Rapid Miner is a tool for creating data mining models.', 'Experience (Years)': 2, 'Level (1–10)': 7 },
+        { Category: 'Data Analysis', Skill: 'Orange Data Mining', Description: 'Orange Data Mining is a tool for creating data mining models.', 'Experience (Years)': 2, 'Level (1–10)': 8 },
+        { Category: 'Project Management', Skill: 'JIRA', Description: 'JIRA is a tool for managing projects and tasks.', 'Experience (Years)': 5, 'Level (1–10)': 7 },
+        { Category: 'Project Management', Skill: 'Trello', Description: 'Trello is a tool for managing projects and tasks.', 'Experience (Years)': 6, 'Level (1–10)': 8 },
+        { Category: 'Project Management', Skill: 'Confluence', Description: 'Confluence is a tool for managing projects and tasks.', 'Experience (Years)': 3, 'Level (1–10)': 7 },
+        { Category: 'Project Management', Skill: 'Zapier', Description: 'Zapier is a tool for automating tasks and workflows.', 'Experience (Years)': 2, 'Level (1–10)': 6 },
+        { Category: 'Project Management', Skill: 'Slack', Description: 'Slack is a tool for communication and collaboration.', 'Experience (Years)': 3, 'Level (1–10)': 7 },
+        { Category: 'Project Management', Skill: 'Google Suite', Description: 'Google Suite is a suite of productivity tools.', 'Experience (Years)': 3, 'Level (1–10)': 7 },
+        { Category: 'UI / UX & Visualisation', Skill: 'HTML', Description: 'HTML is a markup language for creating web pages.', 'Experience (Years)': 8, 'Level (1–10)': 9 },
+        { Category: 'UI / UX & Visualisation', Skill: 'CSS', Description: 'CSS is a style sheet language for describing the presentation of a document written in HTML.', 'Experience (Years)': 8, 'Level (1–10)': 9 },
+        { Category: 'UI / UX & Visualisation', Skill: 'UI Design', Description: 'UI Design is a technique for creating user interfaces.', 'Experience (Years)': 11, 'Level (1–10)': 10 },
+        { Category: 'UI / UX & Visualisation', Skill: 'Kendo UI', Description: 'Kendo UI is a tool for creating user interfaces.', 'Experience (Years)': 4, 'Level (1–10)': 7 },
+        { Category: 'UI / UX & Visualisation', Skill: 'JavaScript', Description: 'JavaScript is a programming language for creating interactive web pages.', 'Experience (Years)': 7, 'Level (1–10)': 8 },
+        { Category: 'UI / UX & Visualisation', Skill: 'Bootstrap', Description: 'Bootstrap is a framework for creating responsive web pages.', 'Experience (Years)': 8, 'Level (1–10)': 9 },
+        { Category: 'UI / UX & Visualisation', Skill: 'Angular JS', Description: 'Angular JS is a framework for creating interactive web pages.', 'Experience (Years)': 4, 'Level (1–10)': 6 },
+        { Category: 'UI / UX & Visualisation', Skill: 'Angular', Description: 'Angular is a framework for creating interactive web pages.', 'Experience (Years)': 2, 'Level (1–10)': 6 },
+        { Category: 'UI / UX & Visualisation', Skill: 'jQuery', Description: 'jQuery is a JavaScript library for simplifying HTML document traversing, event handling, animating, and Ajax interactions.', 'Experience (Years)': 4, 'Level (1–10)': 7 },
+        { Category: 'UI / UX & Visualisation', Skill: 'React JS', Description: 'React JS is a framework for creating interactive web pages.', 'Experience (Years)': 3, 'Level (1–10)': 7 },
+        { Category: 'UI / UX & Visualisation', Skill: 'Figma', Description: 'Figma is a tool for creating user interfaces.', 'Experience (Years)': 3, 'Level (1–10)': 7 },
+        { Category: 'UI / UX & Visualisation', Skill: 'Flutter', Description: 'Flutter is a framework for creating mobile applications.', 'Experience (Years)': 2, 'Level (1–10)': 6 },
+        { Category: 'UI / UX & Visualisation', Skill: 'Material UI', Description: 'Material UI is a framework for creating user interfaces.', 'Experience (Years)': 2, 'Level (1–10)': 7 },
+        { Category: 'UI / UX & Visualisation', Skill: 'Redux', Description: 'Redux is a state management library for JavaScript.', 'Experience (Years)': 2, 'Level (1–10)': 6 },
+        { Category: 'UI / UX & Visualisation', Skill: 'VueJS', Description: 'VueJS is a framework for creating interactive web pages.', 'Experience (Years)': 2, 'Level (1–10)': 6 },
+        { Category: 'Backend', Skill: 'AI Engineering', Description: 'AI Engineering is a technique for creating AI models.', 'Experience (Years)': 3, 'Level (1–10)': 6 },
+        { Category: 'Backend', Skill: 'Flask', Description: 'Flask is a framework for creating web applications with Python.', 'Experience (Years)': 5, 'Level (1–10)': 7 },
+        { Category: 'Backend', Skill: 'Python', Description: 'Python is a programming language commonly used for data analysis and machine learning.', 'Experience (Years)': 6, 'Level (1–10)': 9 },
+        { Category: 'Backend', Skill: 'C#', Description: 'C# is a common programming language used for corporate applications.', 'Experience (Years)': 9, 'Level (1–10)': 9 },
+        { Category: 'Backend', Skill: 'ASP.NET', Description: 'ASP.NET is a framework for creating web applications.', 'Experience (Years)': 7, 'Level (1–10)': 9 },
+        { Category: 'Backend', Skill: 'LINQ', Description: 'LINQ is a framework that integrates querying capabilities into .NET.', 'Experience (Years)': 4, 'Level (1–10)': 8 },
+        { Category: 'Backend', Skill: 'Lambda', Description: 'Lambda is a framework that assists with building business logic in .NET.', 'Experience (Years)': 4, 'Level (1–10)': 8 },
+        { Category: 'Backend', Skill: 'Model View Controller (MVC)', Description: 'Model View Controller (MVC) is a web architecture that separates the application into three components: Model, View, and Controller.', 'Experience (Years)': 7, 'Level (1–10)': 9 },
+        { Category: 'Backend', Skill: 'NodeJS', Description: 'NodeJS is a framework that allows business logic to be written in JavaScript.', 'Experience (Years)': 3, 'Level (1–10)': 7 },
+        { Category: 'Backend', Skill: 'Entity Framework', Description: 'Entity Framework is a framework that allows developers to work with databases using .NET objects.', 'Experience (Years)': 4, 'Level (1–10)': 8 },
+        { Category: 'Backend', Skill: 'Java', Description: 'Java is a programming language mainly used in enterprise applications.', 'Experience (Years)': 3, 'Level (1–10)': 7 },
+        { Category: 'Backend', Skill: 'Spring', Description: 'Spring is a framework for creating web applications.', 'Experience (Years)': 2, 'Level (1–10)': 5 },
+        { Category: 'Backend', Skill: 'Hibernate', Description: 'Hibernate is a framework for creating web applications.', 'Experience (Years)': 2, 'Level (1–10)': 5 },
+        { Category: 'Backend', Skill: 'WinForms', Description: 'WinForms is a framework for creating desktop applications.', 'Experience (Years)': 4, 'Level (1–10)': 7 },
+        { Category: 'Database', Skill: 'SQL', Description: 'SQL is a programming language for managing databases.', 'Experience (Years)': 9, 'Level (1–10)': 8 },
+        { Category: 'Database', Skill: 'XML', Description: 'XML is a markup language for creating structured documents.', 'Experience (Years)': 7, 'Level (1–10)': 7 },
+        { Category: 'Database', Skill: 'JSON', Description: 'JSON is a lightweight data-interchange format.', 'Experience (Years)': 7, 'Level (1–10)': 7 },
+        { Category: 'Database', Skill: 'MongoDB', Description: 'MongoDB is a NoSQL database.', 'Experience (Years)': 3, 'Level (1–10)': 7 },
+        { Category: 'Database', Skill: 'Oracle', Description: 'Oracle is a relational database management system.', 'Experience (Years)': 2, 'Level (1–10)': 6 },
+        { Category: 'Database', Skill: 'Microsoft Access', Description: 'Microsoft Access is a relational database management system.', 'Experience (Years)': 2, 'Level (1–10)': 7 },
+        { Category: 'DevOps', Skill: 'GitHub', Description: 'GitHub is a web-based Git repository hosting service.', 'Experience (Years)': 6, 'Level (1–10)': 8 },
+        { Category: 'DevOps', Skill: 'Jenkins', Description: 'Jenkins is a continuous integration tool.', 'Experience (Years)': 2, 'Level (1–10)': 6 },
+        { Category: 'DevOps', Skill: 'Linux', Description: 'Linux is a Unix-like operating system.', 'Experience (Years)': 2, 'Level (1–10)': 6 },
+        { Category: 'DevOps', Skill: 'Bash', Description: 'Bash is a Unix-like shell.', 'Experience (Years)': 2, 'Level (1–10)': 6 },
+        { Category: 'Web / Marketing', Skill: 'SEO', Description: 'SEO is a technique for improving the visibility of a website in search engines.', 'Experience (Years)': 4, 'Level (1–10)': 6 },
+        { Category: 'Web / Marketing', Skill: 'WooCommerce', Description: 'WooCommerce is a platform for creating online stores.', 'Experience (Years)': 2, 'Level (1–10)': 6 },
+        { Category: 'Web / Marketing', Skill: 'WordPress', Description: 'WordPress is a content management system that can be used for e-commerce websites.', 'Experience (Years)': 3, 'Level (1–10)': 7 },
+        { Category: 'Web / Marketing', Skill: 'Google Analytics', Description: 'Google Analytics is a tool for tracking website traffic.', 'Experience (Years)': 4, 'Level (1–10)': 7 },
     ];
 
     // Group by Category and calculate metrics
@@ -359,6 +415,7 @@ function loadData(){
     const table_data = data.map(row => ({
         category: row.Category,
         skill: row.Skill,
+        description: row.Description,
         experience: row['Experience (Years)'],
         level: row['Level (1–10)']
     }));
@@ -702,7 +759,7 @@ function createRadarChart(canvasId, label, labels, data) {
             data.table_data.forEach(item => {
                 if (item.experience > maxExp) {
                     maxExp = item.experience;
-                    maxExpSkill = item.category + ' - ' + item.skill;
+                    maxExpSkill = 'On ' + item.category + ', in ' + item.skill;
                 }
             });
 
@@ -730,7 +787,7 @@ function createRadarChart(canvasId, label, labels, data) {
                 .sort((a, b) => b.average - a.average)
                 .slice(0, 3);
 
-            const topCategoriesText = `<b style="margin-bottom: 10px;margin-left: 10px;font-weight: 500;">Top categories:</b> 
+            const topCategoriesText = `<b style="margin-bottom: 10 px;margin-left: 10px;font-weight: 500;">Top categories:</b> 
             <br/>
             <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
                 <span class="badge">${topCategories[0].category}</span>
