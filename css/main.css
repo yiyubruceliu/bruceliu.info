@@ -38,6 +38,22 @@
 =           DEFAULT            =
 ==============================*/
 
+:root {
+  /* Keep existing green + navy palette, but enable "liquid glass" surfaces */
+  --bg-0: #E8F5E9;            /* original background */
+  --ink: #0f172a;            /* readable near-black */
+  --navy: #2f2d52;           /* existing heading/nav color */
+  --accent: #a3cd98;         /* existing green accent */
+
+  --glass-bg: rgba(255, 255, 255, 0.42);
+  --glass-bg-strong: rgba(255, 255, 255, 0.58);
+  --glass-border: rgba(255, 255, 255, 0.55);
+  --glass-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+  --glass-shadow-soft: 0 10px 24px rgba(15, 23, 42, 0.10);
+  --glass-blur: 16px;
+  --radius-lg: 22px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -49,7 +65,51 @@ body {
   font-weight: 400;
   line-height: 1.625em;
   position: relative;
-  background-color: #E8F5E9;
+
+  /* Liquid-glass background (same colour scheme) */
+  background: radial-gradient(900px 600px at 10% 5%, rgba(163, 205, 152, 0.35), transparent 60%),
+    radial-gradient(800px 520px at 85% 10%, rgba(47, 45, 82, 0.14), transparent 60%),
+    radial-gradient(900px 650px at 70% 85%, rgba(163, 205, 152, 0.24), transparent 65%),
+    linear-gradient(180deg, #F3FBF4 0%, var(--bg-0) 45%, #F1FBF3 100%);
+  background-attachment: fixed;
+}
+
+/* Ambient glass "blobs" */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: auto;
+  z-index: -1;
+  pointer-events: none;
+  filter: blur(30px);
+  opacity: 0.85;
+}
+
+body::before {
+  width: 520px;
+  height: 520px;
+  left: -180px;
+  top: 140px;
+  background: radial-gradient(circle at 30% 30%, rgba(163, 205, 152, 0.55), rgba(163, 205, 152, 0) 65%);
+}
+
+body::after {
+  width: 560px;
+  height: 560px;
+  right: -220px;
+  top: 80px;
+  background: radial-gradient(circle at 30% 30%, rgba(47, 45, 82, 0.35), rgba(47, 45, 82, 0) 68%);
+}
+
+/* Generic glass surface helper */
+.glass {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
 }
 
 ol,
@@ -1093,8 +1153,11 @@ h6 {
 
 #header.header-scrolled {
   position: fixed;
-  box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
-  background: #fff;
+  box-shadow: var(--glass-shadow-soft);
+  background: rgba(255, 255, 255, 0.55);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   transition: all 0.5s;
 }
 
@@ -1635,6 +1698,21 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
 }
 
+/* About text panel as glass */
+.about-right {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  padding: 26px 22px;
+}
+
+.about-right hr {
+  border-top: 1px solid rgba(47, 45, 82, 0.14);
+}
+
 @media (max-width: 1024px) {
   .about-area .section-title {
     padding-bottom: 0px;
@@ -1768,8 +1846,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 100px;
   cursor: pointer;
   margin-bottom: 30px;
-  border: 1px solid #eeeeee;
-  box-shadow: none;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.40);
+  box-shadow: var(--glass-shadow-soft);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
@@ -1788,8 +1870,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-brand-item:hover {
-  border: 1px solid transparent;
-  box-shadow: 0px 8px 30px rgba(118, 85, 225, 0.15);
+  border: 1px solid rgba(163, 205, 152, 0.55);
+  box-shadow: 0 18px 44px rgba(15, 23, 42, 0.16);
+  transform: translateY(-4px);
 }
 
 .bar-null {
@@ -1801,7 +1884,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 ================================*/
 
 .work-area {
-  background: #c0c0ca;
+  background: transparent;
 }
 
 @media (max-width: 1024px) {
@@ -2157,11 +2240,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 ================================*/
 
 .skill-area {
-  background: #c0c0ca;
+  background: transparent;
 }
 
 .d-table-cell {
-  background-color: #fff;
+  background-color: transparent;
 }
 
 /*================================
@@ -2169,27 +2252,20 @@ body.mobile-nav-active #mobile-nav-toggle {
 ================================*/
 
 .service-area {
-  background: #c0c0ca;
+  background: transparent;
 }
 
 .service-area.white {
   background: #fff;
 }
 
-.service-area .col-lg-3.col-md-6:nth-child(1) .single-service {
-  background: #1c1b31;
-}
-
-.service-area .col-lg-3.col-md-6:nth-child(2) .single-service {
-  background: #1c1b31;
-}
-
-.service-area .col-lg-3.col-md-6:nth-child(3) .single-service {
-  background: #1c1b31;
-}
-
-.service-area .col-lg-3.col-md-6:nth-child(4) .single-service {
-  background: #1c1b31;
+/* Glass cards for services (keep navy tone, but make it translucent) */
+.service-area .single-service {
+  background: rgba(47, 45, 82, 0.38);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
 }
 
 .single-service {
@@ -2354,6 +2430,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .testi_item {
   margin-bottom: 50px;
+  padding: 28px 18px;
+  border-radius: var(--radius-lg);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
 }
 
 @media (max-width: 767px) {
