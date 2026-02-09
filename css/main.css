@@ -112,6 +112,30 @@ body::after {
   -webkit-backdrop-filter: blur(var(--glass-blur));
 }
 
+/* Apple-ish section panels for consistency (container-level glass) */
+.skill-area .container,
+.job-area .container,
+.service-area .container,
+.testimonials_area .container {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 26px;
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  padding: 56px 46px;
+}
+
+@media (max-width: 1024px) {
+  .skill-area .container,
+  .job-area .container,
+  .service-area .container,
+  .testimonials_area .container {
+    padding: 34px 18px;
+    border-radius: 22px;
+  }
+}
+
 ol,
 ul {
   margin: 0;
@@ -462,11 +486,12 @@ th {
 }
 
 .section-gap {
-  padding: 150px 0;
+  /* Reduced to remove excessive dead-space between sections */
+  padding: 110px 0;
 }
 
 .section-gap-mini {
-  padding: 75px 0;
+  padding: 56px 0;
 }
 
 .quote{
@@ -474,12 +499,12 @@ th {
 }
 @media (max-width: 1024px) {
   .section-gap {
-    padding: 60px 0;
+    padding: 64px 0;
   }
 }
 
 .section-gap-top {
-  padding-top: 150px;
+  padding-top: 110px;
 }
 
 @media (max-width: 1024px) {
@@ -489,7 +514,7 @@ th {
 }
 
 .section-gap-bottom-90 {
-  padding-bottom: 130px;
+  padding-bottom: 90px;
 }
 
 @media (max-width: 1024px) {
@@ -499,19 +524,19 @@ th {
 }
 
 .section-title {
-  margin-bottom: 80px;
+  margin-bottom: 46px;
 }
 
 @media (max-width: 1024px) {
   .section-title {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
   }
 }
 
 .section-title h2 {
   font-size: 48px;
   font-weight: 700;
-  margin-bottom: 70px;
+  margin-bottom: 26px;
   text-transform: capitalize;
   position: relative;
   line-height: 44px;
@@ -520,7 +545,7 @@ th {
 @media (max-width: 1024px) {
   .section-title h2 {
     font-size: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 18px;
   }
 }
 
