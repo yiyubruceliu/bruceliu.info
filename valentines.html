@@ -153,7 +153,8 @@
 <body>
   <div class="container">
     <div class="gif-wrapper">
-      <img id="bear-gif" src="img/bear-flower.gif" alt="Bear with flowers">
+      <img id="bear-flower" src="img/bear-flower.gif" alt="Bear with flowers">
+      <img id="bear-kiss" src="img/bear-kiss.gif" alt="Bear kiss" style="display: none;">
     </div>
     <h1 class="question" id="question">Will you be my Valentine?</h1>
     <div class="buttons" id="buttons">
@@ -199,6 +200,10 @@
       btn.style.left = randomX + 'px';
       btn.style.top = randomY + 'px';
       btn.style.zIndex = '999';
+
+      // Also grow the Yes button on each hover
+      yesScale += 0.2;
+      btnYes.style.transform = 'scale(' + yesScale + ')';
     }
 
     // --- "No" click: make "Yes" grow ---
@@ -212,10 +217,9 @@
 
     // --- "Yes" click: celebration! ---
     function handleYes() {
-      // Swap gif
-      const gif = document.getElementById('bear-gif');
-      gif.src = 'img/bear-kiss.gif';
-      gif.alt = 'Bear kiss';
+      // Swap gif visibility
+      document.getElementById('bear-flower').style.display = 'none';
+      document.getElementById('bear-kiss').style.display = 'block';
 
       // Change question text
       const question = document.getElementById('question');
