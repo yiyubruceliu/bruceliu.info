@@ -539,7 +539,7 @@ th {
 .section-title h2 {
   font-size: 48px;
   font-weight: 700;
-  margin-bottom: 26px;
+  margin-bottom: 35px;
   text-transform: capitalize;
   position: relative;
   line-height: 44px;
@@ -1164,6 +1164,25 @@ h6 {
 }
 
 .primary-btn.white:hover span {
+  color: #fff;
+}
+
+/* Hero "Let's chat" button — darker navy liquid glass */
+.home-banner-area .banner-content > .primary-btn {
+  background: rgba(20, 35, 70, 0.55);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  backdrop-filter: blur(18px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.home-banner-area .banner-content > .primary-btn:hover {
+  background: rgba(20, 35, 70, 0.45);
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.15), 0 6px 28px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.home-banner-area .banner-content > .primary-btn:hover span {
   color: #fff;
 }
 
@@ -2425,7 +2444,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 0;
   max-width: 100%;
   height: 4px;
-  background: #7fc242;
+  background: #2e4a7a;
 }
 
 .testimonials_area {
