@@ -33,6 +33,7 @@ function initSlider() {
     items: 1,
     loop: true,
     autoplay: true,
+    autoHeight: true,
     onInitialized: startProgressBar,
     onTranslate: resetProgressBar,
     onTranslated: startProgressBar,
