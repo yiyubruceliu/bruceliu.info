@@ -1332,6 +1332,7 @@ h6 {
     font-size: 22px;
     color: #2e4a7a;
     padding-top: 8px;
+    margin-right: 8px;
   }
 
   .banner-content .designation {
@@ -1714,7 +1715,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .banner-content .designation {
-  max-width: 390px;
   font-size: 30px;
   font-weight: 400;
   line-height: 42px;
