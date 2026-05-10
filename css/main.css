@@ -2351,6 +2351,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #fff;
 }
 
+/* Equal-height service cards (stretch panels within each row) */
+.service-area .container > .row:last-child > [class*="col-"] {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Glass cards for services (keep navy tone, but make it translucent) */
 .service-area .single-service {
   background: rgba(47, 45, 82, 0.38);
@@ -2358,6 +2364,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   box-shadow: var(--glass-shadow);
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-area .single-service > p {
+  flex-grow: 1;
 }
 
 .single-service {
