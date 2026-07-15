@@ -1,2 +1,3 @@
 user-agent: *
-disallow: 
+disallow:
+sitemap: https://bruceliu.info/sitemap.xml
