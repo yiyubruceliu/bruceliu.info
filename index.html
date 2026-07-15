@@ -60,10 +60,14 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/main.css">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'G-XXXXXXXXXX', { send_page_view: true });
+	</script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-	<script type="type/Javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-	<script
-		type="module">window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-XXXXXXXXXX'); </script>
 </head>
 
 <body>
@@ -1191,14 +1195,8 @@
 	</div>
 	<!-- End Back to Top -->
 	<!-- JS -->
-	<script type="module">
-		// const http = require('http');
-		import fetch from 'node-fetch';
-		const axios = require('axios');
-	</script>
 	<script>
 		function btnEmailClick() {
-			console.log('testing')
 			sendEmail();
 		}
 	</script>

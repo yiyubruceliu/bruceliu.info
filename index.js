@@ -69,7 +69,7 @@ var typed = new Typed("#typed", {
 });
 const lightcase = require("/js/lightcase.js");
 const AOS = require("./js/aos.js");
-new AOS.init({
+AOS.init({
   offset: 200,
   duration: 600,
   easing: "ease-in-sine",
