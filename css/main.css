@@ -1739,7 +1739,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .banner-img {
   text-align: right;
   position: relative;
-  left: 160px;
+  left: 0px;
 }
 
 @media (max-width: 1480px) {
