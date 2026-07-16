@@ -6,6 +6,8 @@ window.$ = window.jQuery = $;
 // window.$ = window.jQuery = jquery; // notice the definition of global variables here
 
 import jquerymigrate from "jquery-migrate";
+// Suppress deprecated API warnings from owl.carousel (abandoned lib, harmless)
+$.migrateMute = true;
 // const jquerymigrate = require("/js/jquery-migrate.min.js");
 // const bootstrap = require("./lib/bootstrap/js/bootstrap.min.js");
 // const popper = require("/js/popper.min.js");
