@@ -140,7 +140,7 @@ $(document).ready(function() {
       $("#mobile-body-overly").toggle();
     });
 
-    $(document).click(function(e) {
+    $(document).on("click", function(e) {
       var container = $("#mobile-nav, #mobile-nav-toggle");
       if (!container.is(e.target) && container.has(e.target).length === 0) {
         if ($("body").hasClass("mobile-nav-active")) {
@@ -161,7 +161,7 @@ $(document).ready(function() {
 
   //------- Header Scroll Class  js --------//
 
-  $(window).scroll(function() {
+  $(window).on("scroll", function() {
     if ($(this).scrollTop() > 100) {
       $("#header").addClass("header-scrolled");
     } else {
