@@ -27,60 +27,64 @@ const carousel = require("/js/owl.carousel.min.js");
 //import { findKeyword } from "./keyword.js";
 import { getImage } from "./image.js";
 
-//Init the carousel
-initSlider();
+// Defer all DOM-dependent initialization until the document is ready.
+// This prevents forced-layout errors when ad blockers or slow networks
+// delay resource loading, and ensures elements exist before AOS /
+// Typed / OwlCarousel / Waypoint try to measure them.
+$(document).ready(function () {
+  // Init the carousel
+  initSlider();
 
-function initSlider() {
-  $(".owl-carousel").owlCarousel({
-    items: 1,
-    loop: true,
-    autoplay: true,
-    autoHeight: true,
-    onInitialized: startProgressBar,
-    onTranslate: resetProgressBar,
-    onTranslated: startProgressBar,
+  function initSlider() {
+    $(".owl-carousel").owlCarousel({
+      items: 1,
+      loop: true,
+      autoplay: true,
+      autoHeight: true,
+      onInitialized: startProgressBar,
+      onTranslate: resetProgressBar,
+      onTranslated: startProgressBar,
+    });
+  }
+
+  function startProgressBar() {
+    $(".slide-progress").css({
+      width: "100%",
+      transition: "width 5000ms"
+    });
+  }
+
+  function resetProgressBar() {
+    $(".slide-progress").css({
+      width: 0,
+      transition: "width 0s"
+    });
+  }
+
+  //window.findKeyword = findKeyword;
+  window.getImage = getImage;
+
+  // const isotope = require("./js/isotope.pkgd.min.js");
+  const Typed = require("/js/typed.min.js");
+  var typed = new Typed("#typed", {
+    stringsElement: "#typed-strings",
+    backSpeed: 40,
+    typeSpeed: 40,
+    loop: true
   });
-}
-
-function startProgressBar() {
-  // apply keyframe animation
-  $(".slide-progress").css({
-    width: "100%",
-    transition: "width 5000ms"
+  const lightcase = require("/js/lightcase.js");
+  const AOS = require("./js/aos.js");
+  AOS.init({
+    offset: 200,
+    duration: 600,
+    easing: "ease-in-sine",
+    delay: 100,
+    disable: "mobile"
   });
-}
+  const custom = require("/js/custom.js");
 
-function resetProgressBar() {
-  $(".slide-progress").css({
-    width: 0,
-    transition: "width 0s"
-  });
-}
-
-
-//window.findKeyword = findKeyword;
-window.getImage = getImage;
-
-// const isotope = require("./js/isotope.pkgd.min.js");
-const Typed = require("/js/typed.min.js");
-var typed = new Typed("#typed", {
-  stringsElement: "#typed-strings",
-  backSpeed: 40,
-  typeSpeed: 40,
-  loop: true
+  const waypoint = require("/js/waypoint.min.js");
 });
-const lightcase = require("/js/lightcase.js");
-const AOS = require("./js/aos.js");
-AOS.init({
-  offset: 200,
-  duration: 600,
-  easing: "ease-in-sine",
-  delay: 100,
-  disable: "mobile"
-});
-const custom = require("/js/custom.js");
-
-const waypoint = require("/js/waypoint.min.js");
 
 function sendEmail(){
   var form = $("myform");
