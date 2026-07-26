@@ -2343,6 +2343,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
+.single-project:hover .fa {
+  color: #fff !important;
+}
+
 .single-project>.fa {
   color: #fff;
 }
