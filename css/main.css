@@ -45,7 +45,7 @@
   --navy: #2f2d52;            /* existing heading/nav color */
 
   /* Espresso accent */
-  --accent: #333333;
+  --accent: #4B2E2A;
   --accent-rgb: 75, 46, 42;
 
   --glass-bg: rgba(255, 255, 255, 0.42);
@@ -2231,7 +2231,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-job:hover {
-  background: var(--accent);
+  background: #333333;
   cursor: pointer;
   color: #fff;
   border-color: var(--accent);
@@ -2338,7 +2338,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-project:hover {
-  background: #1c1b31;
+  background: #333333;
   cursor: pointer;
   color: #fff;
 }
