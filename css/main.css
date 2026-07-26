@@ -2237,6 +2237,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-color: var(--accent);
 }
 
+.single-job:hover .fa {
+  color: #fff !important;
+}
+
 .single-job>.fa {
   color: var(--accent);
 }
