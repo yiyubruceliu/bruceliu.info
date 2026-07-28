@@ -1234,6 +1234,28 @@ h6 {
   }
 }
 
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-logo {
+  display: block;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 4px;
+}
+
 #header #logo h1 {
   font-size: 34px;
   margin: 0;
@@ -1241,13 +1263,11 @@ h6 {
   line-height: 1;
   font-weight: 700;
   letter-spacing: 3px;
+  color: #000;
 }
 
-#header #logo h1 a,
-#header #logo h1 a:hover {
+#header #logo .logo-link:hover h1 {
   color: #000;
-  padding-left: 10px;
-  border-left: 4px solid #2f2d52;
 }
 
 #header #logo img {
@@ -1260,8 +1280,9 @@ h6 {
     font-size: 28px;
   }
 
-  #header #logo img {
-    max-height: 40px;
+  #header #logo .site-logo {
+    width: 32px;
+    height: 32px;
   }
 }
 
@@ -2912,6 +2933,24 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .footer-area .footer-logo {
   text-align: center;
+}
+
+.footer-area .footer-logo .logo-link {
+  justify-content: center;
+}
+
+.footer-area .footer-logo .site-logo {
+  width: 48px;
+  height: 48px;
+}
+
+.footer-area .footer-logo h1 {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 1;
+  color: #2e4a7a;
 }
 
 .footer-area .footer-logo h4 {
