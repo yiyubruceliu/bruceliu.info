@@ -3160,3 +3160,41 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin:0px;
   display:none;
 }
+
+/* Companies Section */
+.company-card {
+  text-align: center;
+  padding: 20px;
+}
+
+.company-logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.company-logo {
+  max-width: 120px;
+  max-height: 80px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.company-logo:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+.company-name {
+  font-size: 14px;
+  color: var(--navy);
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+/* End Companies Section */
