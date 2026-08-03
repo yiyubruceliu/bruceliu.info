@@ -5,32 +5,22 @@
                             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://bruceliu.info/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://bruceliu.info/#about-area</loc>
-    <lastmod>2026-07-13</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://bruceliu.info/#history</loc>
-    <lastmod>2026-07-13</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://bruceliu.info/#projects</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://bruceliu.info/experience.html</loc>
+    <lastmod>2026-08-03</lastmod>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://bruceliu.info/#services-area</loc>
-    <lastmod>2026-07-13</lastmod>
-    <priority>0.80</priority>
+    <loc>https://bruceliu.info/projects.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://bruceliu.info/#contact-area</loc>
-    <lastmod>2026-07-13</lastmod>
-    <priority>0.70</priority>
+    <loc>https://bruceliu.info/recommendations.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <priority>0.80</priority>
   </url>
 </urlset>

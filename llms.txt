@@ -9,7 +9,10 @@ Key facts:
 - Contact: yiyubruceliu@gmail.com · WhatsApp +43 660 347 9079 · https://bruceliu.info
 
 ## Primary
-- [Homepage](https://bruceliu.info/): Full profile — about, experience, skills, projects, services, recommendations, contact
+- [Homepage](https://bruceliu.info/): Short profile story — about, experience highlights, selected projects, services, recommendation teasers, contact
+- [Experience](https://bruceliu.info/experience.html): Full roles, employers, and capability clusters
+- [Projects](https://bruceliu.info/projects.html): Case notes for PerspectiveMind AI, PUMA, Unwritten.click, and more
+- [Recommendations](https://bruceliu.info/recommendations.html): Full set of collaborator and student recommendations
 - [CV (PDF)](https://bruceliu.info/docs/Yi%20Yu%20Liu%20CV%2019%20Nov%202025.pdf): Downloadable curriculum vitae
 
 ## Projects
