@@ -831,43 +831,51 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-3 col-md-6">
-					<div class="single-service wow fadeInUp" data-wow-duration="1s"> <span
-							class="fas fa-desktop"></span>
-						<h4>
-							<span class="bottom-space">Learning </span>Sites · Portals
-						</h4>
-						<p>Course and programme sites, info architecture, Bootstrap or component libraries—readable,
-							accessible UX for learners and faculty.</p>
+					<div class="single-service wow fadeInUp" data-wow-duration="1s">
+						<div class="top-sec d-flex justify-content-between">
+							<div class="top-left">
+								<h4>Learning Sites · Portals</h4>
+							</div>
+							<div class="top-right"><i class="fas fa-desktop fa-2x"></i></div>
+						</div>
+						<div class="bottom-sec">Course and programme sites, info architecture, Bootstrap or component
+							libraries—readable, accessible UX for learners and faculty.</div>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
-					<div class="single-service wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"> <span
-							class="fas fa-laptop-code"></span>
-						<h4>
-							<span class="bottom-space">EdTech</span> Applications
-						</h4>
-						<p>Custom learning tools: assessment workflows, dashboards, integrations—typically Python/Flask,
-							React/Next.js, or C# where it fits existing stacks.</p>
+					<div class="single-service wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+						<div class="top-sec d-flex justify-content-between">
+							<div class="top-left">
+								<h4>EdTech Applications</h4>
+							</div>
+							<div class="top-right"><i class="fas fa-laptop-code fa-2x"></i></div>
+						</div>
+						<div class="bottom-sec">Custom learning tools: assessment workflows, dashboards,
+							integrations—typically Python/Flask, React/Next.js, or C# where it fits existing stacks.</div>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
-					<div class="single-service wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s"> <span
-							class="fas fa-database"></span>
-						<h4>
-							<span class="bottom-space">Data ·</span> Integrations
-						</h4>
-						<p>Backend services, OData/SQL pipelines, institutional data guardrails—the plumbing that lets
-							EdTech scale without surprises.</p>
+					<div class="single-service wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+						<div class="top-sec d-flex justify-content-between">
+							<div class="top-left">
+								<h4>Data · Integrations</h4>
+							</div>
+							<div class="top-right"><i class="fas fa-database fa-2x"></i></div>
+						</div>
+						<div class="bottom-sec">Backend services, OData/SQL pipelines, institutional data guardrails—the
+							plumbing that lets EdTech scale without surprises.</div>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
-					<div class="single-service wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"> <span
-							class="fas fa-chart-bar"></span>
-						<h4>
-							<span class="bottom-space">Learning </span>UX · Discovery
-						</h4>
-						<p>Learner and educator journeys, journey maps, requirements and specs from ideation through
-							handoff—strategy aligned with instructional intent.</p>
+					<div class="single-service wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+						<div class="top-sec d-flex justify-content-between">
+							<div class="top-left">
+								<h4>Learning UX · Discovery</h4>
+							</div>
+							<div class="top-right"><i class="fas fa-chart-bar fa-2x"></i></div>
+						</div>
+						<div class="bottom-sec">Learner and educator journeys, journey maps, requirements and specs from
+							ideation through handoff—strategy aligned with instructional intent.</div>
 					</div>
 				</div>
 			</div>
@@ -1310,7 +1318,7 @@
 	<section class="contact-page-area section-gap-top">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12 d-flex flex-row address-wrap">
+				<div class="col-lg-12 d-flex flex-column flex-md-row address-wrap">
 					<div class="single-contact-address d-flex flex-row">
 						<div class="icon"> <span class="fas fa-home mr-1"></span> </div>
 						<div class="contact-details">
@@ -1404,13 +1412,78 @@
 		function btnEmailClick() {
 			sendEmail();
 		}
+
+		// Tiny typewriter that does not depend on the Parcel bundle / Typed.js.
+		// Used when Firefox + Malwarebytes/adblock block or delay the module.
+		function startFallbackTypewriter() {
+			var el = document.getElementById("typed");
+			var src = document.getElementById("typed-strings");
+			if (!el || !src || el.getAttribute("data-typed-active")) return;
+
+			var strings = [];
+			var kids = src.children;
+			for (var i = 0; i < kids.length; i++) {
+				var text = (kids[i].textContent || "").replace(/\s+/g, " ").trim();
+				if (text) strings.push(text);
+			}
+			if (!strings.length) return;
+
+			el.setAttribute("data-typed-active", "1");
+			src.style.display = "none";
+
+			var cursor = document.createElement("span");
+			cursor.className = "typed-cursor";
+			cursor.setAttribute("aria-hidden", "true");
+			cursor.textContent = "|";
+			if (el.nextSibling) {
+				el.parentNode.insertBefore(cursor, el.nextSibling);
+			} else {
+				el.parentNode.appendChild(cursor);
+			}
+
+			var si = 0;
+			var ci = 0;
+			var deleting = false;
+
+			function tick() {
+				var current = strings[si];
+				if (!deleting) {
+					ci++;
+					el.textContent = current.slice(0, ci);
+					if (ci === current.length) {
+						deleting = true;
+						setTimeout(tick, 1400);
+						return;
+					}
+					setTimeout(tick, 40);
+				} else {
+					ci--;
+					el.textContent = current.slice(0, ci);
+					if (ci === 0) {
+						deleting = false;
+						si = (si + 1) % strings.length;
+						setTimeout(tick, 400);
+						return;
+					}
+					setTimeout(tick, 28);
+				}
+			}
+			tick();
+		}
+
 		// If the module bundle is blocked (Firefox + Malwarebytes/adblock),
-		// neutralize AOS pre-animation transforms so the page does not grow
-		// ~100px wider and push the mobile icon-bar off-screen.
+		// neutralize AOS transforms and run the typewriter fallback.
 		window.addEventListener("load", function () {
 			setTimeout(function () {
 				if (!window.__SITE_BOOTED__) {
 					document.documentElement.classList.add("aos-fallback");
+					startFallbackTypewriter();
+					return;
+				}
+				// Bundle loaded but Typed may still have failed — recover.
+				var el = document.getElementById("typed");
+				if (el && !el.getAttribute("data-typed-active") && !(el.textContent || "").trim()) {
+					startFallbackTypewriter();
 				}
 			}, 1200);
 		});

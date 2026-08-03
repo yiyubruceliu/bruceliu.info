@@ -85,13 +85,20 @@ whenPageLoaded(function () {
   window.getImage = getImage;
 
   safe("Typed", function () {
-    const Typed = require("/js/typed.min.js");
+    const TypedMod = require("/js/typed.min.js");
+    const Typed = TypedMod && TypedMod.default ? TypedMod.default : TypedMod;
+    const target = document.getElementById("typed");
+    if (!target || typeof Typed !== "function") {
+      throw new Error("Typed constructor unavailable");
+    }
     new Typed("#typed", {
       stringsElement: "#typed-strings",
       backSpeed: 40,
       typeSpeed: 40,
       loop: true
     });
+    target.setAttribute("data-typed-active", "1");
+    window.__TYPED_READY__ = true;
   });
 
   safe("lightcase", function () {
