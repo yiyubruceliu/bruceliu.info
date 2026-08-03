@@ -1371,12 +1371,13 @@ h6 {
     padding-right: 22px;
     height: 100vh;
 
-    background: rgba(255, 255, 255, 0.34);
+    background: rgba(255, 255, 255, 0.22);
     border: 1px solid rgba(255, 255, 255, 0.55);
     border-radius: 22px;
     box-shadow: 0 18px 44px rgba(15, 23, 42, 0.14);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    /* Lighter blur so the brightened portrait behind stays readable */
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
 
     /* keep content centered-ish */
     margin-top: 86px;
@@ -1409,6 +1410,40 @@ h6 {
 
   .banner-content .primary-btn {
     display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  /*
+    On touch devices, sticky :hover triggers the desktop letter-swap
+    ("Let's chat" → "Coffee With Me?"), which looks broken.
+    Keep the label stable on mobile and match the social-pill entrance feel.
+  */
+  .home-banner-area .banner-content > .primary-btn:before {
+    opacity: 1;
+    transform: none;
+  }
+
+  .home-banner-area .banner-content > .primary-btn:hover:before,
+  .home-banner-area .banner-content > .primary-btn:active:before,
+  .home-banner-area .banner-content > .primary-btn:focus:before {
+    opacity: 1;
+    transform: none;
+  }
+
+  .home-banner-area .banner-content > .primary-btn:hover span,
+  .home-banner-area .banner-content > .primary-btn:active span,
+  .home-banner-area .banner-content > .primary-btn:focus span {
+    opacity: 0;
+    transform: none;
+  }
+
+  .home-banner-area .banner-content > .primary-btn:hover {
+    background: rgba(20, 35, 70, 0.65);
+    border-color: rgba(255, 255, 255, 0.4);
   }
 
   /* Glass buttons in hero */
@@ -1732,11 +1767,23 @@ body.mobile-nav-active #mobile-nav-toggle {
 .home-banner-area {
   background: url(../img/home-banner.png) center;
   background-size: cover;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+/* Full-viewport hero without relying on custom.js (blocked/delayed bundles) */
+.home-banner-area .fullscreen {
+  min-height: 100vh;
+  min-height: 100dvh;
+  height: 100vh;
+  height: 100dvh;
 }
 
 @media (max-width: 769px) {
   .home-banner-area .fullscreen {
-    min-height: 600px !important;
+    min-height: 100vh;
+    min-height: 100dvh;
+    height: auto;
   }
 }
 
@@ -1813,15 +1860,106 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-@media (max-width: 991px) {
-  .banner-img {
+@media (max-width: 1480px) {
+  .banner-img img,
+  .banner-img .banner-portrait {
+    max-width: 80%;
+  }
+}
+
+/* Desktop/tablet: hide portrait column until the hero glass layout takes over */
+@media (max-width: 991px) and (min-width: 769px) {
+  .home-banner-area .banner-img {
     display: none;
   }
 }
 
-@media (max-width: 1480px) {
-  .banner-img img {
-    max-width: 80%;
+/*
+  Mobile hero portrait: soft bright wash, bottom-right, behind the glass
+  card + CTA pills. CSS fade-in only — AOS is disabled on mobile.
+*/
+@keyframes heroPortraitIn {
+  from {
+    opacity: 0;
+    transform: translate3d(20px, 36px, 0) scale(1.05);
+    filter: brightness(1.55) saturate(1.08);
+  }
+  to {
+    opacity: 0.48;
+    transform: translate3d(0, 0, 0) scale(1);
+    filter: brightness(1.28) contrast(0.96) saturate(1.06);
+  }
+}
+
+@media (max-width: 768px) {
+  .home-banner-area {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .home-banner-area .banner-img {
+    display: block;
+    position: absolute;
+    right: -14%;
+    bottom: 8%;
+    left: auto;
+    width: min(88vw, 400px);
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+    pointer-events: none;
+    text-align: right;
+  }
+
+  .home-banner-area .banner-img .circle-1,
+  .home-banner-area .banner-img .circle-2,
+  .home-banner-area .banner-img .circle-3,
+  .home-banner-area .banner-img .triangle {
+    display: none;
+  }
+
+  .home-banner-area .banner-img .banner-portrait-wrap {
+    display: block;
+    width: 100%;
+  }
+
+  .home-banner-area .banner-img .banner-portrait {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    display: block;
+    opacity: 0;
+    filter: brightness(1.28) contrast(0.96) saturate(1.06);
+    -webkit-mask-image: linear-gradient(
+      to top left,
+      rgba(0, 0, 0, 1) 18%,
+      rgba(0, 0, 0, 0.55) 48%,
+      rgba(0, 0, 0, 0.12) 72%,
+      transparent 90%
+    );
+    mask-image: linear-gradient(
+      to top left,
+      rgba(0, 0, 0, 1) 18%,
+      rgba(0, 0, 0, 0.55) 48%,
+      rgba(0, 0, 0, 0.12) 72%,
+      transparent 90%
+    );
+    animation: heroPortraitIn 1.35s cubic-bezier(0.22, 1, 0.36, 1) 0.25s forwards;
+  }
+
+  .home-banner-area .banner-content {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 768px) and (prefers-reduced-motion: reduce) {
+  .home-banner-area .banner-img .banner-portrait {
+    animation: none;
+    opacity: 0.48;
+    transform: none;
+    filter: brightness(1.28) contrast(0.96) saturate(1.06);
   }
 }
 
@@ -3173,6 +3311,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   backdrop-filter: blur(16px) saturate(180%);
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.icon-bar a svg {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: -0.125em;
 }
 
 .icon-bar a:last-child {
