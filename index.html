@@ -1404,6 +1404,16 @@
 		function btnEmailClick() {
 			sendEmail();
 		}
+		// If the module bundle is blocked (Firefox + Malwarebytes/adblock),
+		// neutralize AOS pre-animation transforms so the page does not grow
+		// ~100px wider and push the mobile icon-bar off-screen.
+		window.addEventListener("load", function () {
+			setTimeout(function () {
+				if (!window.__SITE_BOOTED__) {
+					document.documentElement.classList.add("aos-fallback");
+				}
+			}, 1200);
+		});
 	</script>
 	<script src="index.js" type="module"></script>
 	<!-- <script src="js/popper.min.js"></script><script src="js/bootstrap.min.js"></script><script src="js/superfish.min.js"></script><script src="js/jquery.magnific-popup.min.js"></script><script src="js/owl.carousel.min.js"></script><script src="js/isotope.pkgd.min.js"></script><script src="js/wow.min.js"></script><script src="js/typed.min.js"></script><script src="js/lightcase.js"></script><script src="js/aos.js"></script><script src="js/waypoint.min.js"></script><script src="js/custom.js"></script>-->

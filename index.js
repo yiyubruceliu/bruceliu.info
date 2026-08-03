@@ -26,11 +26,14 @@ const carousel = require("/js/owl.carousel.min.js");
 //import { findKeyword } from "./keyword.js";
 import { getImage } from "./image.js";
 
+// Mark the bundle as alive so the HTML fallback does not strip AOS styles.
+window.__SITE_BOOTED__ = true;
+document.documentElement.classList.remove("aos-fallback");
+
 // Defer DOM-dependent init until the page has fully loaded (CSS, images).
 // Firefox + Malwarebytes/ad blockers often delay the module past
 // DOMContentLoaded — and sometimes past window "load". If readyState is
 // already "complete", run immediately; otherwise wait for load.
-// $(document).ready alone is too early for AOS / Owl / Waypoint measurements.
 function whenPageLoaded(fn) {
   if (document.readyState === "complete") {
     fn();
@@ -39,13 +42,20 @@ function whenPageLoaded(fn) {
   }
 }
 
+function safe(label, fn) {
+  try {
+    fn();
+  } catch (err) {
+    console.warn("[site init]", label, err);
+  }
+}
+
 whenPageLoaded(function () {
-  new WOW().init();
+  safe("WOW", function () {
+    new WOW().init();
+  });
 
-  // Init the carousel
-  initSlider();
-
-  function initSlider() {
+  safe("owlCarousel", function () {
     $(".owl-carousel").owlCarousel({
       items: 1,
       loop: true,
@@ -55,7 +65,7 @@ whenPageLoaded(function () {
       onTranslate: resetProgressBar,
       onTranslated: startProgressBar,
     });
-  }
+  });
 
   function startProgressBar() {
     $(".slide-progress").css({
@@ -74,26 +84,36 @@ whenPageLoaded(function () {
   //window.findKeyword = findKeyword;
   window.getImage = getImage;
 
-  // const isotope = require("./js/isotope.pkgd.min.js");
-  const Typed = require("/js/typed.min.js");
-  var typed = new Typed("#typed", {
-    stringsElement: "#typed-strings",
-    backSpeed: 40,
-    typeSpeed: 40,
-    loop: true
+  safe("Typed", function () {
+    const Typed = require("/js/typed.min.js");
+    new Typed("#typed", {
+      stringsElement: "#typed-strings",
+      backSpeed: 40,
+      typeSpeed: 40,
+      loop: true
+    });
   });
-  const lightcase = require("/js/lightcase.js");
-  const AOS = require("./js/aos.js");
-  AOS.init({
-    offset: 200,
-    duration: 600,
-    easing: "ease-in-sine",
-    delay: 100,
-    disable: "mobile"
+
+  safe("lightcase", function () {
+    require("/js/lightcase.js");
   });
+
+  safe("AOS", function () {
+    const AOS = require("./js/aos.js");
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 100,
+      disable: "mobile"
+    });
+  });
+
   // Waypoint must load before custom.js (custom constructs Waypoint instances)
-  const waypoint = require("/js/waypoint.min.js");
-  const custom = require("/js/custom.js");
+  safe("waypoint+custom", function () {
+    require("/js/waypoint.min.js");
+    require("/js/custom.js");
+  });
 });
 
 function sendEmail(){
