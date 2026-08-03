@@ -15,7 +15,6 @@ $.migrateMute = true;
 const WOW = require("./js/wow.min.js");
 // import WOW from "wowjs";
 // window.Wow = WOW;
-new WOW().init();
 import bootstrap from "bootstrap";
 const superfish = require("/js/superfish.min.js");
 const magnific = require("/js/jquery.magnific-popup.min.js");
@@ -27,11 +26,22 @@ const carousel = require("/js/owl.carousel.min.js");
 //import { findKeyword } from "./keyword.js";
 import { getImage } from "./image.js";
 
-// Defer all DOM-dependent initialization until the document is ready.
-// This prevents forced-layout errors when ad blockers or slow networks
-// delay resource loading, and ensures elements exist before AOS /
-// Typed / OwlCarousel / Waypoint try to measure them.
-$(document).ready(function () {
+// Defer DOM-dependent init until the page has fully loaded (CSS, images).
+// Firefox + Malwarebytes/ad blockers often delay the module past
+// DOMContentLoaded — and sometimes past window "load". If readyState is
+// already "complete", run immediately; otherwise wait for load.
+// $(document).ready alone is too early for AOS / Owl / Waypoint measurements.
+function whenPageLoaded(fn) {
+  if (document.readyState === "complete") {
+    fn();
+  } else {
+    $(window).on("load", fn);
+  }
+}
+
+whenPageLoaded(function () {
+  new WOW().init();
+
   // Init the carousel
   initSlider();
 
@@ -81,9 +91,9 @@ $(document).ready(function () {
     delay: 100,
     disable: "mobile"
   });
-  const custom = require("/js/custom.js");
-
+  // Waypoint must load before custom.js (custom constructs Waypoint instances)
   const waypoint = require("/js/waypoint.min.js");
+  const custom = require("/js/custom.js");
 });
 
 function sendEmail(){
