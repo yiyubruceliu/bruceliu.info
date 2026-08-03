@@ -25,6 +25,8 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
 	<!-- Preconnect for performance -->
 	<link rel="preconnect" href="https://www.googletagmanager.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 	<!-- Open Graph -->
 	<meta property="og:type" content="profile">
@@ -104,40 +106,50 @@
 				<div id="logo">
 					<a href="index.html" class="logo-link">
 						<img src="img/bruce-logo.png" alt="Bruce Liu logo" class="site-logo" width="40" height="40">
-						<h1>Bruce
-							<b>.</b>
-						</h1>
+						<span class="site-wordmark">Bruce<b>.</b></span>
 					</a>
 				</div>
 				<!-- / logo -->
 				<!-- nav -->
 				<nav id="nav-menu-container">
 					<ul class="nav-menu">
-						<li class=""> <a class="active" href="#home-banner-area"><i class="fas fa-igloo"></i> Home</a>
-						</li>
-						<li> <a href="#about-area"><i class="fas fa-address-card"></i> About Me</a> </li>
-						<li> <a href="#history"><i class="fas fa-trophy"></i> Experience</a> </li>
-						<li> <a href="#projects"><i class="fas fa-rocket"></i> Projects</a> </li>
-						<li> <a href="#services-area"><i class="fas fa-briefcase"></i> Services</a> </li>
-						<li> <a href="#contact-area"><i class="fas fa-mobile"></i> Contact</a> </li>
+						<li><a class="active" href="index.html"><i class="fas fa-igloo"></i> Home</a></li>
+						<li><a href="experience.html"><i class="fas fa-trophy"></i> Experience</a></li>
+						<li><a href="projects.html"><i class="fas fa-rocket"></i> Projects</a></li>
+						<li><a href="recommendations.html"><i class="fas fa-comment"></i> Recommendations</a></li>
+						<li><a href="index.html#contact-area"><i class="fas fa-mobile"></i> Contact</a></li>
 					</ul>
 				</nav>
 				<!-- / nav -->
 			</div>
 		</div>
 	</header>
+	<button type="button" id="mobile-nav-toggle" aria-label="Open menu" aria-controls="mobile-nav" aria-expanded="false">
+		<i class="lnr lnr-menu" aria-hidden="true"></i>
+	</button>
+	<nav id="mobile-nav" aria-label="Site sections">
+		<ul>
+			<li><a class="active" href="index.html"><i class="fas fa-igloo"></i> Home</a></li>
+						<li><a href="experience.html"><i class="fas fa-trophy"></i> Experience</a></li>
+						<li><a href="projects.html"><i class="fas fa-rocket"></i> Projects</a></li>
+						<li><a href="recommendations.html"><i class="fas fa-comment"></i> Recommendations</a></li>
+						<li><a href="index.html#contact-area"><i class="fas fa-mobile"></i> Contact</a></li>
+		</ul>
+	</nav>
+	<div id="mobile-body-overly" hidden></div>
+
 	<div class="icon-bar">
-		<a href="https://www.facebook.com/sharer.php?s=100&p[url]=bruceliu.info&p[title]=Bruce%20Liu"
+		<a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fbruceliu.info%2F"
 			class="facebook"><i class="fab fa-facebook-f"></i></a>
-		<a href="https://x.com/intent/tweet?text=Bruce%20Liu&hashtags=Bruce%20Liu" class="twitter" aria-label="Share on X">
+		<a href="https://x.com/intent/tweet?url=https%3A%2F%2Fbruceliu.info%2F&text=Dr.%20Yi%20Yu%20(Bruce)%20Liu%20%E2%80%94%20EdTech%20Specialist" class="twitter" aria-label="Share on X">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true">
 				<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
 			</svg>
 		</a>
 		<!-- <a href="https://plus.google.com/share?url=bruceliu.info" class="google"><i class="fab fa-google"></i></a> -->
-		<a href="http://www.linkedin.com/shareArticle?url=bruceliu.info&title=Bruce%20Liu" class="linkedin"><i
+		<a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fbruceliu.info%2F" class="linkedin"><i
 				class="fab fa-linkedin"></i></a>
-		<a href="https://wa.me/436603479079?text=Check%20out%20Bruce's%20profile%20at:%20bruceliu.info" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+		<a href="https://wa.me/436603479079?text=Check%20out%20Bruce%27s%20profile%20at%20https%3A%2F%2Fbruceliu.info%2F" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
 	</div>
 	<!-- End Header Area -->
 	<!-- Start Banner Area -->
@@ -241,12 +253,19 @@
 							</div>
 						</div>
 					</div>
-					<a href="https://wa.me/436603479079?text=You're%20cool.%20Let's%20grab%20a%20coffee%20and%20change%20the%20world%20together"
-						class="primary-btn white mb-1" data-text="Let's chat"> <span>C</span> <span>o</span>
-						<span>f</span> <span>f</span> <span>e</span> <span>e</span> <span>?</span> </a>
-					<a href="docs/Yi Yu Liu CV 19 Nov 2025.pdf" class="primary-btn mt-1" data-text="Free CV Download">
-						<span>1</span> <span>0</span> <span>0</span> <span>%</span> <span></span> <span>F</span>
-						<span>r</span> <span>e</span> <span>e</span> <span>!</span> </a>
+					<div class="about-actions">
+						<a href="https://wa.me/436603479079?text=You're%20cool.%20Let's%20grab%20a%20coffee%20and%20change%20the%20world%20together"
+							class="about-btn about-btn-primary">
+							<i class="fab fa-whatsapp" aria-hidden="true"></i>
+							<span>Let's chat</span>
+						</a>
+						<a href="docs/Yi Yu Liu CV 19 Nov 2025.pdf"
+							class="about-btn about-btn-secondary"
+							download>
+							<i class="fas fa-file-download" aria-hidden="true"></i>
+							<span>Download CV</span>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -259,8 +278,7 @@
 				<div class="col-lg-12">
 					<div class="section-title">
 						<h2>My Experience</h2>
-						<p>Higher education, assessment-focused EdTech, and enterprise delivery. Highlights below —
-							download my CV for the full picture.</p>
+						<p>Higher education, assessment-focused EdTech, and enterprise delivery — four highlights.</p>
 					</div>
 				</div>
 			</div>
@@ -269,12 +287,36 @@
 					<div class="single-job">
 						<div class="top-sec d-flex justify-content-between">
 							<div class="top-left">
+								<h4>Co‑Founder &amp; CTO</h4>
+								<p>PerspectiveMind AI • Nov 2024 – Current</p>
+							</div>
+							<div class="top-right"> <i class="fa fa-briefcase fa-2x"></i> </div>
+						</div>
+						<div class="bottom-sec">Building a proctored oral assessment platform (EdTech)—React/Flask, speech and vision models, Faster Whisper, ElevenLabs, WebRTC, Socket.IO.</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="single-job">
+						<div class="top-sec d-flex justify-content-between">
+							<div class="top-left">
+								<h4>AI Platform Architect &amp; Data Science Lecturer</h4>
+								<p>Modul University of Vienna • Sept 2023 – Current</p>
+							</div>
+							<div class="top-right"> <i class="fa fa-university fa-2x"></i> </div>
+						</div>
+						<div class="bottom-sec">Built PUMA — a 150K-SLOC university management platform from concept to production. Redesigned courses adopted as department standards. Voted Professor of the Year 2026.</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="single-job">
+						<div class="top-sec d-flex justify-content-between">
+							<div class="top-left">
 								<h4>Technology Strategist</h4>
-											<p>{type}Dev • Jan 2020 – Jan 2026</p>
-										</div>
-										<div class="top-right"> <i class="fa fa-briefcase fa-2x"></i> </div>
-									</div>
-									<div class="bottom-sec wow fadeIn" data-wow-duration="2s">Led enterprise-scale BA, process engineering, and delivery across Discovery Financial Services & IoDSA. Scaled a 4-to-11-person team as Scrum Master. Drove the company's first EU market expansion (EUR 840k FFG grant). Authored adopted BPMN documentation methodology.</div>
+								<p>TypeDev • Jan 2020 – Jan 2026</p>
+							</div>
+							<div class="top-right"> <i class="fa fa-briefcase fa-2x"></i> </div>
+						</div>
+						<div class="bottom-sec">Led enterprise-scale BA, process engineering, and delivery across Discovery Financial Services &amp; IoDSA. Scaled a 4-to-11-person team as Scrum Master. Drove the company's first EU market expansion (EUR 840k FFG grant).</div>
 					</div>
 				</div>
 				<div class="col-lg-6">
@@ -286,509 +328,23 @@
 							</div>
 							<div class="top-right"> <i class="fa fa-briefcase fa-2x"></i> </div>
 						</div>
-						<div class="bottom-sec wow fadeIn" data-wow-duration="2s">Led complex enterprise initiatives
-							(e.g., eBoarding) with heavy integration analysis, user journeys, user stories, and
-							stakeholder alignment.</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="single-job">
-						<div class="top-sec d-flex justify-content-between">
-							<div class="top-left">
-								<h4>AI Platform Architect & Data Science Lecturer</h4>
-											<p>Modul University of Vienna • Sept 2023 – Current</p>
-										</div>
-										<div class="top-right"> <i class="fa fa-university fa-2x"></i> </div>
-									</div>
-									<div class="bottom-sec wow fadeIn" data-wow-duration="2s">Built PUMA — a 150K-SLOC university management platform from concept to production. Redesigned courses adopted as department standards. Voted Professor of the Year 2026.</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="single-job">
-						<div class="top-sec d-flex justify-content-between">
-							<div class="top-left">
-								<h4>Founder & CTO</h4>
-								<p>Unwritten.click • May 2026 – Current</p>
-							</div>
-							<div class="top-right"> <i class="fa fa-briefcase fa-2x"></i> </div>
-						</div>
-						<div class="bottom-sec wow fadeIn" data-wow-duration="2s">Solo-built and shipped a monetised AI storytelling platform — LLM narrative engine, WebSocket multiplayer, in-game economy, and payments. From concept to paying customers in under 2 months.</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="single-job">
-						<div class="top-sec d-flex justify-content-between">
-							<div class="top-left">
-								<h4>Co‑Founder & CTO</h4>
-								<p>PerspectiveMind AI • Nov 2024 – Current</p>
-							</div>
-							<div class="top-right"> <i class="fa fa-briefcase fa-2x"></i> </div>
-						</div>
-						<div class="bottom-sec wow fadeIn" data-wow-duration="2s">Building a proctored oral assessment
-							platform (EdTech)—React/Flask, speech and vision models, Faster Whisper, ElevenLabs, WebRTC,
-							Socket.IO.</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="single-job">
-						<div class="top-sec d-flex justify-content-between">
-							<div class="top-left">
-								<h4>Senior Business Analyst (Serviced)</h4>
-								<p>Discovery • Jan 2024 – Oct 2025</p>
-							</div>
-							<div class="top-right"> <i class="fa fa-briefcase fa-2x"></i> </div>
-						</div>
-						<div class="bottom-sec wow fadeIn" data-wow-duration="2s">Authored deep functional specs and
-							process maps (e.g., ILSA migration, Questionnaire Platform, Supplier Onboarding, Security
-							SOPs).</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="single-job">
-						<div class="top-sec d-flex justify-content-between">
-							<div class="top-left">
-								<h4>AI Executive MasterClass Lecturer</h4>
-								<p>TypeDev Technologies • Feb 2026 – Current</p>
-							</div>
-							<div class="top-right"> <i class="fa fa-graduation-cap fa-2x"></i> </div>
-						</div>
-						<div class="bottom-sec wow fadeIn" data-wow-duration="2s">Delivering AI strategy MasterClass series to 180+ C-suite executives. Publicly recorded sessions on AI strategy, responsible deployment, and enterprise adoption.</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="single-job">
-						<div class="top-sec d-flex justify-content-between">
-							<div class="top-left">
-								<h4>Business & Data Analyst</h4>
-								<p>Modul University of Vienna • Jul 2025 – Current</p>
-							</div>
-							<div class="top-right"> <i class="fa fa-university fa-2x"></i> </div>
-						</div>
-						<div class="bottom-sec wow fadeIn" data-wow-duration="2s">Built and operated PUMA for the
-							institution—NextJS, IIS, OData, LM Studio (Gemma) document intelligence, role-based access,
-							CI/CD—in support of compliant knowledge workflows.</div>
+						<div class="bottom-sec">Led complex enterprise initiatives (e.g., eBoarding) with heavy integration analysis, user journeys, user stories, and stakeholder alignment.</div>
 					</div>
 				</div>
 			</div>
+			<p class="section-cta text-center">
+				<a class="primary-btn" href="experience.html">Full experience &amp; employers</a>
+			</p>
 		</div>
 	</section>
 	<!-- End History Area -->
-	<!-- Start Companies Section -->
-	<section class="companies-section section-gap" id="companies">
-		<div class="container">
-			<div class="row d-flex">
-				<div class="col-lg-12">
-					<div class="section-title">
-						<h2>Where I've Worked</h2>
-						<p>A decade of building across startups, enterprises, and academia.</p>
-					</div>
-				</div>
-			</div>
-
-			<!-- Education -->
-			<div class="row companies-grid">
-				<div class="col-lg-3 col-md-4 col-sm-6 company-card" data-aos="fade-up" data-aos-delay="100">
-					<a href="https://perspectivemind.ai" target="_blank" rel="noopener noreferrer" class="company-link">
-						<div class="company-logo-wrap">
-							<img src="img/logos/perspectivemind.png" alt="PerspectiveMind AI logo" class="company-logo">
-						</div>
-					</a>
-					<p class="company-name">PerspectiveMind AI</p>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 company-card" data-aos="fade-up" data-aos-delay="150">
-					<a href="https://www.up.ac.za" target="_blank" rel="noopener noreferrer" class="company-link">
-						<div class="company-logo-wrap">
-							<img src="img/logos/university_of_pretoria.jpg" alt="University of Pretoria logo" class="company-logo">
-						</div>
-					</a>
-					<p class="company-name">University of Pretoria</p>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 company-card" data-aos="fade-up" data-aos-delay="200">
-					<a href="https://www.phsg.org.za" target="_blank" rel="noopener noreferrer" class="company-link">
-						<div class="company-logo-wrap">
-							<img src="img/logos/pretoria_high_school_for_girls.jpg" alt="Pretoria High School for Girls logo" class="company-logo">
-						</div>
-					</a>
-					<p class="company-name">Pretoria High School for Girls</p>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 company-card" data-aos="fade-up" data-aos-delay="250">
-					<a href="https://www.modul.ac.at" target="_blank" rel="noopener noreferrer" class="company-link">
-						<div class="company-logo-wrap">
-							<img src="img/logos/moduluniversity_logo.jpg" alt="Modul University of Vienna logo" class="company-logo">
-						</div>
-					</a>
-					<p class="company-name">Modul University of Vienna</p>
-				</div>
-			</div>
-
-			<div class="row companies-grid mt-50">
-				<div class="col-lg-3 col-md-4 col-sm-6 company-card" data-aos="fade-up" data-aos-delay="100">
-					<a href="https://www.thutopele.co.za/" target="_blank" rel="noopener noreferrer" class="company-link">
-						<div class="company-logo-wrap">
-							<img src="img/logos/thutopele_center.png" alt="ThutoPele Center logo" class="company-logo">
-						</div>
-					</a>
-					<p class="company-name">ThutoPele Center</p>
-				</div>
-			</div>
-
-			<!-- Consulting -->
-			<div class="row companies-grid mt-50">
-				<div class="col-lg-3 col-md-4 col-sm-6 company-card" data-aos="fade-up" data-aos-delay="100">
-					<a href="https://www.discovery.co.za" target="_blank" rel="noopener noreferrer" class="company-link">
-						<div class="company-logo-wrap">
-							<img src="img/logos/discovery_vitality_life.png" alt="Discovery logo" class="company-logo">
-						</div>
-					</a>
-					<p class="company-name">Discovery</p>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 company-card" data-aos="fade-up" data-aos-delay="150">
-					<a href="https://www.autosense.co.za/" target="_blank" rel="noopener noreferrer" class="company-link">
-						<div class="company-logo-wrap">
-							<img src="img/logos/autosense.jpg" alt="AutoSense logo" class="company-logo">
-						</div>
-					</a>
-					<p class="company-name">AutoSense</p>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 company-card" data-aos="fade-up" data-aos-delay="200">
-					<a href="https://www.genasystech.com/" target="_blank" rel="noopener noreferrer" class="company-link">
-						<div class="company-logo-wrap">
-							<img src="img/logos/Genasys.jpg" alt="Genesys logo" class="company-logo">
-						</div>
-					</a>
-					<p class="company-name">Genesys</p>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 company-card" data-aos="fade-up" data-aos-delay="250">
-					<a href="https://fashiontouri.com/en" target="_blank" rel="noopener noreferrer" class="company-link">
-						<div class="company-logo-wrap">
-							<img src="img/logos/fashiontouri.png" alt="FashionTouri logo" class="company-logo">
-						</div>
-					</a>
-					<p class="company-name">FashionTouri</p>
-				</div>
-			</div>
-
-			<div class="row companies-grid mt-50">
-				<div class="col-lg-3 col-md-4 col-sm-6 company-card" data-aos="fade-up" data-aos-delay="100">
-					<a href="http://www.venew.at/" target="_blank" rel="noopener noreferrer" class="company-link">
-						<div class="company-logo-wrap">
-							<img src="img/logos/venew.jpg" alt="Venew logo" class="company-logo">
-						</div>
-					</a>
-					<p class="company-name">Venew</p>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 company-card" data-aos="fade-up" data-aos-delay="150">
-					<a href="https://www.type.dev" target="_blank" rel="noopener noreferrer" class="company-link">
-						<div class="company-logo-wrap">
-							<img src="img/logos/typedev_logo.jpg" alt="{type}Dev logo" class="company-logo">
-						</div>
-					</a>
-					<p class="company-name">{type}Dev</p>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 company-card" data-aos="fade-up" data-aos-delay="200">
-					<a href="https://www.odynn.com/" target="_blank" rel="noopener noreferrer" class="company-link">
-						<div class="company-logo-wrap">
-							<img src="img/logos/odynn_logo.jpg" alt="Odynn logo" class="company-logo">
-						</div>
-					</a>
-					<p class="company-name">Odynn</p>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 company-card" data-aos="fade-up" data-aos-delay="250">
-					<a href="https://parts.cat.com/" target="_blank" rel="noopener noreferrer" class="company-link">
-						<div class="company-logo-wrap">
-							<img src="img/logos/impactcat.webp" alt="ImpactCAT logo" class="company-logo">
-						</div>
-					</a>
-					<p class="company-name">ImpactCAT</p>
-				</div>
-			</div>
-
-			<!-- Earlier Work -->
-			<div class="row companies-grid mt-50">
-				<div class="col-lg-3 col-md-4 col-sm-6 company-card" data-aos="fade-up" data-aos-delay="100">
-					<a href="https://www.vitality.co.uk/" target="_blank" rel="noopener noreferrer" class="company-link">
-						<div class="company-logo-wrap">
-							<img src="img/logos/vitalityuk_logo.jpg" alt="Vitality UK logo" class="company-logo">
-						</div>
-					</a>
-					<p class="company-name">Vitality UK</p>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 company-card" data-aos="fade-up" data-aos-delay="150">
-					<a href="https://www.patternmatched.com" target="_blank" rel="noopener noreferrer" class="company-link">
-						<div class="company-logo-wrap">
-							<img src="img/logos/pattern_matched_technologies_(pty)_ltd.jpg" alt="Pattern Matched Technologies logo" class="company-logo">
-						</div>
-					</a>
-					<p class="company-name">Pattern Matched Technologies</p>
-				</div>
-			</div>
-
-			<!-- Impact & Innovation -->
-			<div class="row companies-grid mt-50">
-				<div class="col-lg-3 col-md-4 col-sm-6 company-card" data-aos="fade-up" data-aos-delay="100">
-					<a href="https://zero21.co.za" target="_blank" rel="noopener noreferrer" class="company-link">
-						<div class="company-logo-wrap">
-							<img src="img/logos/zero21club_logo.jpg" alt="Zero21 Club logo" class="company-logo">
-						</div>
-					</a>
-					<p class="company-name">Zero21 Club</p>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 company-card" data-aos="fade-up" data-aos-delay="150">
-					<a href="http://innovationsummit.co.za/" target="_blank" rel="noopener noreferrer" class="company-link">
-						<div class="company-logo-wrap">
-							<img src="img/logos/south_africa_innovation_summit.jpg" alt="South Africa Innovation Summit logo" class="company-logo">
-						</div>
-					</a>
-					<p class="company-name">SA Innovation Summit</p>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 company-card" data-aos="fade-up" data-aos-delay="200">
-					<a href="https://pawmatcher.app/" target="_blank" rel="noopener noreferrer" class="company-link">
-						<div class="company-logo-wrap">
-							<img src="img/logos/pawmatcher.png" alt="PawMatcher.App logo" class="company-logo">
-						</div>
-					</a>
-					<p class="company-name">PawMatcher.App</p>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 company-card" data-aos="fade-up" data-aos-delay="250">
-					<a href="https://unwrittenclick.com" target="_blank" rel="noopener noreferrer" class="company-link">
-						<div class="company-logo-wrap">
-							<img src="img/logos/unwritten_click.jpg" alt="Unwritten.click logo" class="company-logo">
-						</div>
-					</a>
-					<p class="company-name">Unwritten.click</p>
-				</div>
-			</div>
-
-			<div class="row companies-grid mt-50">
-				<div class="col-lg-3 col-md-4 col-sm-6 company-card" data-aos="fade-up" data-aos-delay="100">
-					<a href="https://www.iodsa.co.za/" target="_blank" rel="noopener noreferrer" class="company-link">
-						<div class="company-logo-wrap">
-							<img src="img/logos/institute_of_directors_in_south_africa_logo.jpg" alt="IoDSA logo" class="company-logo">
-						</div>
-					</a>
-					<p class="company-name">IoDSA</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End Companies Section -->
-	<!-- Start Skill Area -->
-	<section class="skill-area section-gap" id="skill-area" data-aos="fade-up">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="section-title">
-						<h2>My Skills</h2>
-						<p><span class="quote">"Stay hungry. Stay foolish" </span>- <strong>Steve Jobs</strong></p>
-					</div>
-				</div>
-			</div>
-			<div class="row align-items-center justify-content-between">
-				<div class="col-lg-6" data-aos="fade-right">
-					<div class="client-info">
-						<div class="d-flex mb-50"> <span class="lage">10+</span> <span class="smll">Years Building EdTech
-								Products</span> </div>
-					</div>
-					<div class="row">
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<h4>
-										<span class="fas fa-thumbs-up mr-1"></span>15+
-									</h4>Projects Completed
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<h4>
-										<span class="fas fa-smile mr-1"></span>8+
-									</h4>Master Classes Presented
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<h4>
-										<span class="fas fa-star mr-1"></span>10+
-									</h4>Awards & Patents
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6" data-aos="fade-left">
-					<!-- Skill Item -->
-					<div class="skill-item">
-						<div class="d-flex justify-content-between">
-							<h5>UI/UX Development</h5>
-							<h5>90%</h5>
-						</div>
-						<div class="progress" data-percent="90%">
-							<div class="progress-bar bar-null" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-								aria-valuemax="100"></div>
-						</div>
-					</div>
-					<!-- End Skill Item -->
-					<!-- Skill Item -->
-					<div class="skill-item">
-						<div class="d-flex justify-content-between">
-							<h5>SQL</h5>
-							<h5>85%</h5>
-						</div>
-						<div class="progress" data-percent="85%">
-							<div class="progress-bar bar-null" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-								aria-valuemax="100"></div>
-						</div>
-					</div>
-					<!-- End Skill Item -->
-					<!-- Skill Item -->
-					<div class="skill-item">
-						<div class="d-flex justify-content-between">
-							<h5>C# / ASP.NET MVC</h5>
-							<h5>90%</h5>
-						</div>
-						<div class="progress" data-percent="90%">
-							<div class="progress-bar bar-null" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-								aria-valuemax="100"></div>
-						</div>
-					</div>
-					<!-- End Skill Item -->
-					<!-- Skill Item -->
-					<div class="skill-item">
-						<div class="d-flex justify-content-between">
-							<h5>Python</h5>
-							<h5>90%</h5>
-						</div>
-						<div class="progress" data-percent="90%">
-							<div class="progress-bar bar-null" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-								aria-valuemax="100"></div>
-						</div>
-					</div>
-					<!-- End Skill Item -->
-					<!-- Skill Item -->
-					<div class="skill-item">
-						<div class="d-flex justify-content-between">
-							<h5>JavaScript (React)</h5>
-							<h5>85%</h5>
-						</div>
-						<div class="progress" data-percent="85%">
-							<div class="progress-bar bar-null" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-								aria-valuemax="100"></div>
-						</div>
-					</div>
-					<!-- End Skill Item -->
-					<!-- Skill Item -->
-					<div class="skill-item">
-						<div class="d-flex justify-content-between">
-							<h5>HTML / CSS / Bootstrap</h5>
-							<h5>90%</h5>
-						</div>
-						<div class="progress" data-percent="90%">
-							<div class="progress-bar bar-null" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-								aria-valuemax="100"></div>
-						</div>
-					</div>
-					<!-- End Skill Item -->
-					<!-- Skill Item -->
-					<div class="skill-item">
-						<div class="d-flex justify-content-between">
-							<h5>NLP / Text Mining</h5>
-							<h5>90%</h5>
-						</div>
-						<div class="progress" data-percent="90%">
-							<div class="progress-bar bar-null" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-								aria-valuemax="100"></div>
-						</div>
-					</div>
-					<!-- End Skill Item -->
-					<!-- Skill Item -->
-					<div class="skill-item">
-						<div class="d-flex justify-content-between">
-							<h5>AI / ML (OpenAI / LM Studio)</h5>
-							<h5>85%</h5>
-						</div>
-						<div class="progress" data-percent="85%">
-							<div class="progress-bar bar-null" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-								aria-valuemax="100"></div>
-						</div>
-					</div>
-					<!-- End Skill Item -->
-					<!-- Skill Item -->
-					<div class="skill-item">
-						<div class="d-flex justify-content-between">
-							<h5>UML / BPMN / Visio</h5>
-							<h5>90%</h5>
-						</div>
-						<div class="progress" data-percent="90%">
-							<div class="progress-bar bar-null" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-								aria-valuemax="100"></div>
-						</div>
-					</div>
-					<!-- End Skill Item -->
-					<!-- Skill Item -->
-					<div class="skill-item">
-						<div class="d-flex justify-content-between">
-							<h5>MongoDB</h5>
-							<h5>80%</h5>
-						</div>
-						<div class="progress" data-percent="80%">
-							<div class="progress-bar bar-null" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-								aria-valuemax="100"></div>
-						</div>
-					</div>
-					<!-- End Skill Item -->
-					<!-- Skill Item -->
-					<div class="skill-item">
-						<div class="d-flex justify-content-between">
-							<h5>Flask</h5>
-							<h5>80%</h5>
-						</div>
-						<div class="progress" data-percent="80%">
-							<div class="progress-bar bar-null" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-								aria-valuemax="100"></div>
-						</div>
-					</div>
-					<!-- End Skill Item -->
-					<!-- Skill Item -->
-					<div class="skill-item">
-						<div class="d-flex justify-content-between">
-							<h5>WebRTC / WebSockets</h5>
-							<h5>85%</h5>
-						</div>
-						<div class="progress" data-percent="85%">
-							<div class="progress-bar bar-null" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-								aria-valuemax="100"></div>
-						</div>
-					</div>
-					<!-- End Skill Item -->
-					<!-- Skill Item -->
-					<div class="skill-item">
-						<div class="d-flex justify-content-between">
-							<h5>Next.js</h5>
-							<h5>75%</h5>
-						</div>
-						<div class="progress" data-percent="75%">
-							<div class="progress-bar bar-null" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-								aria-valuemax="100"></div>
-						</div>
-					</div>
-					<!-- End Skill Item -->
-
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End Skill Area -->
-	<!-- Start Projects Area -->
+<!-- Start Projects Area -->
 	<section class="project-area section-gap-top section-gap-bottom-90" data-aos="fade-up" id="projects">
 		<div class="container">
 			<div class="row d-flex">
 				<div class="col-lg-12">
 					<div class="section-title">
-						<h2>My Projects</h2>
+						<h2>Selected Work</h2>
 						<p>Selected projects spanning AI, EdTech, and full-stack delivery.</p>
 					</div>
 				</div>
@@ -843,6 +399,9 @@
 					</div>
 				</div>
 			</div>
+			<p class="section-cta text-center">
+				<a class="primary-btn" href="projects.html">All projects</a>
+			</p>
 		</div>
 	</section>
 	<!-- End Projects Area -->
@@ -852,7 +411,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="section-title">
-						<h2>Service Offers</h2>
+						<h2>How I Can Help</h2>
 						<p>EdTech and learning-focused delivery—tell me about your learners, constraints, and success
 							metrics.</p>
 					</div>
@@ -912,419 +471,58 @@
 	</section>
 	<!-- End Service Area -->
 	<!-- Start Testimonials Area -->
-	<div class="slide-progress" style="margin-top: -10px;"></div>
-	<section class="testimonials_area section-gap-mini" data-aos="fade-up">
+	<section class="testimonials_area section-gap-mini" id="recommendations" data-aos="fade-up">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
 					<div class="section-title-center">
 						<h2>Recommendations</h2>
+						<p class="reco-lede">Voices from collaborators and students — more on LinkedIn.</p>
 					</div>
 				</div>
 			</div>
-			<div class="testi_slider owl-carousel">
-				<div class="item">
-					<div class="testi_item row align-center">
-						<div class="col-lg-1 hidden-xs"></div>
-						<div class="col-lg-3">
-							<img src="img/reco-hanno-van-der-merwe.png"
-								alt="Hanno van der Merwe photo taken from LinkedIn recommendations">
-							<h4>Hanno van der Merwe</h4>
-							<ul class="list">
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-							</ul>
-						</div>
-						<div class="col-lg-1 hidden-xs"></div>
-						<div class="col-lg-6">
-							<div class="wow fadeIn testimonial-body" data-wow-duration="1s">
-								<p>Bruce was an exceptional Digital Strategist in my UX department at TypeDEV and a
-									pivotal part of our team sucees. He is one of those rare professionals who brings
-									academic depth, entrepreneurial insight, and practical delivery skills together in a
-									way that genuinely elevates every project he touches. As a Digital Strategist, he
-									played a central role in shaping one of our flagship offerings used to define
-									application specifications for our insute tech and fintech cleints know as the
-									TypeDEV UX-Journey. The UX Journey is a robust, repeatable framework used for
-									discovery and definition process. His work ensured that our projects entered
-									development with fully formed requirements — from requirements engineering all the
-									way through user stories and detailed specifications. Thanks to Bruce’s thoroughness
-									and systems thinking, our development teams were able to build software with almost
-									no rework, avoiding the scope creep and unclear requirements that often plague
-									complex digital projects. The level of clarity and alignment he consistently
-									achieved saved clients time, money, and frustration. On top of his core strategist
-									responsibilities, Bruce frequently supported our front-end development efforts,
-									demonstrating impressive versatility and an eagerness to collaborate across
-									disciplines. His ability to bridge strategy, UX, and implementation made him an
-									invaluable asset to the team. Outside of his professional work, Bruce is also a
-									distinguished academic, now nearing the completion of his PhD in entrepreneurship.
-									His research and scholarly perspective enriched our internal practices, and even
-									though he reported directly to me, I can say sincerely that I learned a great deal
-									from him. His blend of academic rigor and hands-on strategic experience is truly
-									unique. Bruce is insightful, dedicated, generous with his knowledge, and
-									consistently committed to driving quality and clarity in every project. Any team
-									would be fortunate to have him, and I recommend him wholeheartedly.</p>
+			<div class="row reco-grid">
+				<article class="col-lg-4 col-md-6 reco-card">
+					<blockquote class="reco-quote">
+						<p>“He brings academic depth, entrepreneurial insight, and practical delivery together in a way that elevates every project. Discovery entered development with fully formed requirements — and almost no rework.”</p>
+						<footer>
+							<img src="img/reco-hanno-van-der-merwe.png" alt="" width="56" height="56">
+							<div>
+								<cite>Hanno van der Merwe</cite>
+								<span class="reco-role">Digital strategy · TypeDEV</span>
 							</div>
-						</div>
-						<div class="col-lg-1 hidden-xs"></div>
-					</div>
-				</div>
-
-				<div class="item">
-					<div class="testi_item row align-center">
-						<div class="col-lg-1 hidden-xs"></div>
-						<div class="col-lg-3">
-							<img src="img/reco-clarissa-wolfer.png"
-								alt="Clarissa Wölfer photo taken from LinkedIn recommendations">
-							<h4>Clarissa Wölfer</h4>
-							<ul class="list">
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-							</ul>
-						</div>
-						<div class="col-lg-1 hidden-xs"></div>
-						<div class="col-lg-6">
-							<div class="wow fadeIn testimonial-body" data-wow-duration="1s">
-								<p>Bruce has been an outstanding professor throughout my Bachelor studies. His teaching
-									approach combines strong subject-matter expertise with a clear and engaging way of
-									presenting complex concepts. He consistently encouraged independence and supported
-									students in developing both academic knowledge and practical skills. Beyond the
-									classroom, Bruce demonstrated genuine dedication to his students’ success by
-									providing guidance, constructive feedback, and mentorship whenever needed. His
-									passion for the field and commitment to teaching have been truly inspiring, leaving
-									a lasting impact on my academic journey.</p>
+						</footer>
+					</blockquote>
+				</article>
+				<article class="col-lg-4 col-md-6 reco-card">
+					<blockquote class="reco-quote">
+						<p>“An outstanding professor — clear with complex ideas, encouraging independence, and genuinely dedicated to students’ success beyond the classroom.”</p>
+						<footer>
+							<img src="img/reco-clarissa-wolfer.png" alt="" width="56" height="56">
+							<div>
+								<cite>Clarissa Wölfer</cite>
+								<span class="reco-role">Former student</span>
 							</div>
-						</div>
-						<div class="col-lg-1 hidden-xs"></div>
-					</div>
-				</div>
-
-				<div class="item">
-					<div class="testi_item row align-center">
-						<div class="col-lg-1 hidden-xs"></div>
-						<div class="col-lg-3">
-							<img src="img/reco-samaira-hassan.png"
-								alt="Samaira Hassan photo taken from LinkedIn recommendations">
-							<h4>Samaira Hassan</h4>
-							<ul class="list">
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-							</ul>
-						</div>
-						<div class="col-lg-1 hidden-xs"></div>
-						<div class="col-lg-6">
-							<div class="wow fadeIn testimonial-body" data-wow-duration="1s">
-								<p>I had the privilege of being taught by Liu Yi-Yu (Bruce) during my Bachelor’s in
-									Applied Data Science, where he led courses in Fundamentals of Web Programming and
-									Applications as well as Knowledge Extraction, Modeling, and Visualization. What
-									stood out to me was his ability to make complex topics approachable, consistently
-									linking theory to practical, and real-world applications. His classes were always
-									structured yet engaging, encouraging us to think critically and apply concepts
-									beyond the classroom. He was always approachable and willing to provide assistance,
-									even staying long after class if something didn’t make sense. He took the time to
-									understand where we struggled and guided us patiently, ensuring that no one was left
-									behind. He also actively supported both classroom and personal projects, fostering a
-									culture of curiosity and exploration. Through his mentorship, I was able to
-									strengthen my problem-solving skills, deepen my understanding of data-driven
-									research, and gain confidence in applying these skills to real-world challenges.
-									Beyond technical expertise, he demonstrated genuine care for student growth and
-									success, creating an environment where learning felt both challenging and rewarding.
-									I am deeply grateful for his guidance and wholeheartedly recommend Liu Yi-Yu (Bruce)
-									as an outstanding educator and mentor.</p>
+						</footer>
+					</blockquote>
+				</article>
+				<article class="col-lg-4 col-md-6 reco-card">
+					<blockquote class="reco-quote">
+						<p>“He made complex topics approachable and linked theory to practice. Patient mentorship that left no one behind — and a lasting impact on how I work with data.”</p>
+						<footer>
+							<img src="img/reco-samaira-hassan.png" alt="" width="56" height="56">
+							<div>
+								<cite>Samaira Hassan</cite>
+								<span class="reco-role">Applied Data Science student</span>
 							</div>
-						</div>
-						<div class="col-lg-1 hidden-xs"></div>
-					</div>
-				</div>
-
-				<div class="item">
-					<div class="testi_item row align-center">
-						<div class="col-lg-1 hidden-xs"></div>
-						<div class="col-lg-3">
-							<img src="img/reco-fiona-malazogu.png"
-								alt="Fiona Malazogu photo taken from LinkedIn recommendations">
-							<h4>Fiona Malazogu</h4>
-							<ul class="list">
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-							</ul>
-						</div>
-						<div class="col-lg-1 hidden-xs"></div>
-						<div class="col-lg-6">
-							<div class="wow fadeIn testimonial-body" data-wow-duration="1s">
-								<p>I had the privilege of being taught by Professor Liu and also working with him as my
-									thesis supervisor. He has always been supportive and invested in his students
-									success. He helped me not only improve academically but also grow more confident in
-									my work by encouraging us to try our best at all times. During his classes, he
-									wasn’t only focusing on the theoretical aspect but always made sure to teach us the
-									practical applications. I’m fortunate to have worked with Professor Liu and would
-									gladly recommend him to others.</p>
-							</div>
-						</div>
-						<div class="col-lg-1 hidden-xs"></div>
-					</div>
-				</div>
-
-				<div class="item">
-					<div class="testi_item row align-center">
-						<div class="col-lg-1 hidden-xs"></div>
-						<div class="col-lg-3">
-							<img src="img/reco-vilopa-patel.png"
-								alt="Vilopa Patel photo taken from LinkedIn recommendations">
-							<h4>Vilopa Patel</h4>
-							<ul class="list">
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-							</ul>
-						</div>
-						<div class="col-lg-1 hidden-xs"></div>
-						<div class="col-lg-6">
-							<div class="wow fadeIn testimonial-body" data-wow-duration="1s">
-								<p>I had the privilege of learning from Bruce, who is not only a very nice and
-									supportive professor but also extremely knowledgeable in coding and database
-									technologies. His teaching style is practical and impactful, making complex concepts
-									easy to understand. He introduced me to dashboard development, which was completely
-									new for me at the beginning. Thanks to his techniques and clear explanations, I was
-									able to grasp and apply skills in HTML, CSS, JavaScript, Python, and database
-									management with confidence. During my internship period, he also taught me about
-									developing web pages and gave me the opportunity to design pages using Flask files,
-									which further strengthened my practical knowledge. His guidance has been truly
-									valuable in my academic journey, and I highly recommend him as an inspiring educator
-									and mentor.</p>
-							</div>
-						</div>
-						<div class="col-lg-1 hidden-xs"></div>
-					</div>
-				</div>
-
-				<div class="item">
-					<div class="testi_item row align-center">
-						<div class="col-lg-1 hidden-xs"></div>
-						<div class="col-lg-3">
-							<img src="img/reco-anais-janik-boender.png"
-								alt="Anaïs Janik-Boender photo taken from LinkedIn recommendations">
-							<h4>Anaïs Janik-Boender</h4>
-							<ul class="list">
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-							</ul>
-						</div>
-						<div class="col-lg-1 hidden-xs"></div>
-						<div class="col-lg-6">
-							<div class="wow fadeIn testimonial-body" data-wow-duration="1s">
-								<p>Working with Bruce has always been an absolute pleasure. He has a real talent for
-									making complicated data problems feel simple, and he’s always ready to jump in and
-									help. Not only is he smart, but also culturally intelligent, which makes him great
-									to work with within an international environment. One of my favorite things about
-									him is his problem-solving mindset, how he is always looking for solutions and never
-									turns down the chance to support a colleague, which—if you know you know—can be rare
-									these days!</p>
-							</div>
-						</div>
-						<div class="col-lg-1 hidden-xs"></div>
-					</div>
-				</div>
-
-				<div class="item">
-					<div class="testi_item row align-center">
-						<div class="col-lg-1 hidden-xs"></div>
-						<div class="col-lg-3">
-							<img src="img/reco-beryl-maley-shenchu.png"
-								alt="BERYL MALEY SHENCHU photo taken from LinkedIn recommendations">
-							<h4>BERYL MALEY SHENCHU</h4>
-							<ul class="list">
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-							</ul>
-						</div>
-						<div class="col-lg-1 hidden-xs"></div>
-						<div class="col-lg-6">
-							<div class="wow fadeIn testimonial-body" data-wow-duration="1s">
-								<p>Sir Bruce is one of the teachers that pushes us to be our best. He has been my
-									Lecturer for 2 years and i have learnt alot from him, from how to think outside the
-									box to how to always learn from every situation, fall, rise and failure, success. As
-									he has once told me "Mastering something you already mastered is not education" has
-									been a qoute that has helped me see every opportunity as a learning process. Thank
-									you for being a great Teacher and Am grateful i met someone who impacted my life for
-									the best.</p>
-							</div>
-						</div>
-						<div class="col-lg-1 hidden-xs"></div>
-					</div>
-				</div>
-
-				<div class="item">
-					<div class="testi_item row align-center">
-						<div class="col-lg-1 hidden-xs"></div>
-						<div class="col-lg-3">
-							<img src="img/reco-bahareh-heidarnezhad.png"
-								alt="Bahareh Heidarnezhad photo taken from LinkedIn recommendations">
-							<h4>Bahareh Heidarnezhad</h4>
-							<ul class="list">
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-							</ul>
-						</div>
-						<div class="col-lg-1 hidden-xs"></div>
-						<div class="col-lg-6">
-							<div class="wow fadeIn testimonial-body" data-wow-duration="1s">
-								<p>I had the chance to join several of Bruce’s classes, and they were always engaging
-									and enjoyable. He brings positive energy, explains complex topics in a simple way,
-									and encourages hands on learning, which made the lessons very practical and
-									effective. What I appreciated the most was that he was always supportive and
-									approachable whenever we had questions about our projects. I truly value his
-									professionalism and the positive learning environment he created.</p>
-							</div>
-						</div>
-						<div class="col-lg-1 hidden-xs"></div>
-					</div>
-				</div>
-
-				<div class="item">
-					<div class="testi_item row align-center">
-						<div class="col-lg-1 hidden-xs"></div>
-						<div class="col-lg-3">
-							<img src="img/reco-priyanka-govender.png"
-								alt="Priyanka Govender photo taken from LinkedIn recommendations">
-							<h4>Priyanka Govender</h4>
-							<ul class="list">
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-							</ul>
-						</div>
-						<div class="col-lg-1 hidden-xs"></div>
-						<div class="col-lg-6">
-							<div class="wow fadeIn testimonial-body" data-wow-duration="1s">
-								<p>I am absolutely delighted to wholeheartedly endorse Yi Yu Liu (Bruce) based on our
-									shared journey during my internship at TypeDEV back in 2010. Bruce's unique blend of
-									technical prowess, creative brilliance, and exceptional leadership skills made an
-									unforgettable mark on my experience. He fostered an environment of collaboration and
-									innovation that left a lasting impression on me. Bruce's ability to simplify complex
-									UX design concepts, coupled with his open dialogue and constructive feedback, not
-									only helped me grow but also ignited a passion for user-centered design. Under
-									Bruce's mentorship, I embarked on challenging projects that fueled my professional
-									growth. I wholeheartedly recommend Bruce to anyone seeking a mentor and manager who
-									embodies excellence in the field of UX design.</p>
-							</div>
-						</div>
-						<div class="col-lg-1 hidden-xs"></div>
-					</div>
-				</div>
-
-				<div class="item">
-					<div class="testi_item row align-center">
-						<div class="col-lg-1 hidden-xs"></div>
-						<div class="col-lg-3">
-							<img src="img/reco-chris-park.png"
-								alt="Chris Park photo taken from LinkedIn recommendations">
-							<h4>Chris Park</h4>
-							<ul class="list">
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-							</ul>
-						</div>
-						<div class="col-lg-1 hidden-xs"></div>
-						<div class="col-lg-6">
-							<div class="wow fadeIn testimonial-body" data-wow-duration="1s">
-								<p>Driven by a thirst for success, Bruce's dedication and tenacity are matched only by
-									his ability to unpack and empathise with the motives of his colleagues, clients and
-									peers. These skills, along with his technical and business competencies, set him
-									apart from the crowd and ensure that he thrives in challenging, uncertain situations
-									where the beaten path is not an option. I would highly recommend seeking Bruce's
-									counsel on any business, technical, or even personal initiative.</p>
-							</div>
-						</div>
-						<div class="col-lg-1 hidden-xs"></div>
-					</div>
-				</div>
-
-				<div class="item">
-					<div class="testi_item row align-center">
-						<div class="col-lg-1 hidden-xs"></div>
-						<div class="col-lg-3">
-							<img src="img/reco-kuselo-ntsaluba.png"
-								alt="Kuselo Ntsaluba photo taken from LinkedIn recommendations">
-							<h4>Kuselo Ntsaluba</h4>
-							<ul class="list">
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-							</ul>
-						</div>
-						<div class="col-lg-1 hidden-xs"></div>
-						<div class="col-lg-6">
-							<div class="wow fadeIn testimonial-body" data-wow-duration="1s">
-								<p>One of the most driven &amp; hard-working individuals I have ever meet. Furthermore,
-									he is someone who has the ability to add great technological &amp; business value to
-									any project or organisation in need of his skill set. Personally, he is also great
-									at time management, adapts quickly to change and is very open minded in his approach
-									to problems.</p>
-							</div>
-						</div>
-						<div class="col-lg-1 hidden-xs"></div>
-					</div>
-				</div>
-
-				<div class="item">
-					<div class="testi_item row align-center">
-						<div class="col-lg-1 hidden-xs"></div>
-						<div class="col-lg-3">
-							<img src="img/reco-molefe-tlhaku.png"
-								alt="Molefe Tlhaku photo taken from LinkedIn recommendations">
-							<h4>Molefe Tlhaku</h4>
-							<ul class="list">
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-								<li><span> <i class="fa fa-star"></i> </span></li>
-							</ul>
-						</div>
-						<div class="col-lg-1 hidden-xs"></div>
-						<div class="col-lg-6">
-							<div class="wow fadeIn testimonial-body" data-wow-duration="1s">
-								<p>Bruce is one of the smartest and most versatile people I’ve met but what is more
-									impressive to me is how much of a committed and hardworking individual he is. These
-									are characteristics I not only think any organisation should seek in employment
-									candidates but that they would be fortunate to have on board.</p>
-							</div>
-						</div>
-						<div class="col-lg-1 hidden-xs"></div>
-					</div>
-				</div>
-
+						</footer>
+					</blockquote>
+				</article>
 			</div>
+			<p class="section-cta reco-more text-center">
+				<a class="primary-btn" href="recommendations.html">More recommendations</a>
+				<a class="reco-linkedin" href="https://www.linkedin.com/in/yi-yu-bruce-liu/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+			</p>
 		</div>
 	</section>
 	<!-- End Testimonials Area -->
@@ -1358,15 +556,15 @@
 					<div class="single-contact-address d-flex flex-row">
 						<div class="icon"> <span class="fas fa-phone mr-1"></span> </div>
 						<div class="contact-details">
-							<h5>+43(660) 347 9079</h5>
-							<p>Only available on WhatsApp</p>
+							<h5><a href="https://wa.me/436603479079">+43 (660) 347 9079</a></h5>
+							<p>WhatsApp preferred</p>
 						</div>
 					</div>
 					<div class="single-contact-address d-flex flex-row">
 						<div class="icon"> <span class="fas fa-envelope mr-1"></span> </div>
 						<div class="contact-details">
-							<h5>yiyubruceliu@gmail.com</h5>
-							<p>Send me your query anytime!</p>
+							<h5><a href="mailto:yiyubruceliu@gmail.com">yiyubruceliu@gmail.com</a></h5>
+							<p>Send a note anytime</p>
 						</div>
 					</div>
 				</div>
@@ -1383,9 +581,7 @@
 						<div class="footer-logo">
 							<a href="index.html" class="logo-link">
 								<img src="img/bruce-logo.png" alt="Bruce Liu logo" class="site-logo" width="48" height="48">
-								<h1>Bruce
-									<b>.</b>
-								</h1>
+								<span class="site-wordmark">Bruce<b>.</b></span>
 							</a>
 							<h4>Follow Me</h4>
 						</div>
@@ -1441,6 +637,47 @@
 		function btnEmailClick() {
 			sendEmail();
 		}
+
+		// Mobile drawer works without the Parcel/jQuery bundle.
+		(function initMobileNavInline() {
+			var toggle = document.getElementById("mobile-nav-toggle");
+			var nav = document.getElementById("mobile-nav");
+			var overlay = document.getElementById("mobile-body-overly");
+			if (!toggle || !nav || toggle.getAttribute("data-bound") === "1") return;
+			toggle.setAttribute("data-bound", "1");
+
+			function setOpen(open) {
+				document.body.classList.toggle("mobile-nav-active", open);
+				toggle.setAttribute("aria-expanded", open ? "true" : "false");
+				toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+				var icon = toggle.querySelector("i");
+				if (icon) icon.className = open ? "lnr lnr-cross" : "lnr lnr-menu";
+				if (overlay) {
+					if (open) {
+						overlay.removeAttribute("hidden");
+						overlay.style.display = "block";
+					} else {
+						overlay.setAttribute("hidden", "");
+						overlay.style.display = "none";
+					}
+				}
+			}
+
+			toggle.addEventListener("click", function (e) {
+				e.preventDefault();
+				e.stopPropagation();
+				setOpen(!document.body.classList.contains("mobile-nav-active"));
+			});
+			if (overlay) {
+				overlay.addEventListener("click", function () { setOpen(false); });
+			}
+			nav.querySelectorAll("a").forEach(function (link) {
+				link.addEventListener("click", function () { setOpen(false); });
+			});
+			document.addEventListener("keydown", function (e) {
+				if (e.key === "Escape") setOpen(false);
+			});
+		})();
 
 		// Tiny typewriter that does not depend on the Parcel bundle / Typed.js.
 		// Used when Firefox + Malwarebytes/adblock block or delay the module.

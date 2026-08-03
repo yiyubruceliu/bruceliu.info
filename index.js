@@ -30,6 +30,51 @@ import { getImage } from "./image.js";
 window.__SITE_BOOTED__ = true;
 document.documentElement.classList.remove("aos-fallback");
 
+// Mobile nav must work even when jQuery plugins are delayed or blocked.
+(function initMobileNavFallback() {
+  var toggle = document.getElementById("mobile-nav-toggle");
+  var nav = document.getElementById("mobile-nav");
+  var overlay = document.getElementById("mobile-body-overly");
+  if (!toggle || !nav || toggle.dataset.bound === "1") return;
+  toggle.dataset.bound = "1";
+
+  function setOpen(open) {
+    document.body.classList.toggle("mobile-nav-active", open);
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    var icon = toggle.querySelector("i");
+    if (icon) {
+      icon.className = open ? "lnr lnr-cross" : "lnr lnr-menu";
+    }
+    if (overlay) {
+      if (open) overlay.removeAttribute("hidden");
+      else overlay.setAttribute("hidden", "");
+      overlay.style.display = open ? "block" : "none";
+    }
+  }
+
+  toggle.addEventListener("click", function (e) {
+    e.stopPropagation();
+    setOpen(!document.body.classList.contains("mobile-nav-active"));
+  });
+
+  if (overlay) {
+    overlay.addEventListener("click", function () {
+      setOpen(false);
+    });
+  }
+
+  nav.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", function () {
+      setOpen(false);
+    });
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") setOpen(false);
+  });
+})();
+
 // Defer DOM-dependent init until the page has fully loaded (CSS, images).
 // Firefox + Malwarebytes/ad blockers often delay the module past
 // DOMContentLoaded — and sometimes past window "load". If readyState is
@@ -56,6 +101,7 @@ whenPageLoaded(function () {
   });
 
   safe("owlCarousel", function () {
+    if (!$(".owl-carousel").length) return;
     $(".owl-carousel").owlCarousel({
       items: 1,
       loop: true,

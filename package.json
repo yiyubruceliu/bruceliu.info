@@ -11,7 +11,7 @@
   },
   "type": "module",
   "scripts": {
-    "dev": "parcel index.html",
+    "dev": "parcel index.html experience.html projects.html recommendations.html",
     "cname": "Copy CNAME dist\\CNAME",
     "robots": "Copy robots.txt dist\\robots.txt",
     "llms": "Copy llms.txt dist\\llms.txt",
@@ -19,7 +19,7 @@
     "copy-static": "npm run cname && npm run robots && npm run llms && npm run sitemap",
     "check-dist": "if not exist dist mkdir dist",
     "clean": "npm run check-dist && rmdir /Q /S dist && mkdir dist",
-    "prod": "npm run clean && parcel build index.html && npm run copy-static && rmdir /Q /S .parcel-cache",
+    "prod": "npm run clean && parcel build index.html experience.html projects.html recommendations.html && npm run copy-static && rmdir /Q /S .parcel-cache",
     "save-changes": "git add . && git commit -m \"changes\" && git push",
     "git-del": "git branch -D gh-pages",
     "git-split": "git subtree split --prefix dist -b gh-pages",

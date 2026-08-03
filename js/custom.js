@@ -104,7 +104,9 @@ $(document).ready(function() {
 
   //------- Mobile Nav  js --------//
 
-  if ($("#nav-menu-container").length) {
+  // Prefer static markup in index.html (survives delayed/blocked jQuery boot).
+  // Only clone from desktop nav when the drawer is absent.
+  if ($("#nav-menu-container").length && !$("#mobile-nav").length) {
     var $mobile_nav = $("#nav-menu-container")
       .clone()
       .prop({
@@ -115,10 +117,14 @@ $(document).ready(function() {
       id: ""
     });
     $("body").append($mobile_nav);
-    $("body").prepend(
-      '<button type="button" id="mobile-nav-toggle"><i class="lnr lnr-menu"></i></button>'
-    );
-    $("body").append('<div id="mobile-body-overly"></div>');
+    if (!$("#mobile-nav-toggle").length) {
+      $("body").prepend(
+        '<button type="button" id="mobile-nav-toggle" aria-label="Open menu"><i class="lnr lnr-menu"></i></button>'
+      );
+    }
+    if (!$("#mobile-body-overly").length) {
+      $("body").append('<div id="mobile-body-overly"></div>');
+    }
     $("#mobile-nav")
       .find(".menu-has-children")
       .prepend('<i class="lnr lnr-chevron-down"></i>');
@@ -136,8 +142,12 @@ $(document).ready(function() {
 
     $(document).on("click", "#mobile-nav-toggle", function(e) {
       $("body").toggleClass("mobile-nav-active");
-      $("#mobile-nav-toggle i").toggleClass("fa-cross fa-menu");
+      $("#mobile-nav-toggle i").toggleClass("lnr-cross lnr-menu");
       $("#mobile-body-overly").toggle();
+      $("#mobile-nav-toggle").attr(
+        "aria-expanded",
+        $("body").hasClass("mobile-nav-active") ? "true" : "false"
+      );
     });
 
     $(document).on("click", function(e) {
@@ -145,13 +155,12 @@ $(document).ready(function() {
       if (!container.is(e.target) && container.has(e.target).length === 0) {
         if ($("body").hasClass("mobile-nav-active")) {
           $("body").removeClass("mobile-nav-active");
-          $("#mobile-nav-toggle i").toggleClass("fa-cross fa-menu");
+          $("#mobile-nav-toggle i").toggleClass("lnr-cross lnr-menu");
           $("#mobile-body-overly").fadeOut();
+          $("#mobile-nav-toggle").attr("aria-expanded", "false");
         }
       }
     });
-  } else if ($("#mobile-nav, #mobile-nav-toggle").length) {
-    $("#mobile-nav, #mobile-nav-toggle").hide();
   }
 
   //------- Lightbox  js --------//
