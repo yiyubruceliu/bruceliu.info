@@ -13,6 +13,7 @@ Key facts:
 - [Experience](https://bruceliu.info/experience.html): Full roles, employers, and capability clusters
 - [Projects](https://bruceliu.info/projects.html): Case notes for PerspectiveMind AI, PUMA, Unwritten.click, and more
 - [Recommendations](https://bruceliu.info/recommendations.html): Full set of collaborator and student recommendations
+- [Corporate AI Training Package](https://bruceliu.info/corporate_ai_training_plan_v4.html): 4-hour onboarding curriculum for newly licensed ChatGPT users
 - [CV (PDF)](https://bruceliu.info/docs/Yi%20Yu%20Liu%20CV%2019%20Nov%202025.pdf): Downloadable curriculum vitae
 
 ## Projects

@@ -2829,6 +2829,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: all 0.3s ease 0s;
 }
 
+.single-service .top-left h4 a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: none;
+}
+
 @media (max-width: 1199px) {
   .single-service {
     padding: 30px 20px;
@@ -3968,5 +3974,116 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .mt-40 {
   margin-top: 2.5rem;
+}
+
+/*================================
+=         TRAINING DOC          =
+================================*/
+
+.training-doc-area .container {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 26px;
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  padding: 46px 40px;
+}
+
+.training-intro-card,
+.training-block {
+  background: var(--glass-bg-strong);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--glass-shadow-soft);
+  padding: 1.4rem 1.3rem;
+  margin-bottom: 1.25rem;
+}
+
+.training-intro-card p:last-child,
+.training-block p:last-child {
+  margin-bottom: 0;
+}
+
+.training-block h2 {
+  margin-bottom: 0.75rem;
+  font-size: clamp(1.35rem, 2.4vw, 1.9rem);
+}
+
+.training-block h3 {
+  margin: 1.1rem 0 0.6rem;
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+}
+
+.training-block ul,
+.training-block ol {
+  list-style: initial;
+  margin: 0.65rem 0 0.25rem 1.15rem;
+  padding-left: 0.5rem;
+}
+
+.training-block li {
+  margin-bottom: 0.45rem;
+}
+
+.training-table-wrap {
+  overflow-x: auto;
+  border-radius: 14px;
+  border: 1px solid rgba(47, 45, 82, 0.15);
+  margin: 0.85rem 0 1rem;
+}
+
+.training-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.78);
+  min-width: 640px;
+}
+
+.training-table th,
+.training-table td {
+  padding: 0.72rem 0.74rem;
+  border-bottom: 1px solid rgba(47, 45, 82, 0.13);
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.45;
+}
+
+.training-table th {
+  color: var(--navy);
+  background: rgba(69, 77, 138, 0.1);
+  font-weight: 700;
+}
+
+.training-table tr:last-child td {
+  border-bottom: none;
+}
+
+.training-table-framework td:first-child,
+.training-table-framework th:first-child {
+  width: 17%;
+}
+
+.training-checklist {
+  list-style: none !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+.training-checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.training-checklist input[type="checkbox"] {
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 1024px) {
+  .training-doc-area .container {
+    padding: 28px 16px;
+    border-radius: 22px;
+  }
 }
 
