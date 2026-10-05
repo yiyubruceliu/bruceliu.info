@@ -1,0 +1,4 @@
+# Never commit live config (contains SMTP password) or runtime state
+config.php
+storage/*.json
+storage/*.log
