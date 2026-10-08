@@ -1,0 +1,96 @@
+{
+  "intents": {
+    "inline:all-eight-experience-role-cards-are-visible-afte-c1cd2314": {
+      "binding": {
+        "kind": "allOf",
+        "predicates": [
+          {
+            "kind": "element",
+            "query": {
+              "name": "Technology Strategist",
+              "role": "heading"
+            },
+            "state": "visible"
+          },
+          {
+            "kind": "element",
+            "query": {
+              "name": "Founder & CTO",
+              "role": "heading"
+            },
+            "state": "visible"
+          },
+          {
+            "kind": "element",
+            "query": {
+              "name": "Business & Data Analyst",
+              "role": "heading"
+            },
+            "state": "visible"
+          }
+        ]
+      },
+      "declaredAt": 1791486492155,
+      "id": "inline:all-eight-experience-role-cards-are-visible-afte-c1cd2314",
+      "provenBy": {
+        "at": 1791486492207,
+        "grade": "presence",
+        "verdictId": "reticle_assert:1791486492207"
+      },
+      "state": "proved",
+      "statement": "All eight experience role cards are visible after scroll reveals",
+      "status": "proved",
+      "subject": "unsorted",
+      "surface": {
+        "route": "/experience.html"
+      },
+      "updatedAt": 1791486492231
+    },
+    "inline:experience-job-cards-fade-in-when-scrolled-into-4a94cdf1": {
+      "binding": {
+        "kind": "element",
+        "query": {
+          "name": "Co‑Founder & CTO",
+          "role": "heading"
+        },
+        "state": "visible"
+      },
+      "declaredAt": 1791486461935,
+      "id": "inline:experience-job-cards-fade-in-when-scrolled-into-4a94cdf1",
+      "provenBy": {
+        "at": 1791486462117,
+        "grade": "presence",
+        "verdictId": "reticle_act_and_wait:1791486462117"
+      },
+      "state": "proved",
+      "statement": "Experience job cards fade in when scrolled into view instead of staying at opacity 0",
+      "status": "proved",
+      "subject": "unsorted",
+      "updatedAt": 1791486462129
+    },
+    "inline:service-items-fade-in-when-scrolled-into-view-in-1a7cbfe7": {
+      "binding": {
+        "kind": "element",
+        "query": {
+          "name": "Corporate Training Workshops",
+          "role": "heading"
+        },
+        "state": "visible"
+      },
+      "declaredAt": 1791486469310,
+      "id": "inline:service-items-fade-in-when-scrolled-into-view-in-1a7cbfe7",
+      "provenBy": {
+        "at": 1791486469518,
+        "grade": "presence",
+        "verdictId": "reticle_act_and_wait:1791486469518"
+      },
+      "state": "proved",
+      "statement": "Service items fade in when scrolled into view instead of staying at opacity 0",
+      "status": "proved",
+      "subject": "unsorted",
+      "updatedAt": 1791486469552
+    }
+  },
+  "subject": "unsorted",
+  "version": 1
+}

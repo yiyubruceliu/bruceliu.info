@@ -1,0 +1,64 @@
+{
+  "version": 2,
+  "name": "drive-experience-job-cards-fade-in-when-scrolled-into",
+  "projectId": "bruceliu-info-04e3af52",
+  "createdAt": 1791486478786,
+  "steps": [
+    {
+      "tool": "reticle_act",
+      "anchor": {
+        "kind": "role",
+        "role": "heading",
+        "name": "Co‑Founder & CTO"
+      },
+      "args": {},
+      "action": "scrollIntoView",
+      "expect": {
+        "kind": "element",
+        "query": {
+          "role": "heading",
+          "name": "Co‑Founder & CTO"
+        },
+        "state": "visible"
+      },
+      "page": "/"
+    },
+    {
+      "tool": "reticle_act",
+      "anchor": {
+        "kind": "role",
+        "role": "heading",
+        "name": "Corporate Training Workshops"
+      },
+      "args": {},
+      "action": "scrollIntoView",
+      "expect": {
+        "kind": "element",
+        "query": {
+          "role": "heading",
+          "name": "Corporate Training Workshops"
+        },
+        "state": "visible"
+      },
+      "page": "/"
+    }
+  ],
+  "startPath": "/",
+  "intent": "Experience job cards fade in when scrolled into view instead of staying at opacity 0",
+  "requires": [
+    {
+      "kind": "route",
+      "pathname": "/"
+    }
+  ],
+  "ensures": [
+    {
+      "kind": "route",
+      "pathname": "/"
+    }
+  ],
+  "author": {
+    "agent": "Cursor"
+  },
+  "intentId": "flow:drive-experience-job-cards-fade-in-when-scrolled-into"
+}

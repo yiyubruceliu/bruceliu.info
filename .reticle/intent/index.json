@@ -1,0 +1,29 @@
+{
+  "entries": [
+    {
+      "id": "flow:drive-experience-job-cards-fade-in-when-scrolled-into",
+      "statement": "Experience job cards fade in when scrolled into view instead of staying…",
+      "status": "proposed",
+      "subject": "drive-experience-job-cards-fade-in-when"
+    },
+    {
+      "id": "inline:all-eight-experience-role-cards-are-visible-afte-c1cd2314",
+      "statement": "All eight experience role cards are visible after scroll reveals",
+      "status": "proved",
+      "subject": "unsorted"
+    },
+    {
+      "id": "inline:experience-job-cards-fade-in-when-scrolled-into-4a94cdf1",
+      "statement": "Experience job cards fade in when scrolled into view instead of staying…",
+      "status": "proved",
+      "subject": "unsorted"
+    },
+    {
+      "id": "inline:service-items-fade-in-when-scrolled-into-view-in-1a7cbfe7",
+      "statement": "Service items fade in when scrolled into view instead of staying at opa…",
+      "status": "proved",
+      "subject": "unsorted"
+    }
+  ],
+  "version": 1
+}

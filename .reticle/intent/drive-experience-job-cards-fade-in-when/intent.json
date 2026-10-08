@@ -1,0 +1,18 @@
+{
+  "intents": {
+    "flow:drive-experience-job-cards-fade-in-when-scrolled-into": {
+      "declaredAt": 1791486478788,
+      "id": "flow:drive-experience-job-cards-fade-in-when-scrolled-into",
+      "state": "declared",
+      "statement": "Experience job cards fade in when scrolled into view instead of staying at opacity 0",
+      "status": "proposed",
+      "subject": "drive-experience-job-cards-fade-in-when",
+      "surface": {
+        "flow": "drive-experience-job-cards-fade-in-when-scrolled-into"
+      },
+      "updatedAt": 1791486478800
+    }
+  },
+  "subject": "drive-experience-job-cards-fade-in-when",
+  "version": 1
+}
