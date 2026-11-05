@@ -710,7 +710,7 @@
         const TARGET_MS = 30000;
         const RELEASE_BONUS_MS = 500;
         const NAME_KEY = "getTo30PlayerName";
-        const SCORES_URL = "scores.json";
+        const SCORES_URL = "https://secret.bruceliu.info/game.php";
 
         const gateEl = document.getElementById("gate");
         const playEl = document.getElementById("play");
@@ -813,7 +813,7 @@
           } catch (err) {
             boardStatus.hidden = false;
             boardStatus.textContent =
-              "Leaderboard needs the local server (python server.py).";
+              "Leaderboard is offline right now. Your scores still count locally.";
             boardEmpty.hidden = true;
           }
         }
@@ -837,7 +837,7 @@
           } catch (err) {
             boardStatus.hidden = false;
             boardStatus.textContent =
-              "Score saved only in this browser view — start python server.py to write scores.json.";
+              "Could not reach the leaderboard. Your best score is saved in this browser.";
           }
         }
 
