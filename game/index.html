@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Get to 30 seconds — hold, then release as close to 30.000 as you can."
+    />
+    <title>Get to 30 seconds</title>
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <style>
+      :root {
+        --ground: #c8d4c0;
+        --ground-mid: #dce6d4;
+        --ground-deep: #b4c2aa;
+        --dial: #f0e6d8;
+        --dial-light: #fffaf2;
+        --dial-shade: #e2d4c4;
+        --ink: #2a2e2c;
+        --ink-soft: #3a4338;
+        --tomato: #e23a2e;
+        --tomato-deep: #c92218;
+        --tomato-shadow: #8e1610;
+        --chrome: #9aa3a8;
+        --chrome-light: #efe6da;
+        --focus: #1f6b4a;
+        --selection: #e23a2e33;
+        --display: "Bricolage Grotesque", system-ui, sans-serif;
+        --ui: "Figtree", system-ui, sans-serif;
+        --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100%;
+        font-family: var(--ui);
+        color: var(--ink);
+        background: radial-gradient(
+          ellipse 80% 60% at 50% 38%,
+          var(--ground-mid) 0%,
+          var(--ground) 55%,
+          var(--ground-deep) 100%
+        );
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+
+      ::selection {
+        background: var(--selection);
+        color: var(--ink);
+      }
+
+      input,
+      button {
+        font: inherit;
+      }
+
+      /* —— Name gate —— */
+      .gate {
+        min-height: 100%;
+        display: grid;
+        place-items: center;
+        padding: clamp(1.5rem, 5vw, 3rem);
+      }
+
+      .gate[hidden],
+      .play[hidden] {
+        display: none !important;
+      }
+
+      .gate__panel {
+        width: min(100%, 420px);
+        padding: 2.25rem 2rem 2rem;
+        border-radius: 28px;
+        background: radial-gradient(
+          circle at 42% 28%,
+          var(--dial-light),
+          var(--dial) 55%,
+          var(--dial-shade)
+        );
+        box-shadow:
+          0 28px 48px rgba(40, 50, 40, 0.28),
+          inset 0 0 0 10px var(--chrome-light),
+          inset 0 0 42px rgba(0, 0, 0, 0.06);
+      }
+
+      .gate__title {
+        margin: 0 0 0.35rem;
+        font-family: var(--display);
+        font-weight: 800;
+        font-size: clamp(1.6rem, 5vw, 2rem);
+        letter-spacing: -0.03em;
+        line-height: 1.1;
+      }
+
+      .gate__copy {
+        margin: 0 0 1.5rem;
+        color: var(--ink-soft);
+        font-size: 1.05rem;
+        line-height: 1.45;
+      }
+
+      .gate__label {
+        display: block;
+        margin-bottom: 0.45rem;
+        font-weight: 600;
+        font-size: 0.95rem;
+      }
+
+      .gate__input {
+        width: 100%;
+        height: 3.25rem;
+        padding: 0 1rem;
+        border: 2px solid #c4b8a8;
+        border-radius: 14px;
+        background: var(--dial-light);
+        color: var(--ink);
+        caret-color: var(--tomato);
+        margin-bottom: 1rem;
+      }
+
+      .gate__input::placeholder {
+        color: #6a7466;
+      }
+
+      .gate__input:focus-visible {
+        outline: 3px solid var(--focus);
+        outline-offset: 2px;
+      }
+
+      .gate__submit {
+        width: 100%;
+        height: 3.5rem;
+        border: 2px solid #e23a2e;
+        border-radius: 999px;
+        background: linear-gradient(180deg, #c92218, #a81610);
+        color: #ffffff;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        cursor: pointer;
+        box-shadow:
+          0 8px 0 var(--tomato-shadow),
+          0 14px 24px rgba(140, 30, 20, 0.28);
+      }
+
+      .gate__submit:hover {
+        filter: brightness(1.04);
+      }
+
+      .gate__submit:focus-visible {
+        outline: 3px solid var(--focus);
+        outline-offset: 3px;
+      }
+
+      .gate__error {
+        margin: 0.75rem 0 0;
+        color: var(--tomato-deep);
+        font-weight: 600;
+        font-size: 0.95rem;
+      }
+
+      /* —— Play layout —— */
+      .play {
+        min-height: 100%;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+        gap: clamp(1.25rem, 3vw, 2.5rem);
+        align-items: center;
+        padding: clamp(1.25rem, 4vw, 2.5rem);
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .stage {
+        display: grid;
+        place-items: center;
+        align-content: center;
+        gap: clamp(1.5rem, 4vh, 2.75rem);
+        min-width: 0;
+      }
+
+      .player-chip {
+        margin: 0;
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: var(--ink-soft);
+        text-align: center;
+      }
+
+      .player-chip strong {
+        color: var(--ink);
+      }
+
+      .timer {
+        --dial-size: min(68vw, 480px);
+        position: relative;
+        width: var(--dial-size);
+        height: var(--dial-size);
+        display: grid;
+        place-items: center;
+        filter: drop-shadow(0 28px 48px rgba(40, 50, 40, 0.28));
+        transition: transform 420ms var(--ease-out);
+      }
+
+      .timer[data-state="holding"] {
+        transform: scale(1.018);
+      }
+
+      .timer[data-state="holding"] .timer__face {
+        box-shadow:
+          inset 0 0 0 10px var(--chrome-light),
+          inset 0 0 42px rgba(0, 0, 0, 0.06),
+          0 0 0 3px rgba(226, 58, 46, 0.35);
+      }
+
+      .timer[data-state="holding"] .timer__ticks {
+        opacity: 0.7;
+        animation: tick-chase 1s linear infinite;
+      }
+
+      .timer[data-state="idle"] .timer__hand {
+        opacity: 0.55;
+      }
+
+      .timer[data-state="holding"] .timer__hand,
+      .timer[data-state="win"] .timer__hand {
+        opacity: 1;
+      }
+
+      .timer[data-state="idle"] .timer__readout {
+        opacity: 0.88;
+      }
+
+      .timer[data-state="holding"] .timer__readout,
+      .timer[data-state="win"] .timer__readout {
+        opacity: 1;
+      }
+
+      @keyframes tick-chase {
+        to {
+          transform: rotate(6deg);
+        }
+      }
+
+      .timer[data-state="win"] {
+        animation: win-pop 620ms var(--ease-out);
+      }
+
+      @keyframes win-pop {
+        0% {
+          transform: scale(1);
+        }
+        35% {
+          transform: scale(1.06);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .timer__rim {
+        position: absolute;
+        inset: 0;
+        border-radius: 50%;
+        background: linear-gradient(145deg, #c4cbcf, #7f878c 45%, #b8c0c4);
+        box-shadow:
+          inset 0 2px 3px rgba(255, 255, 255, 0.45),
+          inset 0 -3px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      .timer__face {
+        position: relative;
+        z-index: 1;
+        width: calc(100% - 28px);
+        height: calc(100% - 28px);
+        border-radius: 50%;
+        background: radial-gradient(
+          circle at 42% 32%,
+          var(--dial-light),
+          var(--dial) 55%,
+          var(--dial-shade)
+        );
+        box-shadow:
+          inset 0 0 0 10px var(--chrome-light),
+          inset 0 0 42px rgba(0, 0, 0, 0.06);
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+      }
+
+      .timer__ticks {
+        position: absolute;
+        inset: 22px;
+        border-radius: 50%;
+        background: repeating-conic-gradient(
+          from -0.5deg,
+          var(--ink) 0 1deg,
+          transparent 1deg 6deg
+        );
+        -webkit-mask: radial-gradient(
+          farthest-side,
+          transparent calc(100% - 16px),
+          #000 calc(100% - 16px)
+        );
+        mask: radial-gradient(
+          farthest-side,
+          transparent calc(100% - 16px),
+          #000 calc(100% - 16px)
+        );
+        opacity: 0.45;
+        pointer-events: none;
+      }
+
+      .timer__title {
+        position: absolute;
+        top: clamp(3.2rem, 13%, 5rem);
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+        width: max-content;
+        max-width: 86%;
+        font-family: var(--display);
+        font-weight: 800;
+        font-size: clamp(1.05rem, 3.8vw, 1.55rem);
+        letter-spacing: -0.03em;
+        line-height: 1.1;
+        text-align: center;
+        color: var(--ink);
+      }
+
+      .timer__hand {
+        position: absolute;
+        top: 14%;
+        left: 50%;
+        width: 6px;
+        height: 33%;
+        margin-left: -3px;
+        border-radius: 3px;
+        background: var(--tomato);
+        transform-origin: 50% 100%;
+        transform: rotate(0deg);
+        box-shadow: 0 0 0 2px rgb(255 250 242 / 0.45);
+        will-change: transform;
+        z-index: 2;
+        pointer-events: none;
+      }
+
+      .timer__hand::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -7px;
+        width: 16px;
+        height: 16px;
+        margin-left: -8px;
+        border-radius: 50%;
+        background: var(--tomato);
+        box-shadow: 0 0 0 3px var(--dial-light);
+      }
+
+      .timer__readout {
+        position: relative;
+        z-index: 3;
+        margin: 0;
+        font-family: var(--display);
+        font-weight: 800;
+        font-size: clamp(3rem, 12vw, 5.25rem);
+        letter-spacing: -0.04em;
+        line-height: 1;
+        font-variant-numeric: tabular-nums;
+        color: var(--ink);
+        transform: scale(var(--readout-scale, 1));
+        transition: transform 120ms linear;
+      }
+
+      .timer[data-state="holding"] .timer__readout {
+        transition: none;
+      }
+
+      .timer[data-state="win"] .timer__readout {
+        color: var(--tomato-deep);
+      }
+
+      .timer__result {
+        position: absolute;
+        bottom: 18%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+        width: 80%;
+        text-align: center;
+        font-family: var(--ui);
+        font-weight: 600;
+        font-size: clamp(0.9rem, 2.6vw, 1.05rem);
+        color: var(--ink-soft);
+        z-index: 3;
+      }
+
+      .timer[data-state="win"] .timer__result {
+        color: var(--tomato-deep);
+      }
+
+      .timer__stem {
+        position: absolute;
+        z-index: 4;
+        bottom: -2.1rem;
+        left: 50%;
+        translate: -50% 0;
+        width: min(58%, 220px);
+        height: 4.5rem;
+        border-radius: 999px;
+        background: linear-gradient(180deg, #c92218, #a81610);
+        border: 2px solid #e23a2e;
+        color: #ffffff;
+        font-family: var(--ui);
+        font-weight: 700;
+        font-size: clamp(1.05rem, 2.8vw, 1.2rem);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        cursor: pointer;
+        touch-action: none;
+        user-select: none;
+        -webkit-user-select: none;
+        box-shadow:
+          0 10px 0 var(--tomato-shadow),
+          0 18px 28px rgba(140, 30, 20, 0.32);
+        transition:
+          transform 160ms var(--ease-out),
+          box-shadow 160ms var(--ease-out),
+          filter 160ms var(--ease-out);
+      }
+
+      .timer__stem:hover {
+        filter: brightness(1.04);
+      }
+
+      .timer__stem:focus-visible {
+        outline: 3px solid var(--focus);
+        outline-offset: 4px;
+      }
+
+      .timer__stem:active,
+      .timer[data-state="holding"] .timer__stem {
+        transform: translateY(8px);
+        box-shadow:
+          0 2px 0 var(--tomato-shadow),
+          0 8px 16px rgba(140, 30, 20, 0.28);
+      }
+
+      .timer__stem-label {
+        pointer-events: none;
+      }
+
+      .hint {
+        margin: 0;
+        max-width: 28rem;
+        text-align: center;
+        font-size: clamp(0.95rem, 2.4vw, 1.125rem);
+        font-weight: 500;
+        color: var(--ink-soft);
+        line-height: 1.45;
+      }
+
+      .hint strong {
+        color: var(--ink);
+        font-weight: 700;
+      }
+
+      /* —— Leaderboard (enamel plaque, not a card stack) —— */
+      .board {
+        align-self: stretch;
+        max-height: min(78vh, 640px);
+        display: flex;
+        flex-direction: column;
+        padding: 1.35rem 1.2rem 1.2rem;
+        border-radius: 24px;
+        background: radial-gradient(
+          circle at 40% 20%,
+          var(--dial-light),
+          var(--dial) 60%,
+          var(--dial-shade)
+        );
+        box-shadow:
+          0 22px 40px rgba(40, 50, 40, 0.22),
+          inset 0 0 0 8px var(--chrome-light);
+        min-width: 0;
+      }
+
+      .board__title {
+        margin: 0 0 0.25rem;
+        font-family: var(--display);
+        font-weight: 800;
+        font-size: 1.35rem;
+        letter-spacing: -0.03em;
+      }
+
+      .board__sub {
+        margin: 0 0 1rem;
+        color: var(--ink-soft);
+        font-size: 0.9rem;
+        line-height: 1.35;
+      }
+
+      .board__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: auto;
+        flex: 1;
+        display: grid;
+        gap: 0.35rem;
+        align-content: start;
+      }
+
+      .board__list::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      .board__list::-webkit-scrollbar-thumb {
+        background: #b8a994;
+        border-radius: 999px;
+      }
+
+      .board__row {
+        display: grid;
+        grid-template-columns: 1.6rem minmax(0, 1fr) auto;
+        gap: 0.55rem;
+        align-items: baseline;
+        padding: 0.45rem 0.35rem;
+        border-bottom: 1px solid rgb(42 46 44 / 0.1);
+        font-variant-numeric: tabular-nums;
+      }
+
+      .board__row:last-child {
+        border-bottom: 0;
+      }
+
+      .board__rank {
+        font-weight: 700;
+        color: var(--ink-soft);
+        font-size: 0.85rem;
+      }
+
+      .board__name {
+        font-weight: 600;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .board__time {
+        font-family: var(--display);
+        font-weight: 800;
+        font-size: 1rem;
+        letter-spacing: -0.02em;
+      }
+
+      .board__delta {
+        grid-column: 2 / -1;
+        margin-top: -0.15rem;
+        font-size: 0.8rem;
+        color: var(--ink-soft);
+      }
+
+      .board__row.is-you .board__name,
+      .board__row.is-you .board__time {
+        color: var(--tomato-deep);
+      }
+
+      .board__empty,
+      .board__status {
+        margin: 0;
+        color: var(--ink-soft);
+        font-size: 0.95rem;
+        line-height: 1.4;
+      }
+
+      @media (max-width: 860px) {
+        .play {
+          grid-template-columns: 1fr;
+          align-items: start;
+          padding-bottom: 2.5rem;
+        }
+
+        .board {
+          max-height: none;
+          order: 2;
+        }
+
+        .stage {
+          order: 1;
+        }
+
+        .timer {
+          --dial-size: min(72vw, 360px);
+        }
+      }
+
+      @media (max-width: 480px) {
+        .stage {
+          gap: 1.75rem;
+          padding-top: 0.5rem;
+        }
+
+        .timer__stem {
+          bottom: -1.35rem;
+          height: 3.5rem;
+          width: min(72%, 200px);
+        }
+
+        .hint {
+          padding-inline: 0.75rem;
+          font-size: 0.92rem;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .timer,
+        .timer__stem,
+        .timer__readout {
+          transition: none;
+        }
+
+        .timer[data-state="win"],
+        .timer[data-state="holding"] .timer__ticks {
+          animation: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="gate" id="gate" hidden>
+      <form class="gate__panel" id="name-form" autocomplete="username">
+        <h1 class="gate__title">Get to 30 seconds</h1>
+        <p class="gate__copy">Enter your name to play and join the board.</p>
+        <label class="gate__label" for="player-name">Your name</label>
+        <input
+          class="gate__input"
+          id="player-name"
+          name="player-name"
+          type="text"
+          maxlength="24"
+          required
+          autofocus
+          placeholder="e.g. Alex"
+          autocomplete="nickname"
+        />
+        <button class="gate__submit" type="submit">Play</button>
+        <p class="gate__error" id="name-error" hidden></p>
+      </form>
+    </section>
+
+    <div class="play" id="play" hidden>
+      <main class="stage">
+        <p class="player-chip">Playing as <strong id="player-label"></strong></p>
+        <div class="timer" data-state="idle" aria-live="polite">
+          <div class="timer__rim" aria-hidden="true"></div>
+          <div class="timer__face">
+            <div
+              class="timer__ticks"
+              aria-hidden="true"
+              data-impeccable-ignore="repeating-stripes-gradient"
+            ></div>
+            <h1 class="timer__title">Get to 30 seconds</h1>
+            <div class="timer__hand" id="hand" aria-hidden="true"></div>
+            <p class="timer__readout" id="readout">0.000</p>
+            <p class="timer__result" id="result" hidden></p>
+          </div>
+          <button
+            type="button"
+            class="timer__stem"
+            id="hold"
+            aria-pressed="false"
+            aria-describedby="hint"
+            data-impeccable-ignore="hard-offset-shadow"
+          >
+            <span class="timer__stem-label" id="stem-label">Hold</span>
+          </button>
+        </div>
+        <p class="hint" id="hint">
+          Hold mouse or key · release at <strong>30.000</strong>
+        </p>
+      </main>
+
+      <aside class="board" aria-label="Leaderboard">
+        <h2 class="board__title">Leaderboard</h2>
+        <p class="board__sub">Closest to 30.000 wins. Best score per name.</p>
+        <p class="board__status" id="board-status" hidden></p>
+        <ol class="board__list" id="board-list"></ol>
+        <p class="board__empty" id="board-empty">No scores yet — take the first shot.</p>
+      </aside>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script>
+      (() => {
+        const TARGET_MS = 30000;
+        const RELEASE_BONUS_MS = 500;
+        const NAME_KEY = "getTo30PlayerName";
+        const SCORES_URL = "scores.json";
+
+        const gateEl = document.getElementById("gate");
+        const playEl = document.getElementById("play");
+        const nameForm = document.getElementById("name-form");
+        const nameInput = document.getElementById("player-name");
+        const nameError = document.getElementById("name-error");
+        const playerLabel = document.getElementById("player-label");
+        const boardList = document.getElementById("board-list");
+        const boardEmpty = document.getElementById("board-empty");
+        const boardStatus = document.getElementById("board-status");
+
+        const timerEl = document.querySelector(".timer");
+        const holdBtn = document.getElementById("hold");
+        const stemLabel = document.getElementById("stem-label");
+        const readout = document.getElementById("readout");
+        const result = document.getElementById("result");
+        const hand = document.getElementById("hand");
+
+        let playerName = "";
+        let playReady = false;
+        let holding = false;
+        let startTime = 0;
+        let rafId = 0;
+        let activePointerId = null;
+        const heldKeys = new Set();
+
+        function formatMs(ms) {
+          return (Math.max(0, ms) / 1000).toFixed(3);
+        }
+
+        function formatDelta(delta) {
+          const abs = Math.abs(delta);
+          const side = delta < 0 ? "early" : "late";
+          if (delta === 0) return "exact";
+          return `${side} ${abs} ms`;
+        }
+
+        function setReadoutScale(ms) {
+          const windowMs = 2000;
+          const proximity = 1 - Math.min(Math.abs(ms - TARGET_MS) / windowMs, 1);
+          const scale = 1 + proximity * 0.12;
+          readout.style.setProperty("--readout-scale", scale.toFixed(4));
+        }
+
+        function setHand(ms) {
+          hand.style.transform = `rotate(${(ms / TARGET_MS) * 360}deg)`;
+        }
+
+        function setState(state) {
+          timerEl.dataset.state = state;
+          holdBtn.setAttribute(
+            "aria-pressed",
+            state === "holding" ? "true" : "false"
+          );
+        }
+
+        function showNameError(message) {
+          nameError.hidden = !message;
+          nameError.textContent = message || "";
+        }
+
+        function renderBoard(scores) {
+          boardList.innerHTML = "";
+          const list = Array.isArray(scores) ? scores : [];
+          boardEmpty.hidden = list.length > 0;
+
+          list.slice(0, 20).forEach((entry, index) => {
+            const li = document.createElement("li");
+            li.className = "board__row";
+            if (entry.name === playerName) li.classList.add("is-you");
+
+            const rank = document.createElement("span");
+            rank.className = "board__rank";
+            rank.textContent = String(index + 1);
+
+            const name = document.createElement("span");
+            name.className = "board__name";
+            name.textContent = entry.name;
+
+            const time = document.createElement("span");
+            time.className = "board__time";
+            time.textContent = formatMs(entry.ms);
+
+            const delta = document.createElement("span");
+            delta.className = "board__delta";
+            delta.textContent = formatDelta(entry.delta ?? entry.ms - TARGET_MS);
+
+            li.append(rank, name, time, delta);
+            boardList.appendChild(li);
+          });
+        }
+
+        async function loadScores() {
+          boardStatus.hidden = true;
+          try {
+            const res = await fetch(SCORES_URL, { cache: "no-store" });
+            if (!res.ok) throw new Error("Could not load scores");
+            const data = await res.json();
+            renderBoard(data.scores || []);
+          } catch (err) {
+            boardStatus.hidden = false;
+            boardStatus.textContent =
+              "Leaderboard needs the local server (python server.py).";
+            boardEmpty.hidden = true;
+          }
+        }
+
+        async function submitScore(ms) {
+          try {
+            const res = await fetch(SCORES_URL, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                name: playerName,
+                ms,
+                at: new Date().toISOString(),
+              }),
+            });
+            if (!res.ok) throw new Error("Save failed");
+            const data = await res.json();
+            renderBoard(data.scores || []);
+            boardStatus.hidden = true;
+            boardEmpty.hidden = (data.scores || []).length > 0;
+          } catch (err) {
+            boardStatus.hidden = false;
+            boardStatus.textContent =
+              "Score saved only in this browser view — start python server.py to write scores.json.";
+          }
+        }
+
+        function enterPlay(name) {
+          playerName = name;
+          localStorage.setItem(NAME_KEY, name);
+          playerLabel.textContent = name;
+          gateEl.hidden = true;
+          playEl.hidden = false;
+          playReady = true;
+          loadScores();
+          holdBtn.focus({ preventScroll: true });
+        }
+
+        function updateWhileHolding(now) {
+          const elapsed = now - startTime;
+          readout.textContent = formatMs(elapsed);
+          setHand(elapsed);
+          setReadoutScale(elapsed);
+          rafId = requestAnimationFrame(updateWhileHolding);
+        }
+
+        function celebrate() {
+          if (typeof confetti !== "function") return;
+          confetti({
+            particleCount: 120,
+            spread: 70,
+            origin: { y: 0.55 },
+            colors: ["#e23a2e", "#f0e6d8", "#2a2e2c", "#c8d4c0", "#f04a3c"],
+          });
+          window.setTimeout(() => {
+            confetti({
+              particleCount: 80,
+              angle: 60,
+              spread: 55,
+              origin: { x: 0, y: 0.7 },
+              colors: ["#e23a2e", "#fffaf2", "#4a5548"],
+            });
+            confetti({
+              particleCount: 80,
+              angle: 120,
+              spread: 55,
+              origin: { x: 1, y: 0.7 },
+              colors: ["#e23a2e", "#fffaf2", "#4a5548"],
+            });
+          }, 160);
+        }
+
+        function startHold() {
+          if (!playReady || holding) return;
+          holding = true;
+          startTime = performance.now();
+          result.hidden = true;
+          result.textContent = "";
+          stemLabel.textContent = "Release";
+          setState("holding");
+          cancelAnimationFrame(rafId);
+          rafId = requestAnimationFrame(updateWhileHolding);
+        }
+
+        function stopHold() {
+          if (!holding) return;
+          holding = false;
+          cancelAnimationFrame(rafId);
+          rafId = 0;
+          activePointerId = null;
+          heldKeys.clear();
+
+          const elapsedMs =
+            Math.round(performance.now() - startTime) + RELEASE_BONUS_MS;
+          readout.textContent = formatMs(elapsedMs);
+          setHand(elapsedMs);
+          setReadoutScale(elapsedMs);
+          stemLabel.textContent = "Hold";
+
+          const delta = elapsedMs - TARGET_MS;
+          const perfect = elapsedMs === TARGET_MS;
+
+          if (perfect) {
+            setState("win");
+            result.hidden = false;
+            result.textContent = "Exactly 30.000 — perfect!";
+            celebrate();
+          } else {
+            setState("idle");
+            const abs = Math.abs(delta);
+            const side = delta < 0 ? "early" : "late";
+            result.hidden = false;
+            result.textContent =
+              abs === 1
+                ? `Off by 1 ms (${side}). So close.`
+                : `Off by ${abs} ms (${side}). Try again.`;
+          }
+
+          submitScore(elapsedMs);
+        }
+
+        function onPointerDown(event) {
+          if (!playReady) return;
+          if (
+            holding &&
+            activePointerId !== null &&
+            event.pointerId !== activePointerId
+          ) {
+            return;
+          }
+          activePointerId = event.pointerId;
+          holdBtn.setPointerCapture?.(event.pointerId);
+          startHold();
+          event.preventDefault();
+        }
+
+        function onPointerUp(event) {
+          if (activePointerId !== null && event.pointerId !== activePointerId)
+            return;
+          stopHold();
+        }
+
+        function onKeyDown(event) {
+          if (!playReady) return;
+          if (event.metaKey || event.ctrlKey || event.altKey) return;
+          if (event.repeat) return;
+          if (["Tab", "Escape", "F5", "F12"].includes(event.key)) return;
+          heldKeys.add(event.code || event.key);
+          startHold();
+          event.preventDefault();
+        }
+
+        function onKeyUp(event) {
+          if (!playReady) return;
+          if (!heldKeys.has(event.code || event.key) && !holding) return;
+          heldKeys.delete(event.code || event.key);
+          if (heldKeys.size === 0) stopHold();
+          event.preventDefault();
+        }
+
+        nameForm.addEventListener("submit", (event) => {
+          event.preventDefault();
+          const name = nameInput.value.replace(/\s+/g, " ").trim();
+          if (!name) {
+            showNameError("Enter a name to continue.");
+            nameInput.focus();
+            return;
+          }
+          if (name.length > 24) {
+            showNameError("Keep it to 24 characters.");
+            nameInput.focus();
+            return;
+          }
+          showNameError("");
+          enterPlay(name);
+        });
+
+        holdBtn.addEventListener("pointerdown", onPointerDown);
+        holdBtn.addEventListener("pointerup", onPointerUp);
+        holdBtn.addEventListener("pointercancel", onPointerUp);
+        holdBtn.addEventListener("lostpointercapture", onPointerUp);
+        holdBtn.addEventListener("contextmenu", (event) => event.preventDefault());
+
+        window.addEventListener("keydown", onKeyDown);
+        window.addEventListener("keyup", onKeyUp);
+        window.addEventListener("blur", () => {
+          if (holding) stopHold();
+        });
+        window.addEventListener("pointerup", (event) => {
+          if (holding && activePointerId !== null) onPointerUp(event);
+        });
+
+        const saved = (localStorage.getItem(NAME_KEY) || "").trim();
+        if (saved) {
+          enterPlay(saved);
+        } else {
+          gateEl.hidden = false;
+          playEl.hidden = true;
+          nameInput.focus();
+        }
+      })();
+    </script>
+  </body>
+</html>
