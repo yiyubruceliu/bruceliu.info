@@ -1613,6 +1613,12 @@ h6 {
   font-family: var(--font-body);
 }
 
+.nav-menu .nav-ico,
+#mobile-nav .nav-ico {
+  vertical-align: -3px;
+  margin-right: 2px;
+}
+
 .nav-menu a.active,
 .nav-menu a:hover {
   color: #2f2d52 !important;
